@@ -1,0 +1,137 @@
+/* -------------------------
+*-----------通顶----------- 
+----------------------------*/
+#_TOP_ACTIVE_ .top_active_wrap{
+    background: url(../images/top_active.jpg) no-repeat center;
+    height:360px;
+    width:100%;
+}
+
+#_TOP_ACTIVE_ .top_active_btn{
+    position: absolute;
+    right:42px;
+    top:3px;
+    background-image: url(../images/index.png);
+    height:15px;
+    width:15px;
+}
+
+#_TOP_ACTIVE_ .top_active_btn.btn_close{
+    background-position:-15px 0;    
+}
+#_TOP_ACTIVE_ .top_active_btn.btn_open{
+    background-position:-15px -15px;    
+}
+
+/* -------------------------
+*-----------顶部导航栏----------- 
+----------------------------*/
+#_TOP_NAV_{
+    height: 35px;
+    width: 100%;
+    background: #F4F4F4;
+    border-bottom: 1px solid #ECECEC;
+    line-height: 35px;
+}
+/* 左侧 */
+#_TOP_NAV_ .top_nav_left{
+    float: left;
+    width:145px;
+    height: 35px;
+    background: yellowgreen;
+}
+
+/* 网络导航 */
+/* 一级 */
+#_TOP_NAV_ .webnav_wrap{
+    position: relative;
+}
+#_TOP_NAV_ .webnav_wrap_a{
+    display: block;
+    width: 65px;
+    height: 35px;
+    background: violet;
+    text-align: center;
+    padding:0 10px;
+}
+
+#_TOP_NAV_ .webnav_wrap_a span,#_TOP_NAV_ .webnav_wrap_a i{
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+}
+
+#_TOP_NAV_ .webnav_wrap_a i{
+    width: 10px;
+    font-size: 10px;
+    color:#bbb;
+    margin-left: 3px;
+    transform-origin: 50% 50%;
+    transition: all .2s ease-in;
+}
+
+#_TOP_NAV_ .webnav_wrap_a:hover i{
+    transform:rotate(-180deg);
+}
+/* 二级 */
+#NAV_INFO_WRAP{
+    position: absolute;
+    top:35px;
+    width: 988px;
+    border:1px solid #ddd;
+    background: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#NAV_INFO_WRAP dl.nav_wrap2_list{
+    position: relative;
+    display: block;
+    float: left;
+    width: 176px;
+    border-right:1px solid #eee;
+    padding-left: 20px;
+}
+
+#NAV_INFO_WRAP dl.wrap2_right{
+    border-right: none;
+}
+
+#NAV_INFO_WRAP dl.nav_wrap2_list dt{
+    display: block;
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#NAV_INFO_WRAP dl.nav_wrap2_list dd{
+    display: block;
+    width:100%;
+    overflow: hidden;
+}
+
+#NAV_INFO_WRAP dl.nav_wrap2_list dd p{
+    float: left;
+    width: 78px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#NAV_INFO_WRAP dl.nav_wrap2_list dd a{
+    position: relative;
+    display: inline-block;
+}
+
+#NAV_INFO_WRAP dl.nav_wrap2_list dd p:hover a{
+    color:#FF501C;
+    text-decoration: underline;
+}
+
+/* 右侧 */
+#_TOP_NAV_ .top_nav_right{
+    float: right;
+    width:647px;
+    height: 35px;
+    background: yellow;
+}
