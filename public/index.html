@@ -24,12 +24,12 @@
         <div class="container">
             <div class="top_nav_left">
                 <!-- 顶部导航栏-网站导航START  -->
-                <div class="webnav_wrap"> 
-                    <a href="javascript:selectDown()" class="webnav_wrap_a" name="">
+                <div class=" webnav_wrap nav_wrap1_fl"> 
+                    <a href="javascript:selectDown()" class="webnav_wrap_a nav_wrap1_a" name="">
                         <span>网站导航</span>
                         <i class="fa fa-angle-down"></i>
                     </a> 
-                    <div id="NAV_INFO_WRAP" class="" style="display:block;"> 
+                    <div id="NAV_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
                         <dl class="nav_wrap2_list"> 
                             <dt>
                                 特色购物
@@ -40,7 +40,7 @@
                                 <p><a name="" href="javascript:;" target="_blank">苏宁卡</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">海外购</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">政企采购</a></p> 
-                                <p><a name="" href="coupon.html" target="_blank">大聚惠</a></p> 
+                                <p><a name="" href="coupon.html" target="_blank">大聚惠<i class="hot_zh"></i></a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">0元试用</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">视频购物</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">办公直通车</a></p> 
@@ -75,7 +75,7 @@
                                 生活助手 
                             </dt> 
                             <dd> 
-                                <p><a name="" href="javascript:;" target="_blank">零钱宝<i class="hot"></i></a></p> 
+                                <p><a name="" href="javascript:;" target="_blank">零钱宝<i class="hot_zh"></i></a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">手机充值</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">火车票</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">转账还款</a></p> 
@@ -92,7 +92,7 @@
                                 会员服务 
                             </dt> 
                             <dd> 
-                                <p><a name="" href="javascript:;" target="_blank">会员联盟<i class="hot"></i></a></p> 
+                                <p><a name="" href="javascript:;" target="_blank">会员联盟<i class="hot_zh"></i></a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">苏宁社区</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">延长保修</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">免费书城</a></p> 
@@ -101,14 +101,14 @@
                                 <p><a name="" href="javascript:;" target="_blank">苏宁金融</a></p> 
                             </dd> 
                         </dl> 
-                        <dl class="nav_wrap2_list"> 
+                        <dl class="nav_wrap2_list wrap2_right"> 
                             <dt>
                                 更多热点 
                             </dt> 
                             <dd> 
                                 <p><a name="" href="javascript:;" target="_blank">PPTV</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">客户端</a></p> 
-                                <p><a name="" href="javascript:;" target="_blank">商家入驻<i class="hot"></i></a></p> 
+                                <p><a name="" href="javascript:;" target="_blank">商家入驻<i class="hot_zh"></i></a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">苏宁云盘</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">苏宁众包</a></p> 
                                 <p><a name="" href="javascript:;" target="_blank">苏宁联盟</a></p> 
@@ -120,45 +120,58 @@
                                 <p><a name="" href="javascript:;" target="_blank">苏宁足球</a></p> 
                             </dd> 
                         </dl> 
-                        <a href="" class="" name="">
-                            <em class=""></em>
+                        <a href="" class="fl wrap2_close" name="">
+                            <i class="fa fa-close"></i>
                         </a> 
                     </div> 
+                </div>
+                <!-- 顶部导航栏-网站导航END  -->
+
+                <!-- 顶部导航栏-消息START  --> 
+                <div class="msg_wrap nav_wrap1_fl"> 
+                    <a href="javascript:selectDown()" class="msg_wrap_a nav_wrap1_a" target="_blank"> 
+                        <span>消息</span>
+                        <i class="fa fa-angle-down"></i> 
+                    </a> 
+                    <div id="MSG_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
+                        <div class="msg_list"> 
+                            <div class="msg_item msg_item_no"> 
+                                <i></i> 
+                                <span>嗷~ 没有新消息...</span> 
+                            </div> 
+                        </div> 
+                        <div class="msg_bottom"> 
+                            <a href="#" name="" target="_blank">查看更多</a> 
+                        </div> 
+                    </div> 
                 </div> 
+                <!-- 顶部导航栏-消息END  -->
             </div>
-            <div class="top_nav_right"></div>
+            <div class="top_nav_right">
+                <!-- 登录注册 -->
+                <div class="nav_wrap1_fl">
+                    <!-- 已登录用户名显示 -->
+                    <a href="javascript:selectDown()" id="USERS_LOGIN_UNAME" class="nav_wrap1_a" style="display:none;">
+                        <span id="LOGIN_UNAME">fff</span>
+                        <i class="fa fa-angle-down"></i> 
+                    </a>
+                    <!-- 已登录二级 -->
+                    <div id="LOGIN_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
+                        <a href="" class="user_mng" target="_blank">账号管理</a> 
+                        <a href="javascript:" class="user_exit">退出登录</a> 
+                    </div> 
+                    <!-- 未登录 -->
+                    <div id="REG_LOGIN_WRAP" class="nav_wrap1_login">
+                        <a href="#" class="nav_login">登录</a>
+                        <a href="#" class="nav_reg">注册</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- 顶部导航栏-网站导航END  -->
-
-    <!-- 顶部导航栏-消息START  --> 
-       <div class="ng-bar-node-box ng-msg-box"> 
-        <a href="member_message.html" class="ng-bar-node ng-bar-node-msg" name="public0_none_dbgjt_wdxx01" target="_blank"> <span>消息<i class="ng-iconfont dot"></i></span><em class="ng-iconfont down"></em> </a> 
-        <div class="ng-d-box ng-msg-child" style="display:none;"> 
-         <div class="ng-msg-list"> 
-          <div class="ng-msg-item ng-msg-item-no"> 
-           <i></i> 
-           <span>嗷~ 没有新消息...</span> 
-          </div> 
-         </div> 
-         <div class="ng-msg-bottom"> 
-          <a href="member_message.html" name="public0_none_dbgjt_wdxx01" target="_blank">查看更多</a> 
-         </div> 
-        </div> 
-       </div> 
-    <!-- 顶部导航栏-消息END  -->
-      </div> 
-      <div class="ng-toolbar-right"> 
     <!-- 顶部导航栏-登录注册START  -->
-       <a href="javascript:void(0)" class="ng-bar-node username-bar-node username-bar-node-showside" id="username-node" rel="nofollow" style="display:none;"> <span id="usernameHtml01"></span> <em class="hasmsg ng-iconfont"></em> </a> 
-       <div class="ng-bar-node-box username-handle" id="username-node-slide" style="display:none;"> 
-        <a href="member_index.html" rel="nofollow" class="ng-bar-node username-bar-node username-bar-node-noside"> <span id="usernameHtml02"></span> <em class="hasmsg ng-iconfont"></em> <em class="ng-iconfont down"></em> </a> 
-        <div class="ng-d-box ng-down-box ng-username-slide" style="display:none;"> 
-         <a href="member_info.html" class="ng-vip-union" target="_blank" rel="nofollow">账号管理</a> 
-         <a href="javascript:SFE.base.logoff();" rel="nofollow">退出登录</a> 
-        </div> 
-       </div> 
+       
        <div class="ng-bar-node reg-bar-node" id="reg-bar-node"> 
         <a href="login.html" name="public0_none_dbgjt_login0800" rel="nofollow" class="login">登录</a> 
         <a href="javascript:;" target="_blank" class="login reg-bbb" rel="nofollow" name="public0_none_dbgjt_register09">注册</a> 

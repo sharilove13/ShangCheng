@@ -2,6 +2,7 @@ html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p{
     margin: 0;
     padding:0;
     font-size: 12px;
+    font-family: "Microsoft Yahei";
 }
 body,a{
     color: #333;
@@ -24,4 +25,79 @@ a{
     height:100%;
     margin:0 auto;
     background: rebeccapurple;
+}
+
+.fl{
+    float: left;
+}
+
+@font-face {
+    font-family:iconfont;
+    src:url("../fonts/iconfont.woff"),url("../fonts/iconfont.ttf");
+}
+
+.nav_wrap1_fl{
+    position: relative;
+	float: left;
+}
+
+.nav_wrap1_a{
+    display: inline-block;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav_wrap1_a:hover{
+    background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	line-height: 33px;
+	padding: 0 9px
+}
+
+.nav_wrap1_login{
+    display: inline-block;
+    height: 35px;
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    font-family: arial,tahoma,"宋体";
+}
+
+.nav_wrap2{
+    position: absolute;
+    top:35px;
+    border:1px solid #ddd;
+    background: #fff;
+}
+
+.nav_wrap1_a span{
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+}
+
+.nav_wrap1_a span{
+    font-family: arial,tahoma,"宋体";
+}
+
+#_TOP_NAV_ .nav_wrap1_a i{
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+}
+
+#_TOP_NAV_ .nav_wrap1_a i{
+    width: 10px;
+    font-size: 10px;
+    color:#bbb;
+    margin-left: 3px;
+    transform-origin: 50% 50%;
+    transition: all .2s ease-in;
+}
+
+#_TOP_NAV_ .nav_wrap1_a:hover i{
+    transform:rotate(-180deg);
 }
