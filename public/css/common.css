@@ -24,13 +24,46 @@ a{
     width:1190px;
     height:100%;
     margin:0 auto;
-    background: rebeccapurple;
 }
 
 .fl{
     float: left;
 }
 
+
+.ahover:hover{
+    text-decoration: underline;
+    color:#F60;
+}
+.clearboth::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+/* 关闭 */
+a.wrap2_close{
+    position: absolute;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    right: 5px;
+    top: 5px;
+}
+a.wrap2_close i{
+    color: #989898;
+    transform-origin: 50% 50%;
+    -webkit-transition: transform .2s ease-in;
+    -moz-transition: transform .2s ease-in;
+    -o-transition: transform .2s ease-in;
+    transition: transform .2s ease-in
+}
+a.wrap2_close:hover i{
+	color: #F60;
+	transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg)
+}
 @font-face {
     font-family:iconfont;
     src:url("../fonts/iconfont.woff"),url("../fonts/iconfont.ttf");
@@ -81,15 +114,16 @@ a{
 
 .nav_wrap1_a span{
     font-family: arial,tahoma,"宋体";
+    vertical-align: middle;
 }
 
-#_TOP_NAV_ .nav_wrap1_a i{
+#_TOP_NAV_ .nav_wrap1_a i.fa-angle-down{
     display: inline-block;
     height: 100%;
     line-height: 35px;
 }
 
-#_TOP_NAV_ .nav_wrap1_a i{
+#_TOP_NAV_ .nav_wrap1_a i.fa-angle-down{
     width: 10px;
     font-size: 10px;
     color:#bbb;
@@ -98,6 +132,6 @@ a{
     transition: all .2s ease-in;
 }
 
-#_TOP_NAV_ .nav_wrap1_a:hover i{
+#_TOP_NAV_ .nav_wrap1_a:hover i.fa-angle-down{
     transform:rotate(-180deg);
 }

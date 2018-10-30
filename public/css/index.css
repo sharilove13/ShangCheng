@@ -105,32 +105,6 @@
     background: url(../images/npbg.png) no-repeat 0 -205px;
 }
 
-#NAV_INFO_WRAP a.wrap2_close{
-    position: absolute;
-    display: inline-block;
-    font-size: 22px;
-    text-align: center;
-    right: 5px;
-    top: 5px;
-}
-
-#NAV_INFO_WRAP a.wrap2_close i{
-    color: #989898;
-    transform-origin: 50% 50%;
-    -webkit-transition: transform .2s ease-in;
-    -moz-transition: transform .2s ease-in;
-    -o-transition: transform .2s ease-in;
-    transition: transform .2s ease-in
-}
-
-#NAV_INFO_WRAP a.wrap2_close:hover i{
-	color: #F60;
-	transform: rotate(-180deg);
-	-webkit-transform: rotate(-180deg);
-	-moz-transform: rotate(-180deg);
-	-o-transform: rotate(-180deg)
-}
-
 /* 消息 */
 #_TOP_NAV_ .msg_wrap a:hover{
     color:#F60;
@@ -191,10 +165,13 @@
 #_TOP_NAV_ .top_nav_right{
     position: relative;
     float: right;
-    width:647px;
     height: 35px;
-    background: yellow;
 }
+
+#_TOP_NAV_ .top_nav_right .nav_wrap1_fl{
+    height: 35px;
+}
+
 /* 已登录用户btn */
 #USERS_LOGIN_UNAME{
     min-width: 70px;
@@ -231,4 +208,81 @@
 
 #REG_LOGIN_WRAP .nav_reg{
     padding:0 10px;
+}
+/* 我的订单——我的易购——客户服务 */
+#MY_ORDER_INFO_WRAP a,#MY_OTHER_INFO_WRAP a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    width: 71px;
+}
+#MY_ORDER_INFO_WRAP a:hover,#MY_OTHER_INFO_WRAP a:hover,#CLIENT_SERVE_INFO_WRAP a:hover{
+    text-decoration: underline;
+    color:#F60;
+}
+
+
+
+/* 购物车 */
+#MY_CART .cartnum{
+    position: relative;
+    display: inline-block;
+    height: 18px;
+    min-width: 8px;
+    padding:0 4px;
+    text-align: center;
+    color:#fff;
+    border-radius: 8px;
+    background: #f7a705;
+}
+
+/* 手机苏宁 */
+#MB_SUNING_INFO_WRAP{
+    left: -13px;
+    width: 243px;
+    height: 210px;
+    padding: 15px;
+}
+#MB_SUNING_INFO_WRAP .ng_mb_box{
+    float: left;
+    height: 162px;
+    width: 132px;
+    margin-bottom: 10px;
+}
+#MB_SUNING_INFO_WRAP .ng_app_box{
+    float: left;
+    width: 80px;
+    height: 132px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+#MB_SUNING_INFO_WRAP .ng_app_box .ng_app_list{
+    width: 98px;
+    height: 89px;
+    overflow: hidden;
+}
+#MB_SUNING_INFO_WRAP .ng_app_box .ng_app_list a{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+}
+
+#MB_SUNING_INFO_WRAP>a{
+    display: block;
+    line-height: 35px;
+    
+}
+/* 客户服务 */
+#CLIENT_SERVE_INFO_WRAP a{
+    display: block;
+    height: 22px;
+    width:71px;
+    padding-left: 10px;
+    line-height: 22px;
 }

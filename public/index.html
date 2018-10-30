@@ -21,8 +21,8 @@
     </div>
     <!-- 顶部导航栏 -->
     <div id="_TOP_NAV_">
-        <div class="container">
-            <div class="top_nav_left">
+        <div class="container clearboth">
+            <div class="top_nav_left clearboth">
                 <!-- 顶部导航栏-网站导航START  -->
                 <div class=" webnav_wrap nav_wrap1_fl"> 
                     <a href="javascript:selectDown()" class="webnav_wrap_a nav_wrap1_a" name="">
@@ -148,35 +148,154 @@
                 <!-- 顶部导航栏-消息END  -->
             </div>
             <div class="top_nav_right">
-                <!-- 登录注册 -->
-                <div class="nav_wrap1_fl">
-                    <!-- 已登录用户名显示 -->
-                    <a href="javascript:selectDown()" id="USERS_LOGIN_UNAME" class="nav_wrap1_a" style="display:none;">
-                        <span id="LOGIN_UNAME">fff</span>
-                        <i class="fa fa-angle-down"></i> 
-                    </a>
-                    <!-- 已登录二级 -->
-                    <div id="LOGIN_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
-                        <a href="" class="user_mng" target="_blank">账号管理</a> 
-                        <a href="javascript:" class="user_exit">退出登录</a> 
-                    </div> 
-                    <!-- 未登录 -->
-                    <div id="REG_LOGIN_WRAP" class="nav_wrap1_login">
-                        <a href="#" class="nav_login">登录</a>
-                        <a href="#" class="nav_reg">注册</a>
+                <div class="clearboth">
+                    <!-- 顶部导航栏-登录注册START  -->
+                    <div class="nav_wrap1_fl">
+                        <!-- 已登录用户名显示 -->
+                        <a href="javascript:selectDown()" id="USERS_LOGIN_UNAME" class="nav_wrap1_a" style="display:none;">
+                            <span id="LOGIN_UNAME">fff</span>
+                            <i class="fa fa-angle-down"></i> 
+                        </a>
+                        <!-- 已登录二级 -->
+                        <div id="LOGIN_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
+                            <a href="" class="user_mng" target="_blank">账号管理</a> 
+                            <a href="javascript:" class="user_exit">退出登录</a> 
+                        </div> 
+                        <!-- 未登录 -->
+                        <div id="REG_LOGIN_WRAP" class="nav_wrap1_login">
+                            <a href="#" class="nav_login">登录</a>
+                            <a href="#" class="nav_reg">注册</a>
+                        </div>
                     </div>
+                    <!-- 顶部导航栏-登录注册END  -->
+
+                    <!-- 顶部导航栏-我的订单START  -->
+                    <div class="nav_wrap1_fl">
+                        <a href="javascript:selectDown()" id="MY_ORDER" class="ahover nav_wrap1_a">
+                            <span>我的订单</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div id="MY_ORDER_INFO_WRAP" class="nav_wrap2" style="display:none">
+                            <a href="#">
+                                待支付
+                                <i id="WAIT_PAY_COUNT"></i>
+                            </a>
+                            <a href="#">
+                                待收获
+                                <i id="WAIT_DELIVERY_COUNT"></i>
+                            </a>
+                            <a href="#">
+                                待评价
+                                <i id="WAIT_EVALUATION_COUNT"></i>
+                            </a>
+                            <a href="#">修改订单</a>
+                        </div>
+                    </div>
+                    <!-- 顶部导航栏-我的订单END  -->
+
+                    <!-- 顶部导航栏-我的易购START  -->
+                    <div class="nav_wrap1_fl">
+                        <a href="javascript:selectDown()" id="MY_OTHER" class="ahover nav_wrap1_a">
+                            <span>我的易购</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div id="MY_OTHER_INFO_WRAP" class="nav_wrap2" style="display:none">
+                            <a href="#">我的二手</a>
+                            <a href="#">我的金融</a>
+                            <a href="#">我的收藏</a>
+                            <a href="#">我的任性付</a>
+                            <a href="#">我的优惠券</a>
+                            <a href="#">打卡赚云钻</a>
+                            <a href="#">会员联盟</a>
+                        </div>
+                    </div>
+                    <!-- 顶部导航栏-我的易购END  -->
+
+                    <!-- 顶部导航栏-购物车START  -->
+                    <div class="nav_wrap1_fl">
+                            <a href="javascript:selectDown()" id="MY_CART" class="ahover nav_wrap1_a">
+                                <i class="cart"></i>
+                                <span>购物车</span>
+                                <b class="cartnum">0</b>
+                            </a>
+                        </div>
+                        <!-- 顶部导航栏-购物车END  -->
+                        <!-- 顶部导航栏-手机苏宁START  -->
+                    <div class="nav_wrap1_fl">
+                            <a href="javascript:selectDown()" id="MB_SUNING" class="ahover nav_wrap1_a">
+                                <i class="mb"></i>
+                                <span>手机苏宁</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div id="MB_SUNING_INFO_WRAP" class="nav_wrap2" style="display:block">
+                                <div class="ng_mb_box">
+                                    <p>
+                                        <a href="#" target="_blank">扫一扫，下载易购客户端</a>
+                                    </p>
+                                    <a href="#">
+                                        <img src="./images/mb.jpg" alt="苏宁易购APP二维码" height="80px" width="80px">
+                                    </a>
+                                </div>
+                                <div class="ng_app_box">
+                                    <div class="ng_app_list">
+                                        <a href="#">
+                                            <img src="" title="易付宝钱包">
+                                        </a>
+                                        <a href="#">
+                                            <img src="" title="苏宁易购TV版">
+                                            </a>
+                                        <a href="#">
+                                            <img src="" title="PPTV">
+                                        </a>
+                                        <a href="#">
+                                            <img src="" title="苏宁阅读">
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="#" target="_blank">
+                                    <img src="" alt="" width="242px" height:"35px">
+                                </a>
+                                <a href="" class="fl wrap2_close" name="">
+                                    <i class="fa fa-close"></i>
+                                </a> 
+                            </div>
+                        </div>
+                        <!-- 顶部导航栏-手机苏宁END  -->
+                        <!-- 顶部导航栏-易付宝START  -->
+                    <div class="nav_wrap1_fl">
+                            <a href="javascript:selectDown()" id="MY_PAY" class="ahover nav_wrap1_a">
+                                <span>易付宝</span>
+                            </a>
+                        </div>
+                        <!-- 顶部导航栏-易付宝END  -->
+                        <!-- 顶部导航栏-政府采购START  -->
+                    <div class="nav_wrap1_fl">
+                            <a href="javascript:selectDown()" id="ZF_SHOP" class="ahover nav_wrap1_a">
+                                <span>政府采购</span>
+                            </a>
+                        </div>
+                        <!-- 顶部导航栏-政府采购END  -->
+                        <!-- 顶部导航栏-客户服务START  -->
+                    <div class="nav_wrap1_fl">
+                            <a href="javascript:selectDown()" id="CLIENT_SERVE" class="ahover nav_wrap1_a">
+                                <span>客户服务</span>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                            <div id="CLIENT_SERVE_INFO_WRAP" class="nav_wrap2" style="display:none">
+                                <a href="#">帮助中心</a>
+                                <a href="#">查找门店</a>
+                                <a href="#">退换货</a>
+                                <a href="#">约服务</a>
+                                <a href="#">投诉</a>
+                                <a href="#">建议反馈</a>
+                                <a href="#">在线咨询</a>
+                            </div>
+                        </div>
+                        <!-- 顶部导航栏-客户服务END  -->
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- 顶部导航栏-登录注册START  -->
-       
-       <div class="ng-bar-node reg-bar-node" id="reg-bar-node"> 
-        <a href="login.html" name="public0_none_dbgjt_login0800" rel="nofollow" class="login">登录</a> 
-        <a href="javascript:;" target="_blank" class="login reg-bbb" rel="nofollow" name="public0_none_dbgjt_register09">注册</a> 
-       </div> 
-    <!-- 顶部导航栏-登录注册END  -->
 
     <!-- 侧边导航栏 -->
     <div class="sidebar">
