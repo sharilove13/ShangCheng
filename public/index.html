@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css" /> 
     <link rel="stylesheet" type="text/css" href="css/index.css" /> 
-    <script src="js/vue.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/common.js"></script>
 </head>
 <body>
     <!-- 顶部广告 --> 
@@ -24,12 +25,12 @@
         <div class="container clearboth">
             <div class="top_nav_left clearboth">
                 <!-- 顶部导航栏-网站导航START  -->
-                <div class=" webnav_wrap nav_wrap1_fl"> 
-                    <a href="javascript:selectDown()" class="webnav_wrap_a nav_wrap1_a" name="">
+                <div class=" webnav_wrap nav_wrap1_fl selectDown"> 
+                    <a class="webnav_wrap_a nav_wrap1_a" name="">
                         <span>网站导航</span>
                         <i class="fa fa-angle-down"></i>
                     </a> 
-                    <div id="NAV_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
+                    <div id="NAV_INFO_WRAP" class="nav_wrap2"> 
                         <dl class="nav_wrap2_list"> 
                             <dt>
                                 特色购物
@@ -128,12 +129,12 @@
                 <!-- 顶部导航栏-网站导航END  -->
 
                 <!-- 顶部导航栏-消息START  --> 
-                <div class="msg_wrap nav_wrap1_fl"> 
-                    <a href="javascript:selectDown()" class="msg_wrap_a nav_wrap1_a" target="_blank"> 
+                <div class="msg_wrap nav_wrap1_fl selectDown"> 
+                    <a class="msg_wrap_a nav_wrap1_a" target="_blank"> 
                         <span>消息</span>
                         <i class="fa fa-angle-down"></i> 
                     </a> 
-                    <div id="MSG_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
+                    <div id="MSG_INFO_WRAP" class="nav_wrap2"> 
                         <div class="msg_list"> 
                             <div class="msg_item msg_item_no"> 
                                 <i></i> 
@@ -170,12 +171,12 @@
                     <!-- 顶部导航栏-登录注册END  -->
 
                     <!-- 顶部导航栏-我的订单START  -->
-                    <div class="nav_wrap1_fl">
+                    <div class="nav_wrap1_fl selectDown">
                         <a href="javascript:selectDown()" id="MY_ORDER" class="ahover nav_wrap1_a">
                             <span>我的订单</span>
                             <i class="fa fa-angle-down"></i>
                         </a>
-                        <div id="MY_ORDER_INFO_WRAP" class="nav_wrap2" style="display:none">
+                        <div id="MY_ORDER_INFO_WRAP" class="nav_wrap2">
                             <a href="#">
                                 待支付
                                 <i id="WAIT_PAY_COUNT"></i>
@@ -194,12 +195,12 @@
                     <!-- 顶部导航栏-我的订单END  -->
 
                     <!-- 顶部导航栏-我的易购START  -->
-                    <div class="nav_wrap1_fl">
+                    <div class="nav_wrap1_fl selectDown">
                         <a href="javascript:selectDown()" id="MY_OTHER" class="ahover nav_wrap1_a">
                             <span>我的易购</span>
                             <i class="fa fa-angle-down"></i>
                         </a>
-                        <div id="MY_OTHER_INFO_WRAP" class="nav_wrap2" style="display:none">
+                        <div id="MY_OTHER_INFO_WRAP" class="nav_wrap2">
                             <a href="#">我的二手</a>
                             <a href="#">我的金融</a>
                             <a href="#">我的收藏</a>
@@ -221,13 +222,13 @@
                         </div>
                         <!-- 顶部导航栏-购物车END  -->
                         <!-- 顶部导航栏-手机苏宁START  -->
-                    <div class="nav_wrap1_fl">
+                    <div class="nav_wrap1_fl selectDown">
                             <a href="javascript:selectDown()" id="MB_SUNING" class="ahover nav_wrap1_a">
                                 <i class="mb"></i>
                                 <span>手机苏宁</span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
-                            <div id="MB_SUNING_INFO_WRAP" class="nav_wrap2" style="display:block">
+                            <div id="MB_SUNING_INFO_WRAP" class="nav_wrap2" >
                                 <div class="ng_mb_box">
                                     <p>
                                         <a href="#" target="_blank">扫一扫，下载易购客户端</a>
@@ -276,12 +277,12 @@
                         </div>
                         <!-- 顶部导航栏-政府采购END  -->
                         <!-- 顶部导航栏-客户服务START  -->
-                    <div class="nav_wrap1_fl">
+                    <div class="nav_wrap1_fl selectDown">
                             <a href="javascript:selectDown()" id="CLIENT_SERVE" class="ahover nav_wrap1_a">
                                 <span>客户服务</span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
-                            <div id="CLIENT_SERVE_INFO_WRAP" class="nav_wrap2" style="display:none">
+                            <div id="CLIENT_SERVE_INFO_WRAP" class="nav_wrap2">
                                 <a href="#">帮助中心</a>
                                 <a href="#">查找门店</a>
                                 <a href="#">退换货</a>
@@ -296,6 +297,176 @@
             </div>
         </div>
     </div>
+
+    <!-- 搜索行 -->
+    <div id="_SEARCH_HEADER_BOX_">
+        <div class="container">
+            <!--促销图片维护]]--> 
+            <div class="header_search_img"> 
+                <a href="index.html" title="苏宁易购"> 
+                    <img alt="苏宁易购" src="./images/header-logo.png" width="190px" height="90px"/> 
+                </a> 
+                <img src="./images/header-icon2.png">
+            </div> 
+            <div class="header_search"> 
+                <div class="search_box"> 
+                    <i class="fa fa-search"></i> 
+                    <form method="get" onsubmit=""> 
+                        <div class="search_keyword_box"> 
+                            <input tabindex="0" id="SEARCH_KEYWORDS" type="text" class="search_keyword" autocomplete="off" /> 
+                        </div> 
+                        <input id="SEARCH_SUBMIT" type="submit" class="search-btn" name="index1_none_search_ss1" value="搜索" /> 
+                        <!-- 热门搜索词 -->
+                        <div id="snKeywordNew" class="header_search_hotwords"></div> 
+                    </form> 
+                    <div id="ac_results" class="ac_results hide"></div> 
+                    <div id="rec_results" class="rec_results hide"> 
+                        <ul class="history_results"></ul> 
+                        <ul class="rec_results"></ul> 
+                    </div> 
+                </div> 
+            </div>
+            <div class="header_search_img_right"> 
+                <a class="logo-set" title="客户端新人95元券" target="_blank"> 
+                    <img alt="客户端新人95元券" src="./images/header-icon3.jpg" width="180px" height="100px"/> 
+                </a> 
+            </div> 
+        </div>
+    </div>
+
+    <!--sort & nav [[--> 
+    <div id="_SORT_NAV_BAR_"> 
+        <div class="container">
+            <div class="sort_nav"> 
+                <a class="sort_all_a" target="_blank"> 
+                    <i class="slide_icon"></i>
+                    <span>全部商品分类</span>
+                </a> 
+                <div class="sort_list_box"> 
+                        <ul class="sort-list"> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">母婴</a> 
+                                <a target="_blank">玩具</a> 
+                                <a target="_blank">童装童鞋</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">手机</a> 
+                                <a target="_blank">数码</a> 
+                                <a target="_blank">苏宁互联</a>
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">电脑</a> 
+                                <a target="_blank">办公配件</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">电视</a> 
+                                <a target="_blank">冰箱</a> 
+                                <a target="_blank">洗衣机</a> 
+                                <a target="_blank">空调</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">厨卫电器</a> 
+                                <a target="_blank">小家电</a> 
+                                <a target="_blank">个护</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">美妆个护</a> 
+                                <a target="_blank">面膜</a> 
+                                <a target="_blank">洗护</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">运动户外</a> 
+                                <a target="_blank">汽车用品</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">男装 女装 内衣鞋靴</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">箱包皮具</a> 
+                                <a target="_blank">钟表饰品</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">食品粮油 酒水冲调</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">居家家纺</a> 
+                                <a target="_blank">家装建材</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">图书</a> 
+                                <a target="_blank">免费书城</a> 
+                                <a target="_blank">童书</a> 
+                            </li> 
+                            <li> 
+                                <i class="slide_iconfont"></i> 
+                                <a target="_blank">金融</a> 
+                                <a target="_blank">理财</a> 
+                                <a target="_blank">众筹</a> 
+                            </li> 
+                            <div class="clear"></div> 
+                        </ul> 
+                        <div class="ng-sort-detail"> 
+                            <a name="public0_none_ml_gban" href="javascript:void(0);" class="ng-close-sort" target="_self">
+                                <i class="ng-iconfont"></i>
+                            </a> 
+                        <div class="sort-chanel"></div> 
+                        <div class="cate-list"></div> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="ng-nav-index"> 
+                <h4 class="ng-title">
+                    <span>特色频道</span>
+                </h4> 
+                <ul class="ng-nav"> 
+                    <li>
+                        <a name="public0_none_tspd_01" href="vip.html" target="_blank">苏宁会员 </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_02" href="clothes.html" target="_blank">服装城 </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_03" href="supermarket.html" target="_blank">苏宁超市 
+                            <i class="hot"></i> 
+                        </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_04" href="electric.html" target="_blank">电器城 </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_05" href="child.html?" target="_blank">红孩子母婴 
+                            <i class="new"></i> 
+                        </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_06" href="coupon.html" target="_blank">大聚惠 </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_07" href="javascript:;" target="_blank">苏宁金融 </a>
+                    </li> 
+                    <li>
+                        <a name="public0_none_tspd_08" href="mall.html" target="_blank">海外购 </a>
+                    </li> 
+                </ul> 
+            </div> 
+            <div class="ng-nav-right-txtact"> 
+            </div> 
+        </div>
+    </div> 
+   <!--sort & nav ]]--> 
+
 
     <!-- 侧边导航栏 -->
     <div class="sidebar">

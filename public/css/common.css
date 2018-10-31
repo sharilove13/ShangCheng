@@ -20,7 +20,12 @@ a{
     padding:0;
 }
 
+ul,ol,dl,li{
+    list-style: none;
+}
+
 .container{
+    position: relative;
     width:1190px;
     height:100%;
     margin:0 auto;
@@ -40,6 +45,8 @@ a{
     display: block;
     clear: both;
 }
+
+
 /* 关闭 */
 a.wrap2_close{
     position: absolute;

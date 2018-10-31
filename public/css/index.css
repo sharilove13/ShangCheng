@@ -29,6 +29,7 @@
 #_TOP_NAV_{
     height: 35px;
     width: 100%;
+    min-width: 1190px;
     background: #F4F4F4;
     border-bottom: 1px solid #ECECEC;
     line-height: 35px;
@@ -285,4 +286,182 @@
     width:71px;
     padding-left: 10px;
     line-height: 22px;
+}
+
+/* 下拉导航 */
+.nav_wrap1_fl.selectDown .nav_wrap2{
+    display: none;
+}
+.nav_wrap1_fl.selectDown:hover .nav_wrap2{
+    display: block;
+    z-index: 9999;
+}
+
+/* -------------------------
+*-----------搜索栏----------- 
+----------------------------*/
+#_SEARCH_HEADER_BOX{
+    position: relative;
+}
+
+#_SEARCH_HEADER_BOX .header_search_img{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left:0;
+    top:0;
+}
+#_SEARCH_HEADER_BOX_ .header_search{
+    position: absolute;
+    height: 100px;
+    width: 600px;
+    top: 0;
+    left: 370px;
+}
+#_SEARCH_HEADER_BOX_ .header_search .search_box{
+    position: relative;
+    float:right;
+    width: 600px;
+    margin: 28px 0 0 0;
+}
+
+#_SEARCH_HEADER_BOX_ .header_search .search_box i.fa-search{
+    position: absolute;
+    display: block;
+    height: 34px;
+    width: 34px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+#_SEARCH_HEADER_BOX_ .search_keyword_box{
+    float: left;
+    width: 468px;
+    padding-left: 30px;
+    border:2px solid #fa0;
+    border-right: 0;
+}
+#_SEARCH_HEADER_BOX_ #SEARCH_KEYWORDS{
+    width: 458px;
+    height: 18px;
+    margin-top: 0;
+    padding: 8px 10px 8px 0;
+    border: 0;
+    background: #FFF;
+    color: #BBB;
+    font-size: 14px;
+    line-height: 18px;
+    outline: none;
+}
+#_SEARCH_HEADER_BOX_ #SEARCH_KEYWORDS:focus{
+    color:#333;
+}
+#_SEARCH_HEADER_BOX_ #SEARCH_SUBMIT{
+    width: 100px;
+    height: 38px;
+    margin-top: 0;
+    padding: 0 30px;
+    border: 0;
+    cursor: pointer;
+    background: #fa0;
+    letter-spacing: 7px;
+    font-weight: bold;
+    font-family: 'MicroSoft YaHei';
+    font-size: 16px;
+    color: #fff;
+}
+
+#_SEARCH_HEADER_BOX_ .header_search_img_right{
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-top:10px;
+}
+
+/* -------------------------
+*-----------分类栏----------- 
+----------------------------*/
+#_SORT_NAV_BAR_{
+    min-width: 1190px;
+    height: 36px;
+    border-bottom: 2px solid #333;
+}
+#_SORT_NAV_BAR_ .sort_nav{
+    position: absolute;
+    top:0;
+    left:0;
+    /* left:50%; */
+    /* margin-left:-495px; */
+}
+#_SORT_NAV_BAR_ .sort_nav .sort_all_a{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    padding-left: 10px;
+    color: #fff !important;
+	background: #fa0;
+	height: 36px;
+	line-height: 36px;
+    overflow: hidden;
+}
+#_SORT_NAV_BAR_ .sort_nav .sort_all_a i{
+    font-size: 14px;
+    margin-right: 10px;
+    width: 14px;
+    height: 35px;
+}
+#_SORT_NAV_BAR_ .sort_nav .sort_all_a span{
+    font-weight: 700;
+}
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box {
+    position: relative;
+    height: 442px;
+    width: 190px;
+    background: #2b2b2b;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    z-index: 9000;
+}
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box li {
+    height: 32px;
+    line-height: 32px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #252525;
+}
+
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box li:hover {
+    background: #fff;
+    border-top: 1px solid #333;
+    border-right: 0;
+}
+
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box li:hover a{
+    color:#333;
+    font-weight: 700;
+}
+
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box li i.slide_iconfont{
+    color:#FA0;
+    float: left;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    padding-right: 2px;
+}
+
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box li a{
+    color:#eee;
+    float: left;
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+#_SORT_NAV_BAR_ .sort_nav .sort_list_box li a:hover{
+    text-decoration: underline;
 }
