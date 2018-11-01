@@ -7,7 +7,16 @@ html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p{
 body,a{
     color: #333;
 }
+@font-face {
+	font-family:ng-iconfont;src:url(../fonts/iconfont.eot?var=03);src:url(../fonts/iconfont.eot?#iefix) format('embedded-opentype'),url(../fonts/iconfont.woff?var=03) format('woff'),url(../fonts/iconfont.ttf?var=03) format('truetype'),url(../fonts/iconfont.svg#uxiconfont?var=03) format('svg')
+}
 
+.ng-iconfont {
+	display: inline-block;
+	font-family: ng-iconfont!important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
 dl{
     display: block;
 }
@@ -18,8 +27,11 @@ a{
     font-size: 12px;
     outline: none;
     padding:0;
+    cursor: pointer;
 }
-
+i{
+    font-style: normal;
+}
 ul,ol,dl,li{
     list-style: none;
 }
@@ -45,7 +57,18 @@ ul,ol,dl,li{
     display: block;
     clear: both;
 }
-
+.hot_zh{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/npbg.png) no-repeat 0 -205px;
+}
+.new_zh{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/npbg.png) no-repeat -15px -205px;
+}
 
 /* 关闭 */
 a.wrap2_close{

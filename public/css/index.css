@@ -99,12 +99,6 @@
     text-decoration: underline;
 }
 
-#NAV_INFO_WRAP .hot_zh{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background: url(../images/npbg.png) no-repeat 0 -205px;
-}
 
 /* 消息 */
 #_TOP_NAV_ .msg_wrap a:hover{
@@ -245,6 +239,7 @@
     height: 210px;
     padding: 15px;
 }
+
 #MB_SUNING_INFO_WRAP .ng_mb_box{
     float: left;
     height: 162px;
@@ -410,8 +405,8 @@
 }
 #_SORT_NAV_BAR_ .sort_nav .sort_all_a i{
     font-size: 14px;
-    margin-right: 10px;
-    width: 14px;
+    margin-right: 16px;
+    width: 16px;
     height: 35px;
 }
 #_SORT_NAV_BAR_ .sort_nav .sort_all_a span{
@@ -465,3 +460,418 @@
 #_SORT_NAV_BAR_ .sort_nav .sort_list_box li a:hover{
     text-decoration: underline;
 }
+/* 横条分类 */
+#_SORT_NAV_BAR_ .nav_index{
+    z-index: 9000;
+    position: absolute;
+    left: 50%;
+    width: 785px;
+    margin-left: -405px;
+    padding-left: 10px;
+    height: 36px;
+    line-height: 36px;
+}
+#_SORT_NAV_BAR_ .nav_index h4{
+    display: none;
+    height: 35px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+#_SORT_NAV_BAR_ .nav_index h4 span{
+    display: inline-block;
+    line-height: 34px;
+    border-bottom: 1px solid #eee;
+    border: 1px solid red;
+}
+
+#_SORT_NAV_BAR_ .nav_index ul.index_list li{
+    float: left;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 12px 0 13px;
+}
+#_SORT_NAV_BAR_ .nav_index ul.index_list li a{
+    position: relative;
+    float: left;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+}
+#_SORT_NAV_BAR_ .nav_index ul.index_list li a:hover{
+    color:#F60;
+    text-decoration: underline;
+}
+
+/* -------------------------
+*-----------轮播图----------- 
+----------------------------*/
+#_BANNER_TOP_{
+    min-width: 1190px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+}
+
+#_BANNER_TOP_ .banner{
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    text-align: center;
+}
+/* 箭头 */
+#_BANNER_TOP_ .banner .banner_prev{
+    margin-left: -395px;
+    display: inline;
+}
+#_BANNER_TOP_ .banner .banner_next{
+    margin-left:345px;
+    display: inline;
+}
+
+#_BANNER_TOP_ .banner .banner_btn{
+    position: absolute;
+    z-index: 100;
+    width: 50px;
+    height: 84px;
+    cursor: pointer;
+    overflow: hidden;
+    top: 183px;
+    left: 50%;
+}
+
+
+#_BANNER_TOP_ .banner .banner_btn span.btn_bg{
+    z-index: 1;    
+    position: absolute;
+    width: 50px;
+    height: 84px;    
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .15;
+}
+#_BANNER_TOP_ .banner .banner_btn i{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 17px;
+    height: 34px;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .banner .banner_prev i{
+    background: url(../images/index.png) no-repeat -32px 0px;
+}
+#_BANNER_TOP_ .banner .banner_next i{
+    background: url(../images/index.png) no-repeat -50px 0px;
+}
+
+#_BANNER_TOP_ .banner .banner_pic ul li{
+    display: none;
+    opacity: 0;
+    transition: all .5s linear;
+}
+#_BANNER_TOP_ .banner .banner_pic ul li.show{
+    display: block;
+    opacity: 1;
+}
+/* 图片选择器 */
+/* 整个选择条 */
+#_BANNER_TOP_ .banner .banner_ctrl{
+    z-index: 80;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 810px;
+    margin-left: -395px;
+}
+/* 单个选择条 */
+#_BANNER_TOP_ .banner .banner_ctrl li{
+    /* display: inline; */
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    width: 71px;
+    height: 40px;
+    margin-left: 1px;
+}
+
+
+/* 选择条背景 */
+#_BANNER_TOP_ .banner .banner_ctrl li .ctrl_bg{
+    z-index: 5;    
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .3;
+    transition: all .3s;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .ctrl_bg{
+    background: #000;
+    opacity: .65;
+}
+/* 选择条横点wrap */
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item{
+    display: block;
+    position: absolute;
+    z-index: 8;
+    bottom: 40px;
+    left: 0;
+    width: 223px;
+    height: auto;
+    overflow: hidden;
+    transition: all .3s;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li.ctrl08 .title_item, 
+#_BANNER_TOP_ .banner .banner_ctrl li.ctrl09 .title_item, 
+#_BANNER_TOP_ .banner .banner_ctrl li.ctrl10 .title_item{
+    left:-152px;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .ctrl_dot{
+    display: none;
+    position: absolute;
+    z-index: 9900;
+    top: -4px;
+    left:0;
+    width: 100%;
+    height: 4px;
+    text-align: center;
+}
+
+/* 选择条横点 */
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .ctrl_dot i{
+    /* display: inline-block; */
+    display: none;
+    width: 8px;
+    height: 4px;
+    background: #fff;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+/* 二级选择菜单条 */
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item span.title_bg{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 223px;
+    height: 200px;
+    background: #000;
+    opacity: .65;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list {
+    display: none;
+    position: relative;
+    z-index: 2;
+    padding: 8px 10px 2px 13px;
+    text-align: left;
+}
+
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p{
+    display: none;
+    height: 18px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    font-size:12px;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p i{
+    display: none;
+    width: 8px;
+    height: 4px;
+    margin-right: 8px;
+    background: #fff;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p:hover i{
+    background:#FA0;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p:first-child i{
+    background:#FA0;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p a{
+    display: none;
+    width: 180px;
+    height: 18px;
+    color: #ddd;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p:hover a{
+    color: #F60;
+    text-decoration: underline;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item span.title_bg,
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list,
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p{
+    display: block;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p i,
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p a{
+    display: inline-block;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li h4 {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+}
+
+/* --------公告和助手栏----- */
+#_BANNER_TOP_ .show_board{
+    position: absolute;
+    z-index: 60;
+    top: 10px;
+    left: 50%;
+    width: 190px;
+    margin-left: 404px;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .title {
+    position: relative;
+    height: 40px;
+    padding-left: 14px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    font: 14px/40px 'microsoft yahei';
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .title i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background: url("../images/index.png") 0 -31px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .title .more {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font: 12px/40px;
+    color: #666;
+}
+
+/* 公告 */
+#_BANNER_TOP_ .show_board .show_wrap .notice {
+    position: relative;
+    height: 155px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .notice .bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 155px;
+    background: #fff;
+    opacity: 0.9;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .notice .list{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 145px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .notice .list li {
+    height: 18px;
+    margin: 0 10px 9px 15px;
+    line-height: 18px;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .notice .list li a{
+    color:#666;
+}
+
+#_BANNER_TOP_ .show_board .show_wrap .notice .list li.hot a,
+#_BANNER_TOP_ .show_board .show_wrap .notice .list li a:hover{
+    color:#F60;
+    text-decoration: underline;
+}
+
+/* 生活助手 */
+#_BANNER_TOP_ .show_board .show_wrap .life{
+    position: relative;
+    height: 191px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+    
+#_BANNER_TOP_ .show_board .show_wrap .life .bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 191px;
+    background: #fff;
+    opacity: 0.9;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .life .list{
+    position: absolute;
+    z-index: 2;
+    width:200px;
+    height: 191px;
+    overflow: hidden;
+    /* border:1px solid red; */
+}
+#_BANNER_TOP_ .show_board .show_wrap .life .list li {
+    float: left;
+    width: 63px;
+    height: 63px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .life .list li a {
+    display: block;
+    width: 62px;
+    height: 74px;
+    color: #666;
+    font-family: "microsoft yahei";
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .show_board .show_wrap .life .list li a .ng-iconfont {
+    display: block;
+    height: 35px;
+    color: #666;
+    font-size: 26px;
+    text-align: center;
+    line-height: 42px;
+    overflow: hidden;
+}
+
+
