@@ -698,9 +698,11 @@
     vertical-align: middle;
     overflow: hidden;
 }
+
 #_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p:hover i{
     background:#FA0;
 }
+
 #_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p:first-child i{
     background:#FA0;
 }
@@ -716,6 +718,7 @@
     color: #F60;
     text-decoration: underline;
 }
+
 #_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item span.title_bg,
 #_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list,
 #_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p{
@@ -874,4 +877,327 @@
     overflow: hidden;
 }
 
+/* -------------------------
+*---------活动会场入口----------- 
+----------------------------*/
+#_ACTIVITY_ENTER_{
+    min-width: 1190px;
+    height: 184px;
+    margin:20px auto;
+}
 
+#_ACTIVITY_ENTER_ ul li{
+    float: left;
+    width: 290px;
+    height: 184px;
+    margin-left:10px;
+}
+#_ACTIVITY_ENTER_ ul li:first-child{
+    margin-left:0;
+}
+#_ACTIVITY_ENTER_ ul li img{
+    display: block;
+}
+/* -------------第二板块common------------- */
+.title h3{
+    float: left;
+    font: bold 20px/40px 'microsoft yahei';
+}
+.title h4{
+    float: left;
+    padding-left: 6px;
+    font: normal 12px/46px arial;
+}
+
+/* -------------------------
+*---------特色馆----------- 
+----------------------------*/
+
+.second_screen{
+    position: relative;
+    height: 420px;
+    min-width: 1190px;
+    margin-top: 20px;
+    overflow: hidden;
+    /* background: brown; */
+}
+/* 标题 */
+.second_screen .title{
+    position: absolute;
+    z-index: 10;
+    width: 190px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    color: #222;
+    overflow: hidden;
+}
+
+/* 列1 */
+.second_screen .col1{
+    position: relative;
+    width: 188px;
+    height: 378px;
+    top: 40px;
+    float: left;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.second_screen .col1 img{
+    display: block;
+    width: 190px;
+    height: 380px;
+}
+/* 列2 */
+.second_screen .col2{
+    position: relative;
+    width: 420px;
+    top: 20px;
+    float: left;
+    overflow: hidden;
+}
+.second_screen .col2 .item0{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../images/ju-arrow.png") no-repeat;
+}
+.second_screen .col2 .item1 img{
+    display: block;
+    width: 420px;
+    height: 210px;
+}
+.second_screen .col2 .item2 img{
+    display: block;
+    width: 400px;
+    height: 190px;
+}
+/* 列3 */
+.second_screen .col3{
+    position: relative;
+    margin-top: 40px;
+    float: left;
+    width: 405px;
+    height: 378px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.second_screen .col3 .line1{
+    position: absolute;
+    top: 189px;
+    left: 15px;
+    width: 368px;
+    height: 1px;
+    background: #eee;
+    overflow: hidden;
+}
+
+.second_screen .col3 .line2{
+    position: absolute;
+    top: 15px;
+    left: 199px;
+    width: 1px;
+    height: 348px;
+    background: #eee;
+    overflow: hidden;
+}
+.second_screen .col3 li{
+    float: left;
+    width: 199px;
+    height: 189px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.second_screen .col3 li img{
+    display: block;
+    width: 200px;
+    height: 190px;
+}
+/* 列4 */
+.second_screen .col4{
+    position: relative;
+    top: 40px;
+    width: 199px;
+    height: 378px;
+    float: right;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.second_screen .col4 li {
+    height: 94px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.second_screen .col4 li img {
+    display: block;
+    width: 200px;
+    height: 95px;
+}
+/* -------------------------
+*---------苏宁金融----------- 
+----------------------------*/
+.third_screen{
+    min-width:1190px;
+    height: 280px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.third_screen .title{
+    height: 40px;
+    color: #222;
+    overflow: hidden;
+}
+.third_screen .financial_main{
+    height: 240px;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+.third_screen .financial_main .col1 {
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 240px;
+    overflow: hidden;
+    background: yellowgreen;
+}
+.third_screen .financial_main .col2 {
+    float: left;
+    background: yellow;
+}
+
+.third_screen .financial_main .col3 {
+    float: left;
+    width: 410px;
+    margin-right: -10px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.third_screen .financial_main .col3 li {
+    float: left;
+    width: 188px;
+    height: 218px;
+    margin-left: 10px;
+    border: 1px solid #eee;
+    background: #fff;
+    overflow: hidden;
+}
+
+.third_screen .financial_main .col4 {
+    display: block;
+    float: right;
+    width: 180px;
+    margin-right: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+
+/* -------------------------
+*---------1F-服饰百货--------
+----------------------------*/
+.floor_bar{
+    margin-top: 25px;
+}
+/* 选项卡标题 */
+.floor_bar .floor_head .tab{
+    position: absolute;
+    top: 13px;
+    left: 200px;
+    height: 37px;
+    overflow: hidden;
+}
+.floor_bar .floor_head .tab li {
+    float: left;
+    height: 32px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.floor_bar .floor_head .tab li.on {
+    border-bottom-width:3px;
+    border-bottom-style: solid;
+}
+
+.f1_clothes .floor_head .tab li.on {
+    border-bottom-color:#ff6b80;
+}
+.floor_bar .floor_head .tab li a {
+    display: block;
+    height: 32px;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.floor_bar .floor_head .tab li.on a {
+    height: 35px;
+    text-decoration: none;
+}
+
+.floor_bar .floor_head .tab li a i{
+    margin-left: 5px;
+    color: #CCC;
+    font-size: 22px;
+    vertical-align: middle;
+}
+.f1_clothes .floor_head .tab li a i{
+    color:#ff6b80;;
+}
+
+.floor_bar .floor_head .tab li a span{
+    color: #666;
+    font: 14px/35px 'microsoft yahei';
+    vertical-align: middle;
+}
+.floor_bar .floor_head .tab li.on a span{
+    color: #222;
+    font-weight: bold;
+}
+/* 标签分类 */
+.floor_bar .floor_head .links{
+    float: right;
+    width: 750px;
+    height: 30px;
+    margin-top: 18px;
+    text-align: right;
+    overflow: hidden;
+}
+.floor_bar .floor_head .links a {
+    display: inline-block;
+    margin-left: 16px;
+    color: #666;
+    font: 12px/30px 'microsoft yahei';
+    white-space: nowrap;
+}
+.floor_bar .floor_head .links a:hover {
+    color:#F60;
+    text-decoration: underline;
+}
+
+/* 主体 */
+.floor_bar .floor_main {
+    position: relative;
+    height: 440px;
+    width:100%;
+    overflow: hidden;
+    background: pink;
+}
+
+.floor_bar .floor_main .floor_col1{
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.f1_clothes .floor_main .floor_col1{
+    background: #ffd4c1;
+}

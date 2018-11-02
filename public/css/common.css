@@ -7,16 +7,7 @@ html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p{
 body,a{
     color: #333;
 }
-@font-face {
-	font-family:ng-iconfont;src:url(../fonts/iconfont.eot?var=03);src:url(../fonts/iconfont.eot?#iefix) format('embedded-opentype'),url(../fonts/iconfont.woff?var=03) format('woff'),url(../fonts/iconfont.ttf?var=03) format('truetype'),url(../fonts/iconfont.svg#uxiconfont?var=03) format('svg')
-}
 
-.ng-iconfont {
-	display: inline-block;
-	font-family: ng-iconfont!important;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
-}
 dl{
     display: block;
 }
