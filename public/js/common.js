@@ -24,5 +24,5 @@ function bannerTask(){
     clearInterval(timer);
   });
   $slider.on("mouseout",function(){
-    var timer=setInterval(task,3000);
+    var timer=setInterval(bannerTask,3000);
   });

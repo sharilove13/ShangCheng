@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/common.css" /> 
     <link rel="stylesheet" type="text/css" href="css/index.css" /> 
     <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/common.js"></script>
+
 </head>
 <body>
     <!-- 顶部广告 --> 
@@ -464,8 +464,9 @@
     </div> 
     <!--分类行 END--> 
 
-    <!-- 轮播图 START -->
+    <!-- 二楼banner START -->
     <div id="_BANNER_TOP_"> 
+        <!-- 轮播图 START -->
         <div class="banner"> 
             <!-- 左箭头 -->
             <a class="banner_btn banner_prev" name="index1_none_lbgg_qhan01" role="left"> 
@@ -880,7 +881,7 @@
         </div> 
         <!-- 公告 END -->
     </div> 
-
+    <!-- 二楼banner END -->
 
     <!-- 活动会场 START -->
     <div id="_ACTIVITY_ENTER_" class="first_screen"> 
@@ -1039,13 +1040,13 @@
                 </div> 
                 <ul class="tab"> 
                     <li class="on">
-                        <a>
+                        <a data-toggle=tab href="#F1_TAB1">
                             <i></i>
                             <span>热门活动</span>
                         </a>
                     </li> 
                     <li>
-                        <a>
+                        <a  data-toggle=tab href="#F1_TAB2">
                             <i></i>
                             <span>猜你喜欢</span>
                         </a>
@@ -1067,7 +1068,7 @@
                     <a target="_blank" title="女装">
                         <img src="./images/f1-clothes-col1-item1.jpg" alt="" />
                     </a> 
-                    <!-- 频道入口，开发需要传个数给我，用css判断是1个、2个还是4个【3个会隐藏1个，多余4个作为4个处理】 --> 
+                    <!-- 频道入口--> 
                     <div class="floor_enter"> 
                         <a target="_blank"> 
                             <span class="bg"></span>
@@ -1124,8 +1125,8 @@
                         </li> 
                     </ul> 
                 </div> 
-                <!-- tab切第一组 广告[[ --> 
-                <div class="floor_tab_main" style="display: none;"> 
+                <!-- tab切第一组 START --> 
+                <div id="F1_TAB1" class="floor_tab_main" style="display:block;"> 
                     <div class="col1">
                         <a target="_blank" title="钟表会场">
                             <img class="lazy-loading" src="./images/f1-col2-item1.jpg" alt=""/>
@@ -1171,9 +1172,10 @@
                         </li>
                     </ul>
                 </div> 
-                <!-- tab切第一组 广告]] --> 
-                <!-- tab切第二组 单品[[ --> 
-                <div class="floor_tab_main" style="display: block;"> 
+                <!-- tab切第一组 END--> 
+                <!-- tab切第二组 START--> 
+                <div id="F1_TAB2" class="floor_tab_main"> 
+                    <!-- tab2-行1 -->
                     <ul class="sku_list">
                         <li>
                             <p class="sku_img">
@@ -1184,7 +1186,7 @@
                             <p class="sku_name">
                                 <a target="_blank">麦诺伊春百搭文艺白色衬衫</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1195,7 +1197,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">艾塞亚春季公主风家居服</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1206,7 +1208,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">海澜之家2016春季新品夹克</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1216,7 +1218,7 @@
                             <p class="sku_name">
                                 <a target="_blank">onemix玩觅 气垫跑步鞋</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1225,10 +1227,11 @@
                                 </a>
                             </p>
                             <p class="sku_name"><a href="javascript:;" target="_blank">正品Armani阿玛尼手表女式时尚休闲欧美品牌女款腕表女表钢带防水石英表指针式女表精钢时尚石英腕表 AR1909 AR1909金色</a></p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                     </ul>
-                    <ul class="prd-list">
+                    <!-- tab2-行2 -->
+                    <ul class="sku_list">
                         <li>
                             <p class="sku_img">
                                 <a target="_blank" title="钻石快线 黄金戒指 简约经典光圈足金戒指 黄金戒指男女款情侣款金戒指 女戒">
@@ -1238,7 +1241,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">钻石快线 黄金戒指 简约经典光圈足金戒指 黄金戒指男女款情侣款金戒指 女戒</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1249,7 +1252,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">星期六ST&SAT 2016年新款职业金属浅口单鞋SS61115553 黑色 38码</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1260,7 +1263,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">歌诺瑞丝新品连衣裙</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1271,7 +1274,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">Jussara Lee正品春季新款休闲男士直筒裤牛仔裤修身男装 2065 32(2尺5) 蓝色</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                         <li>
                             <p class="sku_img">
@@ -1282,7 +1285,7 @@
                             <p class="sku_name">
                                 <a href="javascript:;" target="_blank">莫尔克包包 两件八折</a>
                             </p>
-                            <p class="sku_price"></p>
+                            <p class="sku_price">￥ 999</p>
                         </li>
                     </ul>
                 </div> 
@@ -1291,7 +1294,818 @@
     </div> 
     <!-- 1F-服饰百货-END -->
 
-    <!-- 侧边导航栏 -->
+    <!-- 2F-手机通讯-START -->
+    <div id="_PHONE_FLOOR_" class="floor_bar f2_phone">
+        <div class="container"> 
+            <div class="floor_head clearboth"> 
+                <div class="title"> 
+                    <h3> <b>2F<b> 手机通讯 </h3> 
+                    <!-- <h4>CLOTHING DEPARTMENT</h4>  -->
+                </div> 
+                <ul class="tab"> 
+                    <li class="on">
+                        <a data-toggle=tab href="#F2_TAB1">
+                            <i></i>
+                            <span>热门活动</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a  data-toggle=tab href="#F2_TAB2">
+                            <i></i>
+                            <span>潮机推荐</span>
+                        </a>
+                    </li> 
+                </ul> 
+                <div class="links"> 
+                    <a target="_blank">iPhone6s</a> 
+                    <a target="_blank">小米4S</a> 
+                    <a target="_blank">荣耀5X</a> 
+                    <a target="_blank">三星Galaxy S7</a> 
+                    <a target="_blank">荣耀7</a> 
+                    <a target="_blank">vivo Xplay5</a> 
+                    <a target="_blank">OPPO R7s</a> 
+                    <a target="_blank">ZUK</a> 
+                </div> 
+            </div> 
+            <div class="floor_main"> 
+                <div class="floor_col1"> 
+                    <a target="_blank" title="手机频道">
+                        <img src="./images/f2-phone-col1-item1.jpg" alt="" />
+                    </a> 
+                    <!-- 频道入口--> 
+                    <div class="floor_enter"> 
+                        <a target="_blank"> 
+                            <span class="bg"></span>
+                            <i class="ng-iconfont"></i> 
+                            <span>热卖手机</span> 
+                        </a> 
+                        <a target="_blank"> 
+                            <span class="bg"></span> 
+                            <i class="ng-iconfont"></i> 
+                            <span>手机配件</span> 
+                        </a> 
+                        <a target="_blank"> 
+                            <span class="bg"></span>
+                            <i class="ng-iconfont"></i> 
+                            <span>智能手机</span> 
+                        </a> 
+                        <a target="_blank"> 
+                            <span class="bg"></span> 
+                            <i class="ng-iconfont"></i> 
+                            <span>合约机</span> 
+                        </a> 
+                    </div> 
+                    <!-- 品牌列表 --> 
+                    <ul class="brands"> 
+                        <li class="item1">
+                            <a target="_blank" title="小米">
+                                <img src="./images/f2-phone-brand1.jpg" alt="" />
+                            </a>
+                        </li> 
+                        <li class="item2">
+                            <a target="_blank" title="荣耀">
+                                <img src="./images/f2-phone-brand2.jpg" alt="" />
+                            </a>
+                        </li> 
+                        <li class="item3">
+                            <a target="_blank" title="苹果">
+                                <img src="./images/f2-phone-brand3.jpg" alt="" />
+                            </a>
+                        </li> 
+                        <li class="item4">
+                            <a target="_blank" title="努比亚官方旗舰店">
+                                <img src="./images/f2-phone-brand4.jpg" alt="" />
+                            </a>
+                        </li> 
+                        <li class="item5">
+                            <a target="_blank" title="OPPO手机官方旗舰店">
+                                <img src="./images/f2-phone-brand5.jpg" alt="" />
+                            </a>
+                        </li> 
+                        <li class="item6">
+                            <a target="_blank" title="VIVO官方旗舰店">
+                                <img src="./images/f2-phone-brand6.jpg" alt="" />
+                            </a>
+                        </li> 
+                    </ul> 
+                </div> 
+                <!-- tab切第一组 START --> 
+                <div id="F2_TAB1" class="floor_tab_main" style="display:block;"> 
+                    <div class="col1">
+                        <a target="_blank" title="红包限量抢">
+                            <img class="lazy-loading" src="./images/f2-col2-item1.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <ul class="col2">
+                        <li>
+                            <a target="_blank" title="三星Galaxy S7预约">
+                                <img class="lazy-loading" src="./images/f2-col3-item1.jpg" alt="三星Galaxy S7预约"/>
+                            </a>
+                        </li>
+                        <li >
+                            <a target="_blank" title="zuk苏宁开售">
+                                <img class="lazy-loading" src="./images/f2-col3-item2.jpg" alt="zuk苏宁开售"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="vivo曲屏金属Xplay5">
+                                <img class="lazy-loading" src="./images/f2-col3-item3.jpg" alt="vivo曲屏金属Xplay5"/>
+                            </a>
+                        </li>
+                        <li >
+                            <a target="_blank" title="PRO5 领券直降">
+                                <img class="lazy-loading" src="./images/f2-col3-item4.jpg" alt="PRO5 领券直降"/>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="col3">
+                        <li>
+                            <a target="_blank" title="苏宁KA平台">
+                                <img class="lazy-loading" src="./images/f2-col4-item1.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="315正品特价">
+                                <img class="lazy-loading" src="./images/f2-col4-item2.jpg" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" title="白送流量要不要">
+                                <img class="lazy-loading" src="./images/f2-col4-item3.jpg" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+                <!-- tab切第一组 END--> 
+                <!-- tab切第二组 START--> 
+                <div id="F2_TAB2" class="floor_tab_main"> 
+                    <!-- tab2-行1 -->
+                    <ul class="sku_list">
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="华为荣耀畅玩4X（CHE1-CL20）金 全网通4G手机 双卡双待">
+                                    <img src="./images/f2-tab2-item1.jpg" alt="①【1.27】用券再减30元，手机端请点击商品详情页图片领券！②使用任性付，0首付，6期免息，每月只要166.5元"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a target="_blank">华为荣耀畅玩4X（CHE1-CL20）金 全网通4G手机 双卡双待</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="荣耀 6 Plus (PE-TL20) 3GB内存 移动4G手机 双卡双待双通 白">
+                                    <img src="./images/f2-tab2-item2.jpg" alt="【领红包直减100,享任性付6期免息分期】优惠仅限27日当天,官方行货,品质保证,发货迅速"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">荣耀 6 Plus (PE-TL20) 3GB内存 移动4G手机 双卡双待双通 白</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a href="javascript:;" target="_blank" title="华为荣耀7移动4G（冰河银）双卡双待（PLK-TL00）（3GB RAM）">
+                                    <img src="./images/f2-tab2-item3.jpg" alt="【用券立减50元】移动端用户，请点击详情页中图片领券。27日3场脉冲抢购，10点08/16点/20点！"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">华为荣耀7移动4G（冰河银）双卡双待（PLK-TL00）（3GB RAM）</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="小米 红米手机2A 高配移动4G双卡版 白色 16GB"><img src="./images/f2-tab2-item4.jpg" alt="新品上市，新升级高通骁龙64位四核处理器，4.7英寸舒适握感，2GB内存+16GB容量！"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a target="_blank">小米 红米手机2A 高配移动4G双卡版 白色 16GB</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="Apple iPhone 6s 16GB 玫瑰金色 移动联通电信4G手机">
+                                    <img src="./images/f2-tab2-item5.jpg" alt="苏宁直发，正品行货，全国联保，急速物流！"/>
+                                </a>
+                            </p>
+                            <p class="sku_name"><a href="javascript:;" target="_blank">Apple iPhone 6s 16GB 玫瑰金色 移动联通电信4G手机</a></p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                    </ul>
+                    <!-- tab2-行2 -->
+                    <ul class="sku_list">
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="华硕手机电神5000 Zenfone Max（黑色）">
+                                    <img src="./images/f2-tab2-item6.jpg" alt="前5000名699元限量抢！5.5英寸大屏，5000mAh大电池，30天超长待机。"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">华硕手机电神5000 Zenfone Max（黑色）</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="锤子 坚果 16GB 青色 移动联通4G手机 双卡双待">
+                                    <img src="./images/f2-tab2-item7.jpg" alt="1月23日起，每天购买前五十名 送坚果手机价值49元原装后壳，先到先得"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">锤子 坚果 16GB 青色 移动联通4G手机 双卡双待</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="OPPO R7s 长续航闪充利器移动4G手机 玫瑰金色">
+                                    <img src="./images/f2-tab2-item8.jpg" alt="【领券20再购买】即日起至31日，购买R7系列机型，每天10点前30名支付用户再送新年大礼包（背包+台历）！赠品限量！"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">OPPO R7s 长续航闪充利器移动4G手机 玫瑰金色</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="华为 HUAWEI Mate8 3GB+32GB版 联通定制版（月光银）">
+                                    <img src="./images/f2-tab2-item9.jpg" alt="现货发售，年度旗舰机！6寸大屏，指纹识别，4000毫安电池，搭载麒麟950芯片，高性能与长续航的结合。支持移动联通双4G！"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">华为 HUAWEI Mate8 3GB+32GB版 联通定制版（月光银）</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                        <li>
+                            <p class="sku_img">
+                                <a target="_blank" title="小米 红米Note 3 全网通版 金色 16GB">
+                                    <img src="./images/f2-tab2-item10.jpg" alt="小米 红米Note 3 全网通版 金色 16GB"/>
+                                </a>
+                            </p>
+                            <p class="sku_name">
+                                <a href="javascript:;" target="_blank">小米 红米Note 3 全网通版 金色 16GB</a>
+                            </p>
+                            <p class="sku_price">￥ 999</p>
+                        </li>
+                    </ul>
+                </div> 
+            </div> 
+        </div>
+    </div> 
+    <!-- 2F-手机通讯-END -->
+
+
+
+
+
+
+    <!-- 苏宁社区 START --> 
+    <div id="_COMMUNITY_ENTER_" class="clearboth"> 
+        <div class="container">
+            <div class="title"> 
+                <h3>苏宁社区</h3> 
+                <!--<h4></h4> -->
+            </div> 
+            <div class="floor_main"> 
+                <!-- 左箭头 -->
+                <a class="community_btn community_prev" name="index1_none_lbgg_qhan01" role="left"> 
+                    <span class="btn_bg"></span> 
+                    <i></i> 
+                </a> 
+                <!-- 右箭头 -->
+                <a class="community_btn community_next" name="index1_none_lbgg_qhan02" role="right"> 
+                    <span class="btn_bg"></span> <i></i> 
+                </a> 
+                <!-- 社区入口[[ --> 
+                <div class="community_enter"> 
+                    <div class="community_enter_title"> 
+                        <a target="_blank">
+                            <span>进入社区</span>
+                            <i>&gt;</i>
+                        </a> 
+                    </div> 
+                    <ul class="community_enter_main"> 
+                        <li>
+                            <a target="_blank">
+                                <i class="ng-iconfont"></i>
+                                全部板块
+                            </a>
+                        </li> 
+                        <li>
+                            <a target="_blank">
+                                <i class="ng-iconfont"></i>
+                                官方专区
+                            </a>
+                        </li> 
+                        <li>
+                            <a target="_blank">
+                                <i class="ng-iconfont"></i>
+                                母婴美妆
+                            </a>
+                        </li> 
+                        <li>
+                            <a target="_blank">
+                                <i class="ng-iconfont"></i>
+                                享易购</a>
+                        </li> 
+                        <li>
+                            <a target="_blank">
+                                <i class="ng-iconfont"></i>
+                                酷玩专区</a>
+                        </li> 
+                        <li>
+                            <a target="_blank">
+                                <i class="ng-iconfont"></i>
+                                版务大厅</a>
+                        </li> 
+                    </ul> 
+                </div> 
+                <!-- 社区入口 END --> 
+                <div class="community_share"> 
+                    <div class="community_share_main"> 
+                        <div class="community_share_item"> 
+                            <!-- 最高热度 START-->
+                            <div class="hots">
+                                <div class="hots_img">
+                                    <a title="柠檬俱乐部" target="_blank">
+                                        <img src="./images/community-lemon.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="hots_wrap">
+                                    <h4>最热度</h4>
+                                    <ul class="hots_list">
+                                        <li>
+                                            <span>【beta】</span>
+                                            <a target="_blank">新版柠檬俱乐部上线啦</a>
+                                        </li>
+                                        <li>
+                                            <span>【SHOW】</span>
+                                            <a target="_blank">美女幼厨娘隆重登场</a>
+                                        </li>
+                                        <li>
+                                            <span>【晒年货】</span>
+                                            <a target="_blank">有了娃才知父母累</a>
+                                        </li>
+                                        <li>
+                                            <span>【留住美好时光】</span>
+                                            <a target="_blank">时光流影相册书</a>
+                                        </li>
+                                        <li>
+                                            <span>【延保】</span>
+                                            <a target="_blank">教你如何不花钱买手机</a>
+                                        </li>
+                                        <li>
+                                            <span>【棒】</span>
+                                            <a target="_blank">把柚子吃出健康来</a>
+                                        </li>
+                                        <li>
+                                            <span>【烹饪】</span>
+                                            <a target="_blank">温暖整个冬天的糖芋苗</a>
+                                        </li>
+                                        <li>
+                                            <span>【幸福】</span>
+                                            <a target="_blank">和宝宝超时空的约定</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- 最热度 END -->
+                            <!-- 晒单START -->
+                            <div class="shares">
+                                <h4>晒单</h4>
+                                <ul class="shares_items">
+                                    <li>
+                                        <div class="shares_img">
+                                            <a target="_blank">
+                                                <img src="./images/community-shares1.jpg" alt="K密创意触控兔笼小夜灯故事早教机环保材质安全无毒粉色标准版128M ">
+                                            </a>
+                                            <div class="shares_name">
+                                                <span></span>
+                                                <p class="shares_txt">
+                                                    <a target="_blank">K密创意触控兔笼小夜灯故事早教机环保材质安全无毒粉色标准版128M </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <dl class="shares_detail">
+                                            <dt>
+                                                <img src="./images/shares-p1.jpg" alt="">
+                                                <span>心****** </span>
+                                            </dt>
+                                            <dd>
+                                                <a title="白天她陪着孩子玩耍，讲故事，朗诵诗歌，当夜幕降临时她用轻轻小夜曲把孩子送入甜甜的梦乡。一个陪伴孩子快乐成长的小精灵。" target="_blank">白天她陪着孩子玩耍，讲故事，朗诵诗歌，当夜幕降临时她用轻轻小夜曲把孩子送入甜甜的梦乡。一个陪伴孩子快乐成长的小精灵。</a>
+                                                <i></i>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <div class="shares_img">
+                                            <a target="_blank">
+                                                <img  src="./images/community-shares2.jpg" alt="雪肌诗丹矿泉深层莹润套盒深层补水保湿无添加 孕妇专用（四件套）">
+                                            </a>
+                                            <div class="shares_name">
+                                                <span></span>
+                                                <p class="shares_txt">
+                                                    <a target="_blank">雪肌诗丹矿泉深层莹润套盒深层补水保湿无添加 孕妇专用（四件套）</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <dl class="shares_detail">
+                                            <dt>
+                                                <img src="./images/shares-p2.jpg" alt="">
+                                                <span>小******** </span>
+                                            </dt>
+                                            <dd>
+                                                <a title="刚刚生完宝宝，以前的护肤品不太适合哺乳期使用，所以说想试试这套适合孕妇使用的护肤套装。没想到真的申请到了，很开心。" target="_blank">刚刚生完宝宝，以前的护肤品不太适合哺乳期使用，所以说想试试这套适合孕妇使用的护肤套装。没想到真的申请到了，很开心。</a>
+                                                <i></i>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 晒单 END-->
+                        </div> 
+                    </div>
+                    <div class="community_pager">
+                        <ul class="pager_list">
+                            <li class="current"></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                        </ul>
+                        <i class="pager_rt_radius"></i>
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+    </div> 
+    <!-- 苏宁社区 END --> 
+
+    <!-- 苏宁保障 START --> 
+    <div class="ng-footer">
+        <div class="ng-ser-box"> 
+            <div class="ng-ser-box-con"> 
+                <div class="ng-promise clearboth"> 
+                    <dl> 
+                        <dt class="zheng">
+                            正品保障
+                        </dt> 
+                        <dd> 
+                            <p>
+                                <strong><a target="_blank">正品保障</a></strong>
+                            </p> 
+                            <p>正品保障，提供发票</p> 
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt class="jisu">
+                            急速物流
+                        </dt> 
+                        <dd> 
+                            <p>
+                                <strong><a target="_blank">急速物流</a></strong>
+                            </p> 
+                            <p>急速物流，急速送达</p> 
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt class="wuyou">
+                            无忧售后
+                        </dt> 
+                        <dd> 
+                            <p>
+                                ]<strong><a target="_blank">无忧售后</a></strong>
+                            </p> 
+                            <p>7天无理由退换货</p> 
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt class="te">
+                            特色服务
+                        </dt> 
+                        <dd> 
+                            <p>
+                                <strong><a target="_blank">特色服务</a></strong>
+                            </p> 
+                            <p>私人定制家电套餐</p> 
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt class="help">
+                            帮助中心
+                        </dt> 
+                        <dd> 
+                            <p>
+                                <strong><a target="_blank">帮助中心</a></strong>
+                            </p> 
+                            <p>您的购物指南</p> 
+                        </dd> 
+                    </dl> 
+                </div> 
+                <div class="ng-help-box clearboth"> 
+                    <dl> 
+                        <dt>
+                            购物指南
+                        </dt> 
+                        <dd>
+                            <a target="_blank">导购演示</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">免费注册</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">会员等级</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">常见问题</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">品牌大全</a>
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt>
+                            支付方式
+                        </dt> 
+                        <dd>
+                            <a target="_blank">易付宝支付</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">网银支付</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">快捷支付</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">分期付款</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">货到付款</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">任性付支付</a>
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt>
+                            物流配送
+                        </dt> 
+                        <dd>
+                            <a target="_blank">免运费政策</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">配送服务承诺</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">签收验货</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">物流查询</a>
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt>
+                            售后服务
+                        </dt> 
+                        <dd>
+                            <a target="_blank">退换货政策</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">退换货流程</a>
+                        </dd> 
+                        <dd>
+                            <a>购买延保服务</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">退款说明</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">退换货申请</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">维修/保养</a>
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt>
+                            商家服务
+                        </dt> 
+                        <dd>
+                            <a target="_blank">商家入驻</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">培训中心</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">信息公告</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">广告服务</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank" >商家帮助</a>
+                        </dd> 
+                        <dd>
+                            <a target="_blank">服务市场</a>
+                        </dd> 
+                    </dl> 
+                </div> 
+                <div class="ng-app-down"> 
+                    <p>易购客户端</p> 
+                    <a target="_blank"> 
+                        <img width="87" height="87" alt="苏宁易购APP二维码" src="http://img.suning.cn/public/v3/images/bottom-app-down.png?var=07" /> 
+                    </a> 
+                </div> 
+            </div> 
+        </div> 
+
+        <!--footer-last-->
+        <div class="ng-new-pro"> 
+            <div class="ng-new-pro-con"> 
+                <div class="ng-new-pro-list"> 
+                    <dl> 
+                        <dt> 
+                            <a target="_blank">
+                                <img width="80" height="80" src="http://img.suning.cn/public/v3/images/f1.png?v=01" />
+                            </a> 
+                        </dt> 
+                        <dd> 
+                            <p class="ng-title">
+                                <a target="_blank">政企采购</a>
+                            </p> 
+                            <p class="ng-intro">
+                                <a target="_blank">为企业用户量身定做的采购平台，优选苏宁易购全站商品，为企业采购提供专业化的一站式采购解决方案。</a>
+                            </p> 
+                        </dd> 
+                    </dl> 
+                    <dl> 
+                        <dt> 
+                            <a target="_blank">
+                                <img width="80" height="80" src="http://img.suning.cn/public/v3/images/f2.png?v=01" />
+                            </a> 
+                        </dt> 
+                        <dd> 
+                            <p class="ng-title">
+                                <a target="_blank">苏宁众包</a>
+                            </p> 
+                            <p class="ng-intro">
+                                <a target="_blank">以苏宁全渠道包销为主要特点，整合全社会众包资源，扶持创新企业，推广创新产品。</a>
+                            </p> 
+                        </dd> 
+                    </dl> 
+                </div> 
+                <div class="ng-serch-suning"> 
+                    <dl> 
+                        <dt></dt> 
+                        <dd> 
+                            <p class="ng-title">身边苏宁</p> 
+                            <p class="ng-intro">全国300个城市1600家门店3000个服务点为您提供最贴心的服务！</p> 
+                            <a class="srh-btn" target="_blank"></a> 
+                        </dd> 
+                    </dl> 
+                </div> 
+                <div class="footer-egg-con"></div> 
+            </div> 
+            <div class="footer-egg-btn" style="width: 356.5px;"></div> 
+        </div> 
+        <div class="ng-s-footer"> 
+            <div class="ng-s-f-con"> 
+                <p class="ng-url-list"> 
+                    <a target="_blank">苏宁云商</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁互联</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁金融</a>
+                    <span>|</span> 
+                    <a target="_blank">易付宝</a>
+                    <span>|</span> 
+                    <a target="_blank">PPTV</a>
+                    <span>|</span> 
+                    <a target="_blank">红孩子</a>
+                    <span>|</span> 
+                    <a target="_blank" >缤购</a>
+                    <span>|</span> 
+                    <a target="_blank">乐购仕</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁物流</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁美国</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁香港</a>
+                    <span>|</span> 
+                    <a target="_blank">手机苏宁</a> 
+                </p> 
+                <p class="ng-url-list"> 
+                    <a target="_blank">关于苏宁易购</a>
+                    <span>|</span> 
+                    <a target="_blank">联系我们</a>
+                    <span>|</span> 
+                    <a target="_blank">诚聘英才</a>
+                    <span>|</span> 
+                    <a target="_blank">供应商入驻</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁联盟</a>
+                    <span>|</span> 
+                    <a target="_blank">苏宁招标</a>
+                    <span>|</span> 
+                    <a target="_blank">友情链接</a>
+                    <span>|</span> 
+                    <a target="_blank">法律申明</a>
+                    <span>|</span> 
+                    <a target="_blank">用户体验提升计划</a>
+                    <span>|</span> 
+                    <a target="_blank">股东会员认证</a> 
+                </p> 
+                <p class="ng-copyright"> 
+                    Copyright&copy; 2002-2016 ，苏宁云商集团股份有限公司版权所有 
+                    <a style="color:#999" target="_blank">
+                        苏ICP备10207551号-4
+                    </a> 
+                    <a style="color:#999" target="_blank">
+                        苏B1-20130131
+                    </a> 
+                    <a style="color:#999" target="_blank">
+                        苏B2-20130376
+                    </a> 
+                    <a style="color:#999" target="_blank">
+                        苏B2-20130391
+                    </a>
+                    出版物经营许可证新出发苏批字第A-243号
+                </p> 
+                <div class="ng-authentication"> 
+                    <a target="_blank"> 
+                        <img width="76" height="24" alt="诚信网站" src="http://img.suning.cn/public/v3/images/chengxin.png" /> 
+                    </a> 
+                    <a target="_blank"> 
+                        <img width="76" height="24" alt="中国联通授权网络经营代理商" src="http://img.suning.cn/public/v3/images/unicom.png" /> 
+                    </a> 
+                    <a target="_blank"> 
+                        <img width="76" height="24" alt="中国电信授权网络经营代理商" src="http://img.suning.cn/public/v3/images/dianxin.jpg" /> 
+                    </a> 
+                    <a target="_blank"> 
+                        <img width="76" height="24" alt="电子营业执照" src="http://img.suning.cn/public/v3/images/dianzi.png?v=02" /> 
+                    </a> 
+                </div> 
+            </div> 
+        </div>       
+    </div> 
+
+
+
+    <!--楼层导航 START-->
+    <div id="_FLOORS_NAV_">
+        <ul class="floors_list"> 
+            <li> 
+                <a class="name">服饰百货</a> 
+                <a class="icon ng-iconfont"></a>
+            </li> 
+            <li> 
+                <a class="name">手机通讯</a> 
+                <a class="icon ng-iconfont"></a>
+            </li> 
+            <li> 
+                <a class="name">生活日用</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">食品酒水</a> 
+                <a class="icon ng-iconfont"></a>
+            </li> 
+            <li> 
+                <a class="name">母婴玩具</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">美妆个护</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">电脑数码</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">生活电器</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">家用电器</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">家装建材</a> 
+                <a class="icon ng-iconfont"></a> 
+            </li> 
+            <li> 
+                <a class="name">图书音像</a> 
+                <a class="icon ng-iconfont"></a>
+            </li> 
+        </ul> 
+    </div>
+    <!--楼层导航 END-->
+
+    <!-- 右侧边导航栏 -->
     <div class="sidebar">
         <div class="sidebar_bg noblock"></div>        
         <div class="sidebar_middle_tabs">
@@ -1303,5 +2117,7 @@
         </div>
         <div class="sidebar_cart_content"></div>
     </div>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

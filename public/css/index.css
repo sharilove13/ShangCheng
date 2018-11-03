@@ -1100,10 +1100,7 @@
     overflow: hidden;
 }
 
-
-/* -------------------------
-*---------1F-服饰百货--------
-----------------------------*/
+/* 楼层common-css */
 .floor_bar{
     margin-top: 25px;
 }
@@ -1126,10 +1123,6 @@
     border-bottom-width:3px;
     border-bottom-style: solid;
 }
-
-.f1_clothes .floor_head .tab li.on {
-    border-bottom-color:#ff6b80;
-}
 .floor_bar .floor_head .tab li a {
     display: block;
     height: 32px;
@@ -1149,10 +1142,6 @@
     font-size: 22px;
     vertical-align: middle;
 }
-.f1_clothes .floor_head .tab li a i{
-    color:#ff6b80;;
-}
-
 .floor_bar .floor_head .tab li a span{
     color: #666;
     font: 14px/35px 'microsoft yahei';
@@ -1162,6 +1151,7 @@
     color: #222;
     font-weight: bold;
 }
+
 /* 标签分类 */
 .floor_bar .floor_head .links{
     float: right;
@@ -1189,7 +1179,6 @@
     height: 440px;
     width:100%;
     overflow: hidden;
-    background: pink;
 }
 /* 列1 */
 .floor_bar .floor_main .floor_col1{
@@ -1199,12 +1188,6 @@
     height: 440px;
     overflow: hidden;
 }
-
-.f1_clothes .floor_main .floor_col1{
-    background: #ffd4c1;
-}
-
-
 .floor_bar .floor_main .floor_col1 img{
     display: block;
     width: 190px;
@@ -1238,9 +1221,6 @@
     left: 0;
     top: 0;
     opacity: .8;
-}
-.f1_clothes .floor_main .floor_col1 .floor_enter a .bg {
-    background-color: #cf3c47;
 }
 .floor_bar .floor_main .floor_col1 .floor_enter a i {
     position: relative;
@@ -1292,6 +1272,7 @@
     margin: 0 auto;
 }
 
+/* 选项卡内容 */
 .floor_bar .floor_main .floor_tab_main{
     float: left;
     width: 999px;
@@ -1302,6 +1283,7 @@
     overflow: hidden;
     display: none;
 }
+/* 选项卡tab1内容 */
 .floor_bar .floor_main .floor_tab_main .col1{
     float: left;
     width: 400px;
@@ -1362,4 +1344,729 @@
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
     overflow: hidden;
+}
+.floor_main .floor_tab_main .sku_list{
+    width:1050px;
+    height:209px;
+    padding-top: 10px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.floor_main .floor_tab_main .sku_list li {
+    float: left;
+    width: 189px;
+    height: 198px;
+    padding: 0 5px;
+    border-right: 1px solid #eee;
+    text-align: center;
+    overflow: hidden;
+}
+.floor_main .floor_tab_main .sku_list li .sku_img{
+    padding-top: 22px;
+}
+.floor_main .floor_tab_main .sku_list li .sku_img img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.floor_main .floor_tab_main .sku_list li .sku_name{
+    /* 过滤多余的title字 */
+    height: 17px;   
+    padding-top: 14px;
+    overflow: hidden;
+}
+.floor_main .floor_tab_main .sku_list li .sku_name a {
+    color: #666;
+    font-family: 'microsoft yahei';
+}
+.floor_main .floor_tab_main .sku_list li .sku_price {
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+}
+/* -------------------------
+*---------1F-服饰百货--------
+----------------------------*/
+
+.f1_clothes .floor_head{
+    border-bottom:1px solid #ff6b80;
+}
+/* 选项卡标题 */
+
+.f1_clothes .floor_head .tab li.on {
+    border-bottom-color:#ff6b80;
+}
+
+.f1_clothes .floor_head .tab li a i{
+    color:#ff6b80;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f1_clothes .floor_main .floor_col1{
+    background: #ffd4c1;
+}
+.f1_clothes .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #cf3c47;
+}
+/* -------------------------
+*---------2F-手机通讯--------
+----------------------------*/
+
+.f2_phone .floor_head{
+    border-bottom:1px solid #61b3ff;
+}
+/* 选项卡标题 */
+
+.f2_phone .floor_head .tab li.on {
+    border-bottom-color:#61b3ff;
+}
+
+.f2_phone .floor_head .tab li a i{
+    color:#61b3ff;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f2_phone .floor_main .floor_col1{
+    background: #c4e6e7;
+}
+.f2_phone .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #50abff;
+}
+
+/* -------------------------
+*---------3F-生活日用--------
+----------------------------*/
+
+.f3_life .floor_head{
+    border-bottom:1px solid #aed55a;
+}
+/* 选项卡标题 */
+
+.f3_life .floor_head .tab li.on {
+    border-bottom-color:#aed55a;
+}
+
+.f3_life .floor_head .tab li a i{
+    color:#aed55a;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f3_life .floor_main .floor_col1{
+    background: #f0f78b;
+}
+.f3_life .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #87b329;
+}
+
+
+/* -------------------------
+*---------4F-食品酒水--------
+----------------------------*/
+
+.f3_food .floor_head{
+    border-bottom:1px solid #ff9901;
+}
+/* 选项卡标题 */
+
+.f4_food .floor_head .tab li.on {
+    border-bottom-color:#ff9901;
+}
+
+.f4_food .floor_head .tab li a i{
+    color:#ff9901;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f4_food .floor_main .floor_col1{
+    background: #f6f2b1;
+}
+.f4_food .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #ff9901;
+}
+
+
+/* -------------------------
+*---------5F-母婴玩具--------
+----------------------------*/
+
+.f5_infant .floor_head{
+    border-bottom:1px solid #ff6565;
+}
+/* 选项卡标题 */
+
+.f5_infant .floor_head .tab li.on {
+    border-bottom-color:#ff6565;
+}
+
+.f5_infant .floor_head .tab li a i{
+    color:#ff6565;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f5_infant .floor_main .floor_col1{
+    background: #f0d9ba;
+}
+.f5_infant .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #ff5d47;
+}
+
+/* -------------------------
+*---------6F-美妆个护--------
+----------------------------*/
+
+.f6_makeup .floor_head{
+    border-bottom:1px solid #fb7292;
+}
+/* 选项卡标题 */
+
+.f6_makeup .floor_head .tab li.on {
+    border-bottom-color:#fb7292;
+}
+
+.f6_makeup .floor_head .tab li a i{
+    color:#fb7292;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f6_makeup .floor_main .floor_col1{
+    background: #ead3ed;
+}
+.f6_makeup .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #fb7292;
+}
+
+
+/* -------------------------
+*---------7F-电脑数码--------
+----------------------------*/
+
+.f7_digital .floor_head{
+    border-bottom:1px solid #6d93ff;
+}
+/* 选项卡标题 */
+
+.f7_digital .floor_head .tab li.on {
+    border-bottom-color:#6d93ff;
+}
+
+.f7_digital .floor_head .tab li a i{
+    color:#6d93ff;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f7_digital .floor_main .floor_col1{
+    background: #c9baf0;
+}
+.f7_digital .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #50abff;
+}
+
+
+/* -------------------------
+*---------8F-生活电器--------
+----------------------------*/
+
+.f8_smallEleApp .floor_head{
+    border-bottom:1px solid #35bfcb;
+}
+/* 选项卡标题 */
+
+.f8_smallEleApp .floor_head .tab li.on {
+    border-bottom-color:#35bfcb;
+}
+
+.f8_smallEleApp .floor_head .tab li a i{
+    color:#35bfcb;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f8_smallEleApp .floor_main .floor_col1{
+    background: #bbf1d1;
+}
+.f8_smallEleApp .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #35bfcb;
+}
+
+
+/* -------------------------
+*---------9F-家用电器--------
+----------------------------*/
+
+.f9_bigEleApp .floor_head{
+    border-bottom:1px solid #356acb;
+}
+/* 选项卡标题 */
+
+.f9_bigEleApp .floor_head .tab li.on {
+    border-bottom-color:#356acb;
+}
+
+.f9_bigEleApp .floor_head .tab li a i{
+    color:#356acb;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+.f9_bigEleApp .floor_main .floor_col1{
+    background: #bbe2f1;
+}
+.f9_bigEleApp .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #366bcb;
+}
+
+
+/* -------------------------
+*---------10F-家装建材--------
+----------------------------*/
+
+f10_building .floor_head{
+    border-bottom:1px solid #7cbb2e;
+}
+/* 选项卡标题 */
+
+f10_building .floor_head .tab li.on {
+    border-bottom-color:#7cbb2e;
+}
+
+f10_building .floor_head .tab li a i{
+    color:#7cbb2e;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+f10_building .floor_main .floor_col1{
+    background: #f0f1bb;
+}
+f10_building .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #7dbb2f;
+}
+
+
+/* -------------------------
+*---------11F-图书音像--------
+----------------------------*/
+
+f11_book .floor_head{
+    border-bottom:1px solid #9e652b;
+}
+/* 选项卡标题 */
+
+f11_book .floor_head .tab li.on {
+    border-bottom-color:#9e652b;
+}
+
+f11_book .floor_head .tab li a i{
+    color:#9e652b;
+}
+
+/* 主体 */
+
+/* 列1 */
+
+f11_book .floor_main .floor_col1{
+    background: #ffebc0;
+}
+f11_book .floor_main .floor_col1 .floor_enter a .bg {
+    background-color: #9e652b;
+}
+
+
+/* -------------------------
+*---------苏宁社区--------
+----------------------------*/
+#_COMMUNITY_ENTER_{
+    min-width: 1190px;
+    margin-top: 20px;
+}
+
+#_COMMUNITY_ENTER_ .title{
+    height: 35px;
+    color: #222;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .floor_main{
+    position: relative;
+    height: 318px;
+}
+/* 箭头 */
+#_COMMUNITY_ENTER_ .floor_main .community_btn{
+    position: absolute;
+    z-index: 100;
+    top: 102px;
+    width: 40px;
+    height: 74px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#_COMMUNITY_ENTER_ .floor_main .community_prev{
+    left: 189px;
+    display: inline;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_next{
+    right:0;
+    display: inline;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_btn span.btn_bg{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 74px;
+    background: #000;
+    opacity: .5;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_btn i{
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 17px;
+    height: 34px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_prev i{
+    background: url("../images/index.png") no-repeat -32px 0px;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_next i{
+    background: url("../images/index.png") no-repeat -50px 0px;
+}
+
+/* 社区入口 */
+#_COMMUNITY_ENTER_ .floor_main .community_enter{
+    float: left;
+    width: 188px;
+    height: 316px;
+    border: 1px solid #eee;
+}
+/* 主题 */
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_title{
+    position: relative;
+    width: 190px;
+    height: 28px;
+    margin: -1px -1px 0;
+    background: #fa0;
+    font: 14px/28px 'microsoft yahei';
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_title a{
+    display: block;
+    height: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_title a span{
+    float: left;
+    padding-left: 15px;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_title a i{
+    float: right;
+    padding-right: 10px;
+    font-family: simsun;
+}
+/* 主体 */
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_main{
+    height: 270px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_main li{
+    float: left;
+    margin-top: 22px;
+    padding: 0 20px;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_main li a {
+    display: block;
+    width: 54px;
+    height: 65px;
+    color: #666;
+    font-family: 'microsoft yahei';
+    text-align: center;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .floor_main .community_enter .community_enter_main li a i {
+    display: block;
+    height: 32px;
+    margin-bottom: 5px;
+    color: #444;
+    font-size: 32px;
+    text-align: center;
+    line-height: 34px;
+    overflow: hidden;
+}
+
+/* 社区主体 */
+#_COMMUNITY_ENTER_ .floor_main .community_share {
+    position: relative;
+    float: left;
+    width: 999px;
+    height: 317px;
+    margin-right: -10px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+#_COMMUNITY_ENTER_ .community_share .community_share_main{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 999px;
+}
+
+#_COMMUNITY_ENTER_ .community_share_main .community_share_item{
+    float: left;
+    width: 1000px;
+    height: 298px;
+    border-top: 1px solid #eee;
+}
+/* 热度 */
+#_COMMUNITY_ENTER_ .community_share_item .hots {
+    float: left;
+    width: 580px;
+    height: 289px;
+    padding: 9px 10px 0;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .hots_img {
+    float: left;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .hots_img img {
+    display: block;
+    width: 390px;
+    height: 280px;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .hots_wrap{
+    padding-left: 403px;
+}
+#_COMMUNITY_ENTER_ .community_share_item .hots_wrap h4{
+    font: normal 14px/1.5 'microsoft yahei';
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .hots_list{
+    height: 242px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .hots_list li{
+    height: 18px;
+    margin-bottom: 14px;
+    font-family: 'microsoft yahei';
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .hots_list li span {
+    font-size: 12px;
+    color: #999;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .hots_list li a:hover {
+    color:#F60;
+    text-decoration: underline;
+}
+/* 晒单 */
+#_COMMUNITY_ENTER_ .community_share_item .shares {
+    float: left;
+    width: 379px;
+    height: 316px;
+    margin-right: -20px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares h4{
+    height: 36px;
+    font: normal 14px/36px 'microsoft yahei';
+    overflow: hidden;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .shares_items{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_items li{
+    display: block;
+    float: left;
+    width: 170px;
+    height: 255px;
+    margin-right: 15px;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .shares_items .shares_img{
+    position: relative;
+    height: 170px;
+    overflow: hidden;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .shares_name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 170px;
+    height: 30px;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .shares_name span{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 30px;
+    background: #000;
+    opacity: .5;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_name p{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 12px;
+    font-weight: 100;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_name p a{
+    color:#fff;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_name p a:hover{
+    text-decoration: underline;
+}
+/* details */
+#_COMMUNITY_ENTER_ .community_share_item .shares_detail{
+    margin-top: 6px;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_detail dt {
+    height: 32px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_detail dt img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+#_COMMUNITY_ENTER_ .community_share_item .shares_detail dd {
+    position: relative;
+    height: 35px;
+    margin-top: 6px;
+    padding-left: 2px;
+    overflow: hidden;
+}
+
+#_COMMUNITY_ENTER_ .community_share_item .shares_detail dd a {
+    font-family: 'microsoft yahei';
+}
+
+/* 页面滚动条 */
+#_COMMUNITY_ENTER_ .community_share .community_pager {
+    position: absolute;
+    z-index: 999;
+    top: 296px;
+    left: 50%;
+    height: 13px;
+    margin-left: -26px;
+    overflow: hidden;
+}
+#_COMMUNITY_ENTER_ .community_pager .pager_list{
+    float: left;
+    height: 13px;
+    padding-left: 2px;
+    background: url(../images/index.png) 0 -84px;
+}
+#_COMMUNITY_ENTER_ .community_pager .pager_list li{
+    display: block;
+    float: left;
+    width: 12px;
+    height: 5px;
+    margin: 4px 0 0 3px;
+    background: #fff;
+    overflow: hidden;
+}
+
+#_COMMUNITY_ENTER_ .community_pager .pager_list li.current {
+    background: #fa0;
+}
+
+#_COMMUNITY_ENTER_ .community_pager .pager_rt_radius {
+    float: left;
+    width: 5px;
+    height: 13px;
+    background: url(../images/index.png) right -84px;
+    overflow: hidden;
+}
+
+/* 楼层导航 */
+#_FLOORS_NAV_{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    right: auto;
+    margin-left: -647px;
+    margin-top: -220px;
+    display: block;
+}
+#_FLOORS_NAV_ .floors_list{
+    width: 32px;
+    overflow: hidden;
+}
+#_FLOORS_NAV_ .floors_list li {
+    height: 40px;
+    margin-top: -1px;
+    border-top: 1px solid #ddd;
+    background: #f4f4f4;
+    text-align: center;
+    overflow: hidden;
+}
+#_FLOORS_NAV_ .floors_list li a.name {
+    /* display: none; */
+    display: block;
+    height: 33px;
+    padding-top: 7px;
+    background: #fff;
+    color: #222;
+    font: 12px/13px 'microsfot yahei';
+}
+.floor-guide li a.icon {
+    display: block;
+    line-height: 40px;
+    color: #b8b8b8;
+    font-size: 22px;
 }
