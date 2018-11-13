@@ -3,6 +3,7 @@ html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p{
     padding:0;
     font-size: 12px;
     font-family: "Microsoft Yahei";
+    font-weight: normal;
 }
 body,a{
     color: #333;
@@ -59,6 +60,11 @@ ul,ol,dl,li{
     width: 15px;
     height: 15px;
     background: url(../images/npbg.png) no-repeat -15px -205px;
+}
+
+/* 图标 */
+.sidebar .sidebar_tab .tab-icon, .sidebar .sidebar_tab .tab-icon-tip, .sidebar .tab-tip-code-warp .icon {
+    background: url(../images/sidebaricon.png) no-repeat;
 }
 
 /* 关闭 */
