@@ -229,15 +229,10 @@
     padding:0 4px;
     text-align: center;
     color:#fff;
-    margintop:
     border-radius: 8px;
     background: #f7a705;
 }
-/* #MY_CART .cartnum b{
-    position: absolute;
-    top:-8px;
-    left:4px;
-} */
+
 /* 手机苏宁 */
 #MB_SUNING_INFO_WRAP{
     left: -13px;
@@ -524,7 +519,7 @@
     height: 450px;
 }
 
-#_BANNER_TOP_ .banner_wrap{
+#_BANNER_TOP_ .banner{
     position: relative;
     z-index: 50;
     width: 100%;
@@ -533,16 +528,16 @@
     text-align: center;
 }
 /* 箭头 */
-#_BANNER_TOP_ .banner_wrap .banner_prev{
+#_BANNER_TOP_ .banner .banner_prev{
     margin-left: -395px;
     display: inline;
 }
-#_BANNER_TOP_ .banner_wrap .banner_next{
+#_BANNER_TOP_ .banner .banner_next{
     margin-left:345px;
     display: inline;
 }
 
-#_BANNER_TOP_ .banner_wrap .banner_btn{
+#_BANNER_TOP_ .banner .banner_btn{
     position: absolute;
     z-index: 100;
     width: 50px;
@@ -554,7 +549,7 @@
 }
 
 
-#_BANNER_TOP_ .banner_wrap .banner_btn span.btn_bg{
+#_BANNER_TOP_ .banner .banner_btn span.btn_bg{
     z-index: 1;    
     position: absolute;
     width: 50px;
@@ -564,7 +559,7 @@
     background: #000;
     opacity: .15;
 }
-#_BANNER_TOP_ .banner_wrap .banner_btn i{
+#_BANNER_TOP_ .banner .banner_btn i{
     position: absolute;
     display: block;
     z-index: 2;
@@ -575,35 +570,182 @@
     height: 34px;
     overflow: hidden;
 }
-#_BANNER_TOP_ .banner_wrap .banner_prev i{
+#_BANNER_TOP_ .banner .banner_prev i{
     background: url(../images/index.png) no-repeat -32px 0px;
 }
-#_BANNER_TOP_ .banner_wrap .banner_next i{
+#_BANNER_TOP_ .banner .banner_next i{
     background: url(../images/index.png) no-repeat -50px 0px;
 }
 
-#_BANNER_TOP_ .banner_wrap .banner_pic ul li{
+#_BANNER_TOP_ .banner .banner_pic ul li{
     display: none;
     opacity: 0;
     transition: all .5s linear;
 }
-#_BANNER_TOP_ .banner_wrap .banner_pic ul li.show{
+#_BANNER_TOP_ .banner .banner_pic ul li.show{
     display: block;
     opacity: 1;
 }
 /* 图片选择器 */
-.bannerPage{text-align: center;position: relative;bottom: 30px;}	
-.bannerPage>a{display: inline-block;text-align: center;width: 14px;line-height: 14px;font-size: 10px; text-decoration: none;margin: 0 5px;border-radius: 50%;}
-.bannerPage>a{background: #FFAA01;}/*页码小点默认背景色*/
-.bannerPage>a.show{background: #FFF;}/*页码小点选中背景色*/
-	
+/* 整个选择条 */
+#_BANNER_TOP_ .banner .banner_ctrl{
+    z-index: 80;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 810px;
+    margin-left: -395px;
+}
+/* 单个选择条 */
+#_BANNER_TOP_ .banner .banner_ctrl li{
+    /* display: inline; */
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    width: 71px;
+    height: 40px;
+    margin-left: 1px;
+}
 
-.bannerPage+div{position:relative;padding: 10px;box-sizing: border-box;line-height: 50px;height: 50px;transition: all 0.5s;opacity: 0.3;}
-.banner:hover+div+div{opacity: 1;}
-.bannerPage+div:hover{opacity: 1;}
-.bannerPage+div>a{text-decoration: none; width: 50px;text-align: center;background: #FFF;border-radius: 50%;font-size: 30px;font-family:  serif;font-weight: bold;}
-.bannerPage+div>a:nth-child(1){float: left;}
-.bannerPage+div>a:nth-child(2){float: right;}
+
+/* 选择条背景 */
+#_BANNER_TOP_ .banner .banner_ctrl li .ctrl_bg{
+    z-index: 5;    
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .3;
+    transition: all .3s;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .ctrl_bg{
+    background: #000;
+    opacity: .65;
+}
+/* 选择条横点wrap */
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item{
+    display: block;
+    position: absolute;
+    z-index: 8;
+    bottom: 40px;
+    left: 0;
+    width: 223px;
+    height: auto;
+    overflow: hidden;
+    transition: all .3s;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li.ctrl08 .title_item, 
+#_BANNER_TOP_ .banner .banner_ctrl li.ctrl09 .title_item, 
+#_BANNER_TOP_ .banner .banner_ctrl li.ctrl10 .title_item{
+    left:-152px;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .ctrl_dot{
+    display: none;
+    position: absolute;
+    z-index: 9900;
+    top: -4px;
+    left:0;
+    width: 100%;
+    height: 4px;
+    text-align: center;
+}
+
+/* 选择条横点 */
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .ctrl_dot i{
+    /* display: inline-block; */
+    display: none;
+    width: 8px;
+    height: 4px;
+    background: #fff;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+/* 二级选择菜单条 */
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item span.title_bg{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 223px;
+    height: 200px;
+    background: #000;
+    opacity: .65;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list {
+    display: none;
+    position: relative;
+    z-index: 2;
+    padding: 8px 10px 2px 13px;
+    text-align: left;
+}
+
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p{
+    display: none;
+    height: 18px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    font-size:12px;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p i{
+    display: none;
+    width: 8px;
+    height: 4px;
+    margin-right: 8px;
+    background: #fff;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p:hover i{
+    background:#FA0;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p:first-child i{
+    background:#FA0;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p a{
+    display: none;
+    width: 180px;
+    height: 18px;
+    color: #ddd;
+    vertical-align: middle;
+    overflow: hidden;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li .title_item .title_list p:hover a{
+    color: #F60;
+    text-decoration: underline;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item span.title_bg,
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list,
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p{
+    display: block;
+}
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p i,
+#_BANNER_TOP_ .banner .banner_ctrl li:hover .title_item .title_list p a{
+    display: inline-block;
+}
+
+#_BANNER_TOP_ .banner .banner_ctrl li h4 {
+    position: absolute;
+    z-index: 6;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+}
 
 /* --------公告和助手栏----- */
 #_BANNER_TOP_ .show_board{
@@ -2149,7 +2291,6 @@ f11_book .floor_main .floor_col1 .floor_enter a .bg {
 #_ABOUT_FOOTER_ .footer_last_info{
     min-width: 1190px;
     height: 120px;
-    text-align: center;
 }
 #_ABOUT_FOOTER_ .footer_last_list {
     line-height: 25px;
@@ -2160,7 +2301,7 @@ f11_book .floor_main .floor_col1 .floor_enter a .bg {
 }
 #_ABOUT_FOOTER_ .footer_last_list span {
     color: #888;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 #_ABOUT_FOOTER_ .footer_copyright{
     width: 1190px;

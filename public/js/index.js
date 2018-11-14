@@ -1,5 +1,21 @@
 window.onload=function(){
     /* -----------------------
+    *         顶部广告
+    ---------------------------*/
+    $("#TOP_ACTIVE_BTN").on("click",function(){
+        var $ad = $("#TOP_ACTIVE_WRAP");
+        var $btn = $("#TOP_ACTIVE_BTN");
+        if($ad.hasClass("noblock")){
+            $ad.removeClass("noblock");
+            $btn.removeClass("btn_close");
+            $btn.title="打开";
+        }else{
+            $ad.addClass("noblock");
+            $btn.addClass("btn_close");
+            $btn.title="关闭";
+        }
+    })
+    /* -----------------------
     *         tab标签切换
     ---------------------------*/
     $(".tab:has([data-toggle=tab])")
@@ -40,9 +56,9 @@ window.onload=function(){
     });
 
 
-    /* -----------------------
-    *         左侧滚动条导航出现
-    ---------------------------*/
+    /* --------------------------------------------------
+    *         左侧滚动条导航和头部浮动fixed出现
+    ------------------------------------------------------*/
 
     function toTop_left_nav(BK){
         var toTop=document.body.scrollTop || document.documentElement.scrollTop;
@@ -53,8 +69,12 @@ window.onload=function(){
         
         if(toTop>BK_T-innerHeight/2){
             $("#_FLOORS_NAV_").removeClass("noblock");
+            $("#_HEADER_LOGIN_").addClass("fixed");
+            $("#_SEARCH_HEADER_BOX_").addClass("fixed");
         }else{
             $("#_FLOORS_NAV_").addClass("noblock");
+            $("#_HEADER_LOGIN_").removeClass("fixed");
+            $("#_SEARCH_HEADER_BOX_").removeClass("fixed");
         }
     }
 
@@ -80,6 +100,7 @@ window.onload=function(){
         }
 
     }
+
 
     window.onscroll=function(){  //绑定滚动条动作事件
         toTop_left_nav($("#_SPECIAL_ENTER_"));
