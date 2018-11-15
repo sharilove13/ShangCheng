@@ -4,20 +4,7 @@
 body{
     background: #f8f8f8;
 }
-/* 左侧 */
-#_REG_HEADER_ .simple_header{
-    position: relative;
-    width:400px;
-}
-#_REG_HEADER_ .simple_header a{
-    display: inline-block;
-}
-#_REG_HEADER_ .reglogo {
-    display: inline-block;
-    height: 17px;
-    width: 89px;
-    background: url("../images/regLogo.png");
-}
+
 
 /* 主体输入框 */
 #_REG_HEADER_ .main_box{
@@ -304,4 +291,56 @@ body{
 }
 #REG_STEP1 .reg_main_input .tip_error_color{
     color:#F00 !important;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+*----------------------------------------------------注册成功页面-------------------------------------------------------*
+*----------------------------------------------------------------------------------------------------------------*/
+#_SUCCESS_MAIN_{
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin-top: 5px;
+}
+#_SUCCESS_MAIN_ .success_main_info{
+    width: 100%;
+    padding: 0 10px;
+    background: #fff;
+}
+#_SUCCESS_MAIN_ .success_main_info .success_content_wrap{
+    position: relative;
+    margin: 0 auto;
+    width: 590px;
+    min-height: 360px;
+    padding: 0;
+    left: 20px;
+    overflow: hidden;
+}
+#_SUCCESS_MAIN_ .success_content_wrap .success_content i.logo{
+    background: url("../images/reg/lion-run.gif") no-repeat;
+    display: block;
+    width: 120px;
+    height: 161px;
+    margin: 40px auto 0;
+}
+#_SUCCESS_MAIN_ .success_content_wrap .success_content p.tip{
+    margin-top: 12px;
+    font: 18px "Microsoft YaHei";
+    text-align: center;
+    color: #666;
+}
+#_SUCCESS_MAIN_ .success_content_wrap .success_content p.relocation {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding-top: 20px;
+}
+#_SUCCESS_MAIN_ .success_content_wrap .success_content a{
+    color:#08C;
+    font-size: 14px;
+}
+#_SUCCESS_MAIN_ .success_content_wrap .success_content a:hover{
+    color:#f88600;
 }

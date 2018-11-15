@@ -1,0 +1,13 @@
+#_SEARCH_HEADER_BOX_ .search_keyword_box{
+    border:2px solid #3284e5;;
+}
+
+#_SEARCH_HEADER_BOX_ #SEARCH_SUBMIT{
+    position: absolute;
+    right: 0px;
+    background: #3284e5;
+}
+
+#_SEARCH_HEADER_BOX_.fixed .fixed_header_bg{
+    border-bottom: 1px solid #3284e5;
+}

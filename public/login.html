@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>用户登录 - 苏宁易购</title> 
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+
+<body style="background: #f6f6f6">
+	<div id="_REG_HEADER_" class="reg_header clearboth">
+		<div class="container">
+			<!-- 简头 START --> 
+			<div class="simple_header clearboth"> 
+				<a href="index.html" title="苏宁易购">
+					<img alt="苏宁易购" src="images/simple-logo.png" />
+				</a> 
+				<span class="welcome">欢迎登录</span> 
+			</div> 
+			<!-- 简头 END --> 
+		</div>
+	</div>
+	<div id="_LOGIN_WRAP_" class="login_wrap">
+		<div class="container clearboth">
+			<div class="login_wrap_box">
+				<div class="login_main" style="display: block;">
+					<div class="go_reg">
+						<a href="javascript:;" target="_blank">账号注册
+							<span>&gt;</span>
+						</a>
+					</div>
+					<div class="login_tab">
+						<div>普通登录</div>
+					</div>
+					<div class="login_body">
+						<div class="login_style" style="display: block;">
+							<dl>
+								<dd><input name="txtUser" type="text" id="LOGIN_UNAME" placeholder="用户名/邮箱/手机号" /></dd>
+							</dl>
+							<dl>
+								<dd><input type="password" id="LOGIN_UPWD" placeholder="请输入您的密码" /></dd>
+							</dl>
+							<!-- <dl id="logincode" style="display: none;">
+							<dd><input type="text" id="txtCode" name="txtCode" style="width: 133px; margin-right: 10px;" placeholder="验证码" /><img id="vCodeImg" src="" width="90" height="34" title="点击换一个" style="vertical-align: middle; margin-top: -4px;" onclick="this.src='/ImgCode.aspx?t='+Math.random()*100" /></dd>
+							</dl> -->
+							<div class="psw_forget">
+								<a href="javascript:void(0);" tabindex="-1" target="_blank">忘记密码?</a>
+							</div>
+							<div class="remember">
+								<input type="checkbox" id="issave" checked /><label for="issave">下次自动登录</label>
+							</div>
+							<div class="tishi"></div>
+							<button onclick="cliLogin()" id="logbtn" style="outline:none">登 录</button>
+						</div>
+					</div>
+					<div class="hezuo">
+						<h3>使用合作网站的账号登录：</h3>
+						<p>
+							<a href="javascript:;"><i class="weixin"></i></a>
+							<a href="javascript:;"><i class="qq"></i></a>
+							<a href="javascript:;"><i class="yifubao"></i></a>
+						</p>
+					</div>
+					<div class="qiehuan"></div>
+					<div id="QIEHUAN_TIP">
+						<img src="images/login/zhishi2.png" />
+					</div>
+				</div>
+				<div class="login_main" style="display: none;">
+					<i class="qiehuan" style="background-position:left bottom; bottom:10px"></i>
+					<div class="app_login">
+						<h1><i>-</i>登录失败，请刷新二维码后重试！</h1>
+						<h2>使用九机APP&nbsp;&nbsp;扫码安全登录</h2>
+					</div>
+					<div class="app_code">
+						<img id="APP_LOGIN_CODE" src="./images/login/code.png" />
+					</div>
+					<div class="shuaxin">
+						<span>刷新二维码</span>
+						<p><a href="javascript:;" target="_blank">下载易购客户端</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="_ABOUT_FOOTER_" class="about_footer clearboth">
+		<div class="footer_last"> 
+			<div class="container footer_last_info"> 
+				<p class="footer_last_list"> 
+					<a target="_blank">苏宁云商</a>
+					<span>|</span> 
+					<a target="_blank">苏宁互联</a>
+					<span>|</span> 
+					<a target="_blank">苏宁金融</a>
+					<span>|</span> 
+					<a target="_blank">易付宝</a>
+					<span>|</span> 
+					<a target="_blank">PPTV</a>
+					<span>|</span> 
+					<a target="_blank">红孩子</a>
+					<span>|</span> 
+					<a target="_blank" >缤购</a>
+					<span>|</span> 
+					<a target="_blank">乐购仕</a>
+					<span>|</span> 
+					<a target="_blank">苏宁物流</a>
+					<span>|</span> 
+					<a target="_blank">苏宁美国</a>
+					<span>|</span> 
+					<a target="_blank">苏宁香港</a>
+					<span>|</span> 
+					<a target="_blank">手机苏宁</a> 
+				</p> 
+				<p class="footer_last_list"> 
+					<a target="_blank">关于苏宁易购</a>
+					<span>|</span> 
+					<a target="_blank">联系我们</a>
+					<span>|</span> 
+					<a target="_blank">诚聘英才</a>
+					<span>|</span> 
+					<a target="_blank">供应商入驻</a>
+					<span>|</span> 
+					<a target="_blank">苏宁联盟</a>
+					<span>|</span> 
+					<a target="_blank">苏宁招标</a>
+					<span>|</span> 
+					<a target="_blank">友情链接</a>
+					<span>|</span> 
+					<a target="_blank">法律申明</a>
+					<span>|</span> 
+					<a target="_blank">用户体验提升计划</a>
+					<span>|</span> 
+					<a target="_blank">股东会员认证</a> 
+				</p> 
+				<p class="footer_copyright clearboth"> 
+					Copyright&copy; 2002-2016 ，苏宁云商集团股份有限公司版权所有 
+					<a style="color:#999" target="_blank">
+						苏ICP备10207551号-4
+					</a> 
+					<a style="color:#999" target="_blank">
+						苏B1-20130131
+					</a> 
+					<a style="color:#999" target="_blank">
+						苏B2-20130376
+					</a> 
+					<a style="color:#999" target="_blank">
+						苏B2-20130391
+					</a>
+					出版物经营许可证新出发苏批字第A-243号
+				</p> 
+				<div class="footer_authentication"> 
+					<a target="_blank"> 
+						<img width="76" height="24" alt="诚信网站" src="./images/index/footer_bottom_icon1.png" /> 
+					</a> 
+					<a target="_blank"> 
+						<img width="76" height="24" alt="中国联通授权网络经营代理商" src="./images/index/footer_bottom_icon2.png" /> 
+					</a> 
+					<a target="_blank"> 
+						<img width="76" height="24" alt="中国电信授权网络经营代理商" src="./images/index/footer_bottom_icon3.jpg" /> 
+					</a> 
+					<a target="_blank"> 
+						<img width="76" height="24" alt="电子营业执照" src="./images/index/footer_bottom_icon4.png" /> 
+					</a> 
+				</div> 
+			</div> 
+		</div>       
+	</div>
+</body>
+
+</html>

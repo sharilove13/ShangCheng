@@ -1,0 +1,234 @@
+body{background: #fff!important;}
+#_LOGIN_WRAP_{
+    position: relative;
+    width:100%;
+    height: 530px;
+    background:#fff url("../images/login/log_bg1.jpg") no-repeat center top;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+#_LOGIN_WRAP_ .login_wrap_box{
+    width: 343px;
+    height: 343px;
+    float: right;
+    background: url("../images/login/login_shadow.png") no-repeat;
+    position: absolute;
+    left: 63%;
+    top: 80px;
+    z-index: 999;
+}
+#_LOGIN_WRAP_ .login_main{
+    width: 330px;
+    min-height: 315px;
+    padding-bottom: 20px;
+    position: relative;
+    float: right;
+}
+#_LOGIN_WRAP_ .login_main .go_reg{
+    position:absolute; 
+    right:30px; 
+    top:14px;
+}
+#_LOGIN_WRAP_ .login_main .go_reg span{
+    width:16px; 
+    height:16px; 
+    background:#999; 
+    float:right; 
+    color:#fff; 
+    border-radius:100%; 
+    text-align:center; 
+    line-height:16px; 
+    margin:1px 0 0 5px; 
+    font-family:'宋体'; 
+    font-weight:bold;
+}
+#_LOGIN_WRAP_ .login_main .login_tab {
+    width: 310px;
+    height: 46px;
+    padding-left: 20px;
+    text-align: center;
+    border-bottom: 1px solid #6795D6 !important;
+    overflow: hidden;
+}
+#_LOGIN_WRAP_ .login_main .login_tab>div{
+    width: 200px;
+    text-align: center;
+    height: 45px;
+    margin: 0 10px;
+    line-height: 46px;
+    font-size: 14px;
+    color: #6EA4E4;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+#_LOGIN_WRAP_ .login_main .login_body{
+    padding: 5px 30px 0;
+    overflow: hidden;
+}
+#_LOGIN_WRAP_ .login_main .login_style dl{
+    margin-top: 20px;
+}
+#_LOGIN_WRAP_ .login_main .login_style dl>dd{
+    margin-inline-start: 40px;
+}
+#_LOGIN_WRAP_ .login_style dd input{
+    border: 1px solid  #d6d6d6;
+    width: 233px;
+    height: 34px;
+    line-height: 28px\9;
+    padding-left: 35px;
+    border-radius: 3px;
+}
+#_LOGIN_WRAP_ .login_style .psw_forget,
+#_LOGIN_WRAP_ .login_style .remember{
+    margin-top: 15px;
+}
+#_LOGIN_WRAP_ .login_style .psw_forget{
+    float: right;
+}
+#_LOGIN_WRAP_ .login_style .remember input[type=checkbox] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#_LOGIN_WRAP_ .login_style .remember label {
+    color: #999;
+}
+#_LOGIN_WRAP_ .login_style button{
+    width: 270px;
+    border: 0;
+    background: #6EA4E4;
+    border-radius: 3px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+}
+#_LOGIN_WRAP_ .hezuo{
+    margin-top: 15px;
+    padding: 0 30px;
+}
+#_LOGIN_WRAP_ .hezuo h3 {
+    color: #999;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+#_LOGIN_WRAP_ .hezuo a {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 7px;
+}
+#_LOGIN_WRAP_ .hezuo a i{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-left: 9px;
+    overflow: hidden;
+    background: url("../images/login/loginSp-ico.png") no-repeat;
+    cursor: pointer;
+}
+#_LOGIN_WRAP_ .hezuo a i.weixin{
+    background-position: 0 -105px;
+}
+#_LOGIN_WRAP_ .hezuo a:hover i.weixin{
+    background-position: 0 -139px;
+}
+#_LOGIN_WRAP_ .hezuo a i.qq{
+    background-position: -34px -105px;
+}
+#_LOGIN_WRAP_ .hezuo a:hover i.qq{
+    background-position: -34px -139px;
+}
+#_LOGIN_WRAP_ .hezuo a i.yifubao{
+    background-position: -68px -105px;
+}
+#_LOGIN_WRAP_ .hezuo a:hover i.yifubao{
+    background-position: -68px -139px;
+}
+#_LOGIN_WRAP_ .qiehuan{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 1px;
+    bottom: 30px;
+    background: url("../images/login/login-code.png") no-repeat right top;
+    cursor: pointer;
+}
+#QIEHUAN_TIP{
+    position:absolute; 
+    right:-185px; 
+    bottom:30px; 
+    cursor:pointer;
+}
+
+/* 二维码登录 */
+#_LOGIN_WRAP_ .login_main .app_login {
+    position: relative;
+    padding: 35px 50px 0;
+}
+
+/* 登录出错 */
+#_LOGIN_WRAP_ .app_login h1{
+    text-align: center;
+    background: #ffebeb;
+    color: #e4393c;
+    border: 1px solid #FFAEAF;
+    padding-left: 25px;
+    line-height: 32px;
+    display: none;
+}
+#_LOGIN_WRAP_ .app_login h1 i {
+    width: 16px;
+    height: 16px;
+    background: #e4393c;
+    color: #fff;
+    font-weight: bold;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    margin: 8px 0 0 -25px;
+    font-size: 17px;
+}
+/* 二维码登录主体 */
+#_LOGIN_WRAP_ .app_login h2 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei';
+    color: #888;
+    line-height: 32px;
+}
+#_LOGIN_WRAP_ .app_code {
+    border: 1px solid #e1e1e1;
+    padding: 10px;
+    width: 155px;
+    margin: 15px auto;
+    font-size: 0;
+}
+#_LOGIN_WRAP_ .shuaxin{
+    text-align: center;
+}
+#_LOGIN_WRAP_ .shuaxin span {
+    padding: 0 10px;
+    width: 155px;
+    line-height: 30px;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #6EA1E2;
+    color: #fff;
+    margin-bottom: 8px;
+}
+#_LOGIN_WRAP_ .shuaxin a:hover{
+    color:#6795D6;
+} 
+
+#_ABOUT_FOOTER_ .footer_last{
+    background: #fff!important;
+}
