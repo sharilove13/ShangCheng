@@ -1,0 +1,307 @@
+/* -------------------------
+*---------头部 reg_header--------
+----------------------------*/
+body{
+    background: #f8f8f8;
+}
+/* 左侧 */
+#_REG_HEADER_ .simple_header{
+    position: relative;
+    width:400px;
+}
+#_REG_HEADER_ .simple_header a{
+    display: inline-block;
+}
+#_REG_HEADER_ .reglogo {
+    display: inline-block;
+    height: 17px;
+    width: 89px;
+    background: url("../images/regLogo.png");
+}
+
+/* 主体输入框 */
+#_REG_HEADER_ .main_box{
+    position: relative;
+    width: 100%;    
+    border: 0;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    background: #fff;
+}
+/* 有账号 */
+#_REG_HEADER_ .main_box>p{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: right;
+    height: 14px;    
+    margin: 0;
+    padding: 0 0 5px;
+    line-height: 14px;
+    background: #f8f8f8;
+}
+#_REG_HEADER_ .main_box>p>a{
+    color:#08c;
+}
+#_REG_HEADER_ .main_box>p>a:hover{
+    color:#f88600;
+    text-decoration: underline;
+}
+/* 无账号注册 */
+#ENTERREG_FORM{
+    border:1px solid #ddd;
+}
+#REG_STEP1{
+    width: 968px;
+    padding: 0 10px;
+    margin:0 auto;
+    position: relative;
+}
+#REG_STEP1 .reg_nav {
+    position: relative;
+    margin: 50px auto 0;
+    width: 870px;
+    height: 35px;
+    font: 18px "Microsoft YaHei";
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap{
+    margin: 0 auto;
+    width: 550px;
+    color: #666;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li {
+    position: relative;
+    float: left;
+    padding: 0 19px 0;
+    line-height: 34px;
+    margin-right: 32px;
+    font-size: 18px;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li.current{
+    color: #fa0;
+    border-bottom: 2px solid #fa0;
+}
+
+/* STEP1,2,3图标 */
+#REG_STEP1 .reg_nav .reg_step_wrap li i{
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 5px;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li i.icon-1 {
+    background: url("../images/reg/cop-bg.png") -40px 0 no-repeat;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li.current i.icon-1 {
+    background: url("../images/reg/cop-bg.png") -64px 0 no-repeat;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li i.icon-2 {
+    background: url("../images/reg/cop-bg.png") -40px -24px no-repeat;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li.current i.icon-2 {
+    background: url("../images/reg/cop-bg.png") -64px -24px no-repeat;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li i.icon-3 {
+    background: url("../images/reg/cop-bg.png") -40px -48px no-repeat;
+}
+#REG_STEP1 .reg_nav .reg_step_wrap li.current i.icon-3 {
+    background: url("../images/reg/cop-bg.png") -64px -48px no-repeat;
+}
+
+/* 无账号注册主体 */
+#REG_STEP1 .reg_main{
+    position: relative;
+    margin: 0 auto;
+    width: 538px;
+    min-height: 560px;
+    height:auto;
+    overflow: hidden;
+    left: 20px;
+}
+#REG_STEP1 .reg_main .reg_main_input{
+    position: absolute;
+    width: 460px;
+    z-index: 10;
+    padding-bottom: 85px;
+}
+#REG_STEP1 .reg_main .reg_main_input .reg_txtbox{
+    position: relative;
+    height: 48px;
+    border: solid 1px #bbb;
+    background: #fff;
+}
+/* 输入框文字 */
+
+#REG_STEP1 .reg_main_input .reg_txtbox i{
+    display: block;
+    float: left;
+    width: 34px;
+    height: 48px;
+    background: url(../images/input-icon.png) no-repeat;
+}
+
+#REG_STEP1 .reg_main_input .reg_txtbox i.ico_usename{
+    background-position: 0 -148px!important;
+}
+
+#REG_STEP1 .reg_main_input .reg_txtbox .txt_input{
+    position: relative;
+    float: left;
+    padding: 15px 5px;
+    height: 18px;
+    width:410px;
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    font-family: SimSun;
+    border: 0;
+    outline: none;
+}
+/* 输入验证码 */
+#REG_STEP1 .reg_main_input .message_back .message_back_input_bg{
+    width: 460px;
+    height: 50px;
+    position: absolute;
+    z-index: 99;
+}
+#REG_STEP1 .reg_main_input .message_back .reg_phone_code{
+    height: 48px;
+}
+#REG_STEP1 .reg_phone_code .phone_txtbox{
+    position: relative;
+    border: solid 1px #bbb;
+    float: left;
+    width: 299px;
+    height: 48px;
+    background-color: #f6f6f6;
+}
+#REG_STEP1 .reg_phone_code i{
+    display: block;
+    float: left;
+    width: 34px;
+    height: 48px;
+    background: url("../images/input-icon.png") no-repeat;
+}
+#REG_STEP1 .reg_phone_code i.ico_msgback{
+    background-position: 2px 0;
+}
+#REG_STEP1 .reg_phone_code .phone_txtbox>input{
+    float: left;
+    padding: 15px 5px;
+    height: 18px;
+    background: transparent;
+    color: #333;
+    font-size: 14px;
+    font-family: SimSun;
+    border: 0;
+}
+#REG_STEP1 .reg_phone_code .btn_get_code{
+    float: left;
+    margin: 0;
+    width: 158px;
+    height: 48px;
+    background: #f6f6f6;
+    line-height: 48px;
+    font-size: 14px;
+    color: #333!important;
+    text-align: center;
+    border: 1px solid #BBB;
+    border-width: 1px 1px 1px 0;
+}
+#REG_STEP1 .canclick .reg_phone_code .btn_get_code{
+    cursor: not-allowed;
+    color: #d6d6d6!important;
+}
+#REG_STEP1 .reg_tip{
+    position: relative;
+    height: 28px;
+    color: #666;
+}
+#REG_STEP1 .reg_tip .tips_wrap{
+    position: absolute;
+    left: 0;
+    height: 16px;
+}
+
+#REG_STEP1 .reg_tip .tips_wrap input{
+    float: left;
+    margin-top: 2px;
+    outline:none;
+}
+#REG_STEP1 .reg_tip .tips_wrap a{
+    color: #08C;
+}
+
+#REG_STEP1 .reg_main_input .btn_reg{
+    width: 100%;
+}
+#REG_STEP1 .reg_main_input .btn_reg .reg_submit{
+    display: block;
+    padding: 14px 0;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: 700;
+    color: #fff;
+    background: #ff9c00;
+    border: solid 1px #f88600;
+    text-decoration: none;
+}
+#REG_STEP1 .reg_main_input .btn_reg .reg_submit:hover{
+    background: #f8b500;
+	border: solid 1px #ff9c00;
+}
+#REG_STEP1 .reg_main_input .bottom-tip{
+    color: #333;
+    margin-top: 10px;
+}
+#REG_STEP1 .reg_main_input .bottom-tip a{
+    color: #333;
+    font-size: 14px;    
+    font-family: "Microsoft YaHei";
+}
+#REG_STEP1 .reg_main_input .bottom-tip a:hover{
+    color:#f88600;
+    text-decoration: underline;
+}
+/* 注册错误提示 */
+#REG_STEP1 .reg_main .error_wrap{
+    height:50px;
+}
+#REG_STEP1 .reg_main .error_wrap.noshow{
+    opacity: 0;
+}
+#REG_STEP1 .reg_main .error_wrap .error_wrap_box{
+    position: relative;
+    width: 424px;    
+    padding: 10px 0 10px 34px;    
+    border: 1px solid #f55;
+    background-color: #fff0f0;
+}
+#REG_STEP1 .reg_main .error_wrap .error_wrap_box .error{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 3px;
+    height: 10px;
+    padding: 8px 8px 0 8px;
+    font-size: 12px;
+    background: url("../images/reg/cop-bg.png") 0 0 no-repeat;
+}
+#REG_STEP1 .reg_main_input .input_tip{
+    height: 25px;
+    font-size: 12px;
+    color: #999;
+    padding-top: 5px;
+}
+#REG_STEP1 .reg_main_input .tip_error_color{
+    color:#F00 !important;
+}

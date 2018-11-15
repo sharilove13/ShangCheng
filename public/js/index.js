@@ -15,6 +15,26 @@ window.onload=function(){
             $btn.title="关闭";
         }
     })
+
+    /* -----------------------
+    *         分类弹窗
+    ---------------------------*/
+    $(".sort_lists>li").on("mouseenter",function(){
+        $li = $(this);
+        $li.parent().next().addClass("sort_detail_box");
+    })
+    $(".sort_lists>li").on("mouseleave",function(){
+        $li = $(this);
+        $li.parent().next().removeClass("sort_detail_box");
+    })
+    $(".sort_detail").on("mouseenter",function(){
+        $div = $(this);
+        $div.addClass("sort_detail_box");
+    })
+    $(".sort_detail").on("mouseleave",function(){
+        $div = $(this);
+        $div.removeClass("sort_detail_box");
+    })
     /* -----------------------
     *         tab标签切换
     ---------------------------*/

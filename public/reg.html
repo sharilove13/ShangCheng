@@ -4,288 +4,237 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
         <title>注册</title> 
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
-        <!-- 引入全站公用资源文件 --> 
+        <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/reg.css" /> 
     </head> 
     <body>
-        <div class="wrapper"> 
-            <!-- 简头 START --> 
-            <div class="simple-header"> 
-                <div id="snlogo" class="clearfix"> 
+        <div id="_REG_HEADER_" class="reg_header clearboth"> 
+            <div class="container">
+                <!-- 简头 START --> 
+                <div class="simple_header"> 
                     <a href="index.html" title="苏宁易购">
-                        <img alt="苏宁易购" src="https://sslres.suning.com/project/srsregister/images/snlogo.png" />
+                        <img alt="苏宁易购" src="images/simple-logo.png" />
                     </a> 
-                    <span class="channel l reglogo"></span> 
+                    <span class="channel reglogo"></span> 
                 </div> 
-            </div> 
-            <!-- 简头 END --> 
-            <div class="main-box reg mart reg-bor-top"> 
-                <p class="tr lh36 notice login-bor"> 我已经注册，马上
-                    <a name="Preg_index_none_log">登录 &gt;</a>
-                </p> 
-                <form id="enterReg_form" action="reg_bind_email.html" method="post" autocomplete="off"> 
-                    <div class="tab-cont cont-marg" id="step1"> 
-                        <div class="reg-nav"> 
-                            <ul class="reg-step clearfix" style="text-align:center;"> 
-                                <li class="current">
-                                    <i class="icon-1"></i>设置登录名
-                                </li> 
-                                <li>
-                                    <i class="icon-2"></i>设置账户信息
-                                </li> 
-                                <li>
-                                    <i class="icon-3"></i>注册成功
-                                </li> 
-                            </ul> 
-                        </div> 
-                        <!-- reg-type-cont [[ --> 
-                        <div class="reg-main" style=" min-height: 560px;height: auto!important;height: 560px;"> 
-                            <div class="error-wrap"> 
-                                <div class="error-box mb10 mt10 hide"> 
-                                    <i class="error"></i> 
-                                    <span></span> 
-                                </div> 
+                <!-- 简头 END --> 
+                <div class="main_box"> 
+                    <p> 我已经注册，马上
+                        <a>登录 &gt;</a>
+                    </p> 
+                    <form id="ENTERREG_FORM" action="reg_bind_email.html" method="post" autocomplete="off"> 
+                        <div id="REG_STEP1"> 
+                            <div class="reg_nav"> 
+                                <ul class="reg_step_wrap clearboth" style="text-align:center;"> 
+                                    <li class="current">
+                                        <i class="icon-1"></i>设置登录名
+                                    </li> 
+                                    <li>
+                                        <i class="icon-2"></i>设置账户信息
+                                    </li> 
+                                    <li>
+                                        <i class="icon-3"></i>注册成功
+                                    </li> 
+                                </ul> 
                             </div> 
-                            <div class="reg-form pb85"> 
-                                <div class="reg-txtbox"> 
-                                    <label class="input-label">请输入您的手机号码</label> 
-                                    <i class="ico-usename"></i> 
-                                    <input class="txt-input text-email" type="text" id="mobileAlias" name="aliasName" value="" maxlength="11" tabindex="1" /> 
-                                </div> 
-                                <div class="input-tip per-input-tip tip-error-color" id="aliasTip"></div> 
-                                <div class="reg-code imgCodeDiv" style="display:none"> 
-                                    <div class="code-txtbox"> 
-                                        <i class="ico-code"></i> 
-                                        <input class="txt-input" type="text" id="imgCode" name="imgCode" maxlength="4" tabindex="2" /> 
-                                        <label class="input-label">请输入验证码</label> 
-                                    </div> 
-                                    <div class="code-num"> 
-                                        <img id="imgSrc" src="" alt="" name="Preg_index_none_pic" /> 
-                                        <a id="changeImgSrc" href="javascript:;" name="Preg_index_none_change" class="changecode" tabindex="-1">换一张</a> 
+                            <!-- reg-type-cont [[ --> 
+                            <div class="reg_main"> 
+                                <div class="error_wrap noshow"> 
+                                    <div class="error_wrap_box" style="margin-top:10px;margin-bottom:10px;"> 
+                                        <i class="error"></i> 
+                                        <span></span> 
                                     </div> 
                                 </div> 
-                                <div class="input-tip  per-input-tip tip-error-color imgCodeDiv" id="imgCodeTip" style="display:none"></div> 
-                                <div class="issetgray setgray"> 
-                                    <div class="shadow"></div> 
-                                    <div class="reg-code reg-phone-code smsCodeDiv"> 
+                                
+                                <div class="reg_main_input"> 
+                                    <!-- 手机号输入框 -->
+                                    <div class="reg_txtbox"> 
+                                        <i class="ico_usename"></i> 
+                                        <input class="txt_input" type="text" id="MOBILE_UNAME" placeholder="请输入您的手机号码" maxlength="11" tabindex="1" /> 
+                                    </div> 
+                                    <div class="input_tip tip_error_color" id="MUNAME_TIP"></div> 
+                                    <!--
+                                    <div class="reg_code imgCodeDiv" style="display:block"> 
                                         <div class="code-txtbox"> 
                                             <i class="ico-code"></i> 
-                                            <input class="txt-input" type="text" id="smsCode" name="mobileCode" maxlength="6" tabindex="3" /> 
-                                            <label class="input-label">请输入短信验证码</label> 
+                                            <input class="txt-input" type="text" id="imgCode" name="imgCode" maxlength="4" tabindex="2" /> 
+                                            <label class="input-label">请输入验证码</label> 
                                         </div> 
-                                        <a class="btn-get-code" href="javascript:;" id="sendSmsCode" name="Preg_index_none_getmobilenew">
-                                            <span>获取短信验证码</span>
-                                        </a> 
+                                        <div class="code-num"> 
+                                            <img id="imgSrc" src="" alt="" name="Preg_index_none_pic" /> 
+                                            <a id="changeImgSrc" href="javascript:;" name="Preg_index_none_change" class="changecode" tabindex="-1">换一张</a> 
+                                        </div> 
                                     </div> 
-                                </div> 
-                                <div class="input-tip per-input-tip tip-error-color smsCodeDiv" id="smsCodeTip"></div> 
-                                <div class="input-tip per-input-tip clearfix smsCodeDiv" id="yyTip" style="display:none"> 
-                                    <span class="yuyin"> 
-                                        <i class="yuyin-icon"></i>您也可以尝试： 
-                                        <a class="yuyin-cont get-code-btn" href="javascript:;" id="sendYy" name="Preg_index_none_getyuyinnew">
-                                            <span>获取语音验证码</span>
-                                        </a> 
-                                        <span id="sendYying" style="padding-left:20px;display:none">获取语音验证码</span> 
-                                    </span> 
-                                </div> 
-                                <div class="reg-tip"> 
-                                    <div class="auto-label"> 
-                                        <input type="checkbox" id="protocol" name="Preg_index_none_check" checked="checked" />&nbsp;同意 
-                                        <a target="_blank" href="/memberRegu.do" name="Preg_index_none_hyzc" tabindex="-1">《苏宁易购会员章程》</a> 
-                                        <a target="_blank" href="/eppAggrement.do" name="Preg_index_none_yfb" tabindex="-1">《易付宝协议》</a>及 
-                                        <a target="_blank" href="/snAdPlatformTreaty.do" name="Preg_index_none_snlm" tabindex="-1">《苏宁广告联盟在线协议》</a> 
+                                    <div class="input_tip  tip_error_color" id="imgCodeTip"></div> 
+                                    -->
+                                    <!-- 获取验证码 -->
+                                    <div class="message_back canclick"> 
+                                        <div class="message_back_input_bg"></div> 
+                                        <div class="reg_phone_code"> 
+                                            <div class="phone_txtbox"> 
+                                                <i class="ico_msgback"></i> 
+                                                <input class="txt_input" type="text" id="smsCode" maxlength="6" tabindex="3" placeholder="请输入短信验证码"/> 
+                                            </div> 
+                                            <a class="btn_get_code" href="javascript:;" id="sendSmsCode" name="Preg_index_none_getmobilenew">
+                                                <span>获取短信验证码</span>
+                                            </a> 
+                                        </div> 
                                     </div> 
-                                </div> 
-                                <div class="input-tip  per-input-tip red" id="protocolTip"></div> 
-                                <div class="btn-reg"> 
-                                    <a href="javascript:void(0)" class="reg-submit" id="step1save" name="Preg_index_none_submit1">同意协议并注册</a> 
-                                    <a href="javascript:;" class="reg-submit" id="step1saveing" style="display:none">正在提交...</a> 
-                                </div> 
-                                <p class="bottom-tip mt10"> 
-                                    <a href="javascript:;" onclick="srscommon.goCompanyReg($('#targetUrl').val());return false;" name="Preg_index_none_companyreg">企业用户注册 &gt;</a> 
-                                </p> 
-                                <div class="clear"></div> 
-                            </div> 
-                        </div> 
-                        <!-- reg-type-cont ]] --> 
-                    </div> 
-                    <div class="tab-cont cont-marg" id="step2" style="display:none"> 
-                        <div class="reg-nav"> 
-                            <ul class="reg-step clearfix" style="text-align:center;"> 
-                                <li><i class="icon-1"></i>设置登录名</li> 
-                                <li class="current"><i class="icon-2"></i>设置账户信息</li> 
-                                <li><i class="icon-3"></i>注册成功</li> 
-                            </ul> 
-                        </div> 
-                        <!-- reg-type-cont [[ --> 
-                        <div class="reg-main"> 
-                            <div class="reg-form pt50 pb85"> 
-                                <div class="reg-txtbox"> 
-                                    <label class="input-label" style="display: block;">请设置账号密码</label> 
-                                    <i class="ico-pwd"></i> 
-                                    <input class="txt-input text-email password-new" type="password" id="setPsw" name="setPsw" maxlength="20" tabindex="5" /> 
-                                </div> 
-                                <div class="input-tip per-input-tip" id="setPswTip"></div> 
-                                <div class="safe-rank-box" style="display:none"> 
-                                    <div class="safe-rank-label">
-                                        安全程度： 
+                                    <div class="input_tip tip_error_color" id="smsCodeTip"></div> 
+                                    <!-- 协议 -->                                    
+                                    <div class="reg_tip"> 
+                                        <div class="tips_wrap"> 
+                                            <input type="checkbox" id="PROTOCOL" checked="checked" />&nbsp;同意 
+                                            <a target="_blank" href="/memberRegu.do" tabindex="-1">《苏宁易购会员章程》</a> 
+                                            <a target="_blank" href="/eppAggrement.do" tabindex="-1">《易付宝协议》</a>及 
+                                            <a target="_blank" href="/snAdPlatformTreaty.do" tabindex="-1">《苏宁广告联盟在线协议》</a> 
+                                        </div> 
                                     </div> 
-                                    <div class="safe-rank" id="setPsw_rank"> 
-                                        <div class="safe-rank-bar"></div> 
-                                        <ul> 
-                                            <li>低</li> 
-                                            <li>中</li> 
-                                            <li>高</li> 
-                                        </ul> 
+                                    <div class="input_tip tip_error_color" id="protocolTip"></div> 
+                                    <div class="btn_reg"> 
+                                        <a href="javascript:void(0)" class="reg_submit" id="step1save" name="Preg_index_none_submit1">同意协议并注册</a> 
+                                        <a href="javascript:;" class="reg_submit" id="step1saveing" style="display:none">正在提交...</a> 
                                     </div> 
-                                </div> 
-                                <div class="clear"></div> 
-                                <div class="btn-reg"> 
-                                    <a href="###" class="reg-submit" id="step2save" name="Preg_index_none_submit2">下一步</a> 
-                                    <a href="javascript:;" class="reg-submit" id="step2saveing" style="display:none">正在提交...</a> 
+                                    <p class="bottom-tip mt10"> 
+                                        <a href="javascript:;" onclick="srscommon.goCompanyReg($('#targetUrl').val());return false;" name="Preg_index_none_companyreg">企业用户注册 &gt;</a> 
+                                    </p> 
+                                    <div class="clear"></div> 
                                 </div> 
                             </div> 
+                            <!-- reg-type-cont ]] --> 
                         </div> 
-                        <!-- reg-type-cont ]] --> 
-                    </div> 
-                    <input type="hidden" id="token" name="token" value="2b54becb-a62f-442b-b58a-8da73bb407c2" /> 
-                    <input type="hidden" id="uid" name="uid" value="" /> 
-                    <input type="hidden" id="regPage" name="regPage" value="NORMAL_REG_PAGE" /> 
-                    <input type="hidden" id="myTargetUrl" name="myTargetUrl" value="http://www.suning.com/" /> 
-                    <input type="hidden" id="mseqNum" value="-1" /> 
-                    <input type="hidden" id="commerceServer" value="https://ssl.suning.com" /> 
-                    <input type="hidden" id="custSource" name="custSource" value="" /> 
-                </form> 
-            </div> 
-        </div> 
-        <!-- 抢绑确认框 --> 
-        <div class="win-container" id="cangrap-confirm"> 
-            <div class="win-main" style="width:450px;"> 
-                <div class="win-mask"></div> 
-                <div class="win-inner"> 
-                    <div class="title"> 
-                        <h3>账户确认</h3> 
-                        <em><a href="javascript:void(0);" class="close" title="关闭窗口" onclick="account.winAct({isOpen:false,isIframe:false,id:'cangrap-confirm'});">&times;</a></em> 
-                    </div> 
-                    <div class="pwdSetTip clearfix straight-login"> 
-                        <p>该手机号已注册易购账号，继续注册原账号将不能使用，如果您希望使用原账号请直接登录。</p> 
-                        <a class="login-alert cangrap-confirm-login-btn" href="javascript:;" name="Preg_index_none_Tlog">直接登录</a> 
-                        <a class="no-login cangrap-confirm-continue-btn" href="javascript:;" name="Preg_index_none_Treg">我没有注册过，我要继续注册</a> 
-                    </div> 
+                        <div class="tab-cont cont-marg" id="step2" style="display:none"> 
+                            <div class="reg-nav"> 
+                                <ul class="reg-step clearfix" style="text-align:center;"> 
+                                    <li><i class="icon-1"></i>设置登录名</li> 
+                                    <li class="current"><i class="icon-2"></i>设置账户信息</li> 
+                                    <li><i class="icon-3"></i>注册成功</li> 
+                                </ul> 
+                            </div> 
+                            <!-- reg-type-cont [[ --> 
+                            <div class="reg-main"> 
+                                <div class="reg-form pt50 pb85"> 
+                                    <div class="reg-txtbox"> 
+                                        <label class="input-label" style="display: block;">请设置账号密码</label> 
+                                        <i class="ico-pwd"></i> 
+                                        <input class="txt-input text-email password-new" type="password" id="setPsw" name="setPsw" maxlength="20" tabindex="5" /> 
+                                    </div> 
+                                    <div class="input-tip per-input-tip" id="setPswTip"></div> 
+                                    <div class="safe-rank-box" style="display:none"> 
+                                        <div class="safe-rank-label">
+                                            安全程度： 
+                                        </div> 
+                                        <div class="safe-rank" id="setPsw_rank"> 
+                                            <div class="safe-rank-bar"></div> 
+                                            <ul> 
+                                                <li>低</li> 
+                                                <li>中</li> 
+                                                <li>高</li> 
+                                            </ul> 
+                                        </div> 
+                                    </div> 
+                                    <div class="clear"></div> 
+                                    <div class="btn-reg"> 
+                                        <a href="###" class="reg-submit" id="step2save" name="Preg_index_none_submit2">下一步</a> 
+                                        <a href="javascript:;" class="reg-submit" id="step2saveing" style="display:none">正在提交...</a> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <!-- reg-type-cont ]] --> 
+                        </div> 
+                        <input type="hidden" id="token" name="token" value="2b54becb-a62f-442b-b58a-8da73bb407c2" /> 
+                        <input type="hidden" id="uid" name="uid" value="" /> 
+                        <input type="hidden" id="regPage" name="regPage" value="NORMAL_REG_PAGE" /> 
+                        <input type="hidden" id="myTargetUrl" name="myTargetUrl" value="http://www.suning.com/" /> 
+                        <input type="hidden" id="mseqNum" value="-1" /> 
+                        <input type="hidden" id="commerceServer" value="https://ssl.suning.com" /> 
+                        <input type="hidden" id="custSource" name="custSource" value="" /> 
+                    </form> 
                 </div> 
-            </div> 
+            </div>
         </div> 
-        <!-- 线下卡已存在确认框 --> 
-        <div class="win-container" id="offline-confirm"> 
-            <div class="win-main" style="width:450px;"> 
-                <div class="win-mask"></div> 
-                <div class="win-inner"> 
-                    <div class="title"> 
-                        <h3>账户确认</h3> 
-                        <em><a href="javascript:void(0);" class="close" title="关闭窗口" onclick="account.winAct({isOpen:false,isIframe:false,id:'offline-confirm'});">&times;</a></em> 
-                    </div> 
-                    <div class="pwdSetTip clearfix straight-login"> 
-                        <p>该手机在苏宁门店注册成为会员，您在易购注册成功后，会把您此次注册的易购账号和门店账号进行合并。</p> 
-                        <a class="login-alert offline-confirm-continue-btn" href="javascript:;" name="Preg_index_none_Treg">继续注册</a> 
-                        <a class="no-login" href="javascript:;" onclick="account.winAct({isOpen:false,isIframe:false,id:'offline-confirm'});">取消</a> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-        <!-- 易付宝已存在确认框 --> 
-        <div class="win-container" id="epp-mobile-confirm"> 
-            <div class="win-main" style="width:450px;"> 
-                <div class="win-mask"></div> 
-                <div class="win-inner"> 
-                    <div class="title"> 
-                    <h3>账户确认</h3> 
-                    <em><a href="javascript:void(0);" class="close" title="关闭窗口" onclick="account.winAct({isOpen:false,isIframe:false,id:'epp-mobile-confirm'});">&times;</a></em> 
-                    </div> 
-                    <div class="pwdSetTip clearfix straight-login"> 
-                        <p>该手机在易付宝已存在，您可以：</p> 
-                        <a class="login-alert epp-mobile-confirm-login-btn" href="javascript:;" name="">联合登录</a> 
-                        <a class="no-login epp-mobile-confirm-continue-btn" href="javascript:;" name="Preg_index_none_Treg">继续注册</a> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-        <!-- 弹出密码设置建议[[ --> 
-        <div class="win-container" id="setPassword"> 
-            <div class="win-main" style="width:450px;"> 
-                <div class="win-mask"></div> 
-                <div class="win-inner"> 
-                    <div class="title"> 
-                        <h3>密码设置建议</h3> 
-                        <em><a href="javascript:void(0);" class="close" title="关闭窗口" onclick="account.winAct({isOpen:false,isIframe:false,id:'setPassword'});">&times;</a></em> 
-                    </div> 
-                    <div class="pwdSetTip clearfix"> 
-                        <p class="mb15">据统计研究，80%的被盗账号都是由于密码太简单而被猜到引起的。 </p> 
-                        <p><strong class="c-6">因此，我们建议：</strong></p> 
-                        <ul> 
-                            <li>1.&nbsp;密码设置至少6位以上，由数字、字母和符号混合而成，安全性最高；</li> 
-                            <li>2.&nbsp;不允许空格，不允许特殊字符，如； &lt;&gt;;'\。允许的符号为： <p> ~!@#$%^&amp;*()_+-={}[]?/,.；</p> </li> 
-                            <li>3.&nbsp;不要使用7位以下的纯数字，这样容易被人猜到；</li> 
-                            <li>4.&nbsp;不要和用户名太相似，这样容易被人猜到；</li> 
-                            <li>5.&nbsp;不要用太多连续或重复的字符（如：1234、abcd、3333、 ssss等）；</li> 
-                            <li>6.&nbsp;不要用手机号、电话号码、生日、学号、身份证号等个人信息。</li> 
-                        </ul> 
-                        <p><strong class="c-6">友情提醒：用户名和密码要做好相应记录，以免忘记</strong></p> 
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-        <!-- 问卷调查 [[ --> 
-        <div class="ECode-floatBar" style="position: fixed;_position:absolute; top: auto; left: auto; z-index: 7500; right: 0px; bottom: 0px; margin-bottom: 270px;"> 
-            <div id="gSideTools" class="g-sidebar"> 
-                <ul> 
-                    <li> 
-                        <a name="Preg_index_none_info016" target="_blank" href="javascript:;" class="i-side-survey">
-                            <em>问卷调查</em><i></i>
+        <div id="_ABOUT_FOOTER_" class="about_footer clearboth">
+            <div class="footer_last"> 
+                <div class="container footer_last_info"> 
+                    <p class="footer_last_list"> 
+                        <a target="_blank">苏宁云商</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁互联</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁金融</a>
+                        <span>|</span> 
+                        <a target="_blank">易付宝</a>
+                        <span>|</span> 
+                        <a target="_blank">PPTV</a>
+                        <span>|</span> 
+                        <a target="_blank">红孩子</a>
+                        <span>|</span> 
+                        <a target="_blank" >缤购</a>
+                        <span>|</span> 
+                        <a target="_blank">乐购仕</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁物流</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁美国</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁香港</a>
+                        <span>|</span> 
+                        <a target="_blank">手机苏宁</a> 
+                    </p> 
+                    <p class="footer_last_list"> 
+                        <a target="_blank">关于苏宁易购</a>
+                        <span>|</span> 
+                        <a target="_blank">联系我们</a>
+                        <span>|</span> 
+                        <a target="_blank">诚聘英才</a>
+                        <span>|</span> 
+                        <a target="_blank">供应商入驻</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁联盟</a>
+                        <span>|</span> 
+                        <a target="_blank">苏宁招标</a>
+                        <span>|</span> 
+                        <a target="_blank">友情链接</a>
+                        <span>|</span> 
+                        <a target="_blank">法律申明</a>
+                        <span>|</span> 
+                        <a target="_blank">用户体验提升计划</a>
+                        <span>|</span> 
+                        <a target="_blank">股东会员认证</a> 
+                    </p> 
+                    <p class="footer_copyright clearboth"> 
+                        Copyright&copy; 2002-2016 ，苏宁云商集团股份有限公司版权所有 
+                        <a style="color:#999" target="_blank">
+                            苏ICP备10207551号-4
                         </a> 
-                    </li> 
-                </ul> 
-            </div> 
-        </div> 
-        <!-- 问卷调查 ]] --> 
-        <!-- 弹出语音获取验证码框[[ --> 
-        <div class="win-container" id="yuyin"> 
-            <div class="win-main clearfix" style="width:450px;"> 
-                <div class="win-mask"></div> 
-                <div class="win-inner"> 
-                    <div class="title"> 
-                        <h3>语音获取验证码</h3> 
-                        <em><a href="javascript:void(0);" class="close" title="关闭窗口" onclick="account.winAct({isOpen:false,isIframe:false,id:'yuyin'});">&times;</a></em> 
-                    </div> 
-                    <div class="pwdSetTip clearfix straight-login"> 
-                        <div class="alert-btn-cont"> 
-                            <i class="alert-tip"></i> 
-                            <h3 class="yuyin-yyMsg"></h3> 
-                        </div> 
-                        <a class="alert2" href="javascript:void(0);" onclick="account.winAct({isOpen:false,isIframe:false,id:'yuyin'});">确定</a> 
+                        <a style="color:#999" target="_blank">
+                            苏B1-20130131
+                        </a> 
+                        <a style="color:#999" target="_blank">
+                            苏B2-20130376
+                        </a> 
+                        <a style="color:#999" target="_blank">
+                            苏B2-20130391
+                        </a>
+                        出版物经营许可证新出发苏批字第A-243号
+                    </p> 
+                    <div class="footer_authentication"> 
+                        <a target="_blank"> 
+                            <img width="76" height="24" alt="诚信网站" src="./images/index/footer_bottom_icon1.png" /> 
+                        </a> 
+                        <a target="_blank"> 
+                            <img width="76" height="24" alt="中国联通授权网络经营代理商" src="./images/index/footer_bottom_icon2.png" /> 
+                        </a> 
+                        <a target="_blank"> 
+                            <img width="76" height="24" alt="中国电信授权网络经营代理商" src="./images/index/footer_bottom_icon3.jpg" /> 
+                        </a> 
+                        <a target="_blank"> 
+                            <img width="76" height="24" alt="电子营业执照" src="./images/index/footer_bottom_icon4.png" /> 
+                        </a> 
                     </div> 
                 </div> 
-            </div> 
-        </div> 
-        <!-- 语音获取验证码框 ]] -->
-        <div class="win-wrapper" id="winWrapper" style="display:none;"> 
-            <!--[if lt IE 7]><iframe class="mask-iframe" style="display:none;"></iframe><![endif]--> 
-            <div id="winBox"></div> 
-        </div> 
-        <iframe class="screen-iframe" style="display:none;" scrolling="no" frameborder="0"></iframe> 
-        <!-- 此处引入公用简尾 --> 
-        <div class="clear"></div> 
-        <div class="ng-s-footer"> 
-        <div class="ng-s-f-con"> 
-            <p class="ng-url-list"> <a name="public0_none_wb_yqlj0101" target="_blank" href="javascript:;">苏宁云商</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0102" target="_blank" href="javascript:;">苏宁互联</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0111" target="_blank" href="javascript:;">苏宁金融</a><span>|</span> <a name="public0_none_wb_yqlj0103" target="_blank" rel="nofollow" href="javascript:;">易付宝</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0105" target="_blank" href="javascript:;">PPTV</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0106" target="_blank" href="javascript:;">红孩子</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0107" target="_blank" href="javascript:;">缤购</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0108" target="_blank" href="javascript:;">乐购仕</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0111" target="_blank" href="javascript:;">苏宁物流</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0109" target="_blank" href="javascript:;">苏宁美国</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0110" target="_blank" href="javascript:;">苏宁香港</a><span>|</span> <a name="public0_none_wb_yqlj0111" target="_blank" href="javascript:;">手机苏宁</a> </p> 
-            <p class="ng-url-list"> <a rel="nofollow" name="public0_none_wb_yqlj0201" target="_blank" href="javascript:;">关于苏宁易购</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0202" target="_blank" href="javascript:;">联系我们</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0203" target="_blank" href="javascript:;">诚聘英才</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0204" target="_blank" href="javascript:;">供应商入驻</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0205" target="_blank" href="javascript:;">苏宁联盟</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0206" target="_blank" href="javascript:;">苏宁招标</a><span>|</span> <a name="public0_none_wb_yqlj0207" target="_blank" href="javascript:;">友情链接</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0208" target="_blank" href="javascript:;">法律申明</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0209" target="_blank" href="javascript:;">用户体验提升计划</a><span>|</span> <a rel="nofollow" name="public0_none_wb_yqlj0209" target="_blank" href="javascript:;">股东会员认证</a> </p> 
-            <p class="ng-copyright"> Copyright&copy; 2002-2016 ，苏宁云商集团股份有限公司版权所有 <a style="color:#999" target="_blank" href="javascript:;">苏ICP备10207551号-4</a> <a style="color:#999" rel="nofollow" target="_blank" href="javascript:;">苏B1-20130131</a> <a style="color:#999" rel="nofollow" target="_blank" href="javascript:;">苏B2-20130376</a> <a style="color:#999" rel="nofollow" target="_blank" href="javascript:;">苏B2-20130391</a> 出版物经营许可证新出发苏批字第A-243号</p> 
-            <div class="ng-authentication"> 
-            <a rel="nofollow" name="public0_none_wb_zs0302" target="_blank" href="javascript:;"> <img width="76" height="24" alt="诚信网站" src="http://img.suning.cn/public/v3/images/chengxin.png" /> </a> 
-            <a rel="nofollow" name="public0_none_wb_zs0303" target="_blank" href="javascript:;"> <img width="76" height="24" alt="中国联通授权网络经营代理商" src="http://img.suning.cn/public/v3/images/unicom.png" /> </a> 
-            <a rel="nofollow" name="public0_none_wb_zs0304" target="_blank" href="javascript:;"> <img width="76" height="24" alt="中国电信授权网络经营代理商" src="http://img.suning.cn/public/v3/images/dianxin.jpg" /> </a> 
-            <a name="public0_none_wb_zs0303" rel="nofollow" target="_blank" href="javascript:;"> <img width="76" height="24" alt="电子营业执照" src="http://img.suning.cn/public/v3/images/dianzi.png?v=02" /> </a> 
-            </div> 
-            </div> 
-        </div> 
+            </div>       
+        </div>
     </body>
+    <script src="js/reg.js"></script>
 </html>
