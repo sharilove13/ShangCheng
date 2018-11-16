@@ -1,0 +1,510 @@
+#_BRAND_SHOP_{
+    width: 1190px;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+#_BRAND_SHOP_ .brand_store{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    height: 120px;
+    overflow: hidden;
+}
+
+
+/* -------------------------
+*-------横向导航栏----------- 
+----------------------------*/
+#_HOZTAL_NAV_{
+    min-height: 24px;
+    margin: 15px auto 0;
+    font-size: 14px;
+    position: relative;
+}
+#SEARCH_PATH {
+    border-bottom: 0!important;
+    margin-bottom: 9px;
+    margin-right: 85px;
+}
+#SEARCH_PATH a{
+    color: #666;
+}
+#SEARCH_PATH .all_result {
+    float: left;
+    line-height: 24px;
+}
+#SEARCH_PATH .icon-right {
+    float: left;
+    background: url("../images/products/icons.png") no-repeat -280px -234px;
+    width: 5px;
+    height: 9px;
+    vertical-align: middle;
+    margin: 7px 10px 14px;
+}
+
+#SEARCH_PATH .goods_labels{
+    position: relative;
+    float: left;
+    height: 24px;
+    margin: 0 6px 6px 0;
+    padding: 0 20px 0 10px;
+    border-radius: 2px;
+    line-height: 24px;
+    background-color: #F8F8FA;
+}
+#SEARCH_PATH .goods_labels span {
+    float: left;
+}
+#SEARCH_PATH .goods_labels em {
+    display: block;
+    float: left;
+    line-height: 24px;
+    color: #F60;
+    max-width: 152px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: text-top;
+}
+
+#SEARCH_PATH .goods_labels i {
+    display: block;
+    position: absolute;
+    background: url("../images/products/icons.png") no-repeat -280px -200px;
+    width: 7px;
+    height: 7px;
+    right: 6px;
+    top: 9px;
+}
+
+#SEARCH_PATH .goods_name{
+    float: left;
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #999;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+/*清除筛选*/
+#SEARCH_PATH .labels_clearall{
+    float: left;
+    padding: 0 10px;
+    margin-top: 2px;
+    margin-left: 30px;
+    border: 1px solid #ddd;
+    color: #999;
+    line-height: 17px;
+    font-size: 12px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+/* -------------------------
+*-------商品展示主体----------- 
+----------------------------*/
+
+#_PRODUCTS_WRAP_ .product_list{
+    min-height: 500px;
+}
+#PRODUCTS_LIST>ul {
+    width: 1210px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+#PRODUCTS_LIST .pro_item_wrap {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 460px;
+    margin: 40px 22px 30px 0;
+}
+#PRODUCTS_LIST .pro_item_wrap .item_bg {
+    position: absolute;
+    left: -10px;
+    top: -30px;
+    width: 220px;
+    height: 100%;
+    padding: 30px 10px 10px 10px;
+    background: #FFF;
+}
+
+#PRODUCTS_LIST .pro_item_wrap:hover .item_bg {
+    padding: 29px 9px 9px 9px;
+    box-shadow: 0px 0px 4px 1px rgba(210,210,214,0.5);
+    border: 1px solid #DDD;
+    border-radius: 2px;
+}
+
+#PRODUCTS_LIST .pros_item_img .img_block{
+        position: relative;
+        height: 220px;
+        width: 220px;
+        overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_img .img_block a{
+    display: block;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    text-align: center;
+
+}
+#PRODUCTS_LIST .pros_item_img .img_block a>img {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    background: url("../images/products/pro_load.jpg") no-repeat center center;
+}
+#PRODUCTS_LIST .pros_item_img .focus_box {
+    position: relative;
+    margin: 10px auto 0;
+    width: 220px;
+    height: 32px;
+    overflow: hidden;
+}
+/* 箭头 */
+#PRODUCTS_LIST .pros_item_img .focus_box .btn-l {
+    position: absolute;
+    display: block;
+    width: 5px;
+    top: 0;
+    left: 0;
+}
+#PRODUCTS_LIST .pros_item_img .focus_box .btn-r {
+    position: absolute;
+    display: block;
+    width: 5px;
+    top: 0;
+    right: 0;
+}
+
+#PRODUCTS_LIST .focus_box>a>b {
+    display: block;
+    margin: 11px 0;
+    overflow: hidden;
+    cursor: pointer;
+    width: 5px;
+    height: 10px;
+}
+#PRODUCTS_LIST .focus_box .btn-l{
+    background: url("../images/products/hover-prev.png") no-repeat 0 12px;
+}
+#PRODUCTS_LIST .focus_box .btn-r{
+    background: url("../images/products/hover-next.png") no-repeat 0 12px;
+}
+#PRODUCTS_LIST .focus_box .btn-l.disabled{
+    background: url("../images/products/disabled-prev.png") no-repeat 0 12px;
+}
+#PRODUCTS_LIST .focus_box .btn-r.disabled{
+    background: url("../images/products/disabled-next.png") no-repeat 0 12px;
+}
+/* 小图片 */
+#PRODUCTS_LIST .pros_item_img .focus_img{
+    margin: 0 auto;
+    height: 32px;
+    width: 192px;
+    overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_img .focus_img dl {
+    display: block;
+    position: relative;
+    width: 9999px;
+    height: 32px;
+}
+#PRODUCTS_LIST .pros_item_img .focus_img dl dd {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 40px;
+    height: 32px;
+    overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_img .focus_img dl dd:hover{
+    border:1px solid #F60;
+}
+#PRODUCTS_LIST .pros_item_img .focus_img dl dd a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    cursor: default;
+}
+#PRODUCTS_LIST .pros_item_img .focus_img dl dd a img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFF;
+}
+/* 内容主体 */
+#PRODUCTS_LIST .pros_item_info .price_box{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 12px 0 0 0;
+    overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_info .price_box .price {
+    float: left;
+    font-family: Tahoma;
+    height: 20px;
+    line-height: 18px;
+    font-size: 20px;
+    color: #F60;
+    font-weight: bold;
+}
+#PRODUCTS_LIST .pros_item_info .price_box .price i {
+    font-size: 12px;
+    font-family: arial;
+    margin-right: 3px;
+    font-weight: normal;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_title {
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 8px 0;
+    word-break: break-all;
+    overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_title .highlight {
+    color: #F60;
+    font-weight: normal;
+}
+.ad_label {
+    width: 100%;
+    height: 18px;
+    text-align: right;
+    overflow: hidden;
+}
+.ad_label i{
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    width: 30px;
+    padding: 0 0 0 14px;
+    text-align: left;
+    color: #FFF;
+    font-size: 12px;
+    background: url("../images/products/icons.png") no-repeat -188px 0;
+}
+.ad_label i.new{
+    background-position: -188px 0;
+}
+
+#PRODUCTS_LIST .pros_item_info .pros_item_from{
+    height: 18px;
+    margin: 8px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_from .from_style {
+    float: left;
+    margin: 0 5px 0 0;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    padding: 2px 4px;
+    border: 1px solid #F60;
+    border-radius: 2px;
+    cursor: default;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_from .from_style.zy {
+    color: #F60;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_label{
+    display: block;
+    position: relative;
+    width: 224px;
+    height: 18px;
+    margin: 8px 0 0 0;
+    z-index: 32;
+    overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_label span {
+    float: left;
+}
+#PRODUCTS_LIST .pros_item_info .pros_item_label span i {
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    max-width: 210px;
+    line-height: 12px;
+    margin: 0 3px 0 0;
+    padding: 3px 4px;
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 2px;
+    background: #F60;
+    z-index: 35;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 按钮 */
+#PRODUCTS_LIST .pros_item_btn{
+    width: 218px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    margin: 10px 0 0 0;
+    border: 1px solid #EEE;
+    border-radius: 2px;
+    overflow: hidden;
+}
+#PRODUCTS_LIST .pros_item_btn .btn_collect,
+#PRODUCTS_LIST .pros_item_btn .btn_cart{
+    float: left;
+    width: 109px;
+    height: 12px;
+    line-height: 12px;
+    padding: 8px 0;
+    text-align: center;
+    border-left: 1px solid #EEE;
+    margin-left: -1px;
+}
+
+#PRODUCTS_LIST .pros_item_btn a i{
+    display: inline-block;
+    margin: 0 2px 0 0;
+    vertical-align: top;
+    overflow: hidden;
+    width: 12px;
+    height: 12px;
+    background: url("../images/products/icons.png") no-repeat;
+}
+/* 收藏图标 */
+#PRODUCTS_LIST .pros_item_btn .btn_collect i {
+    background-position: -259px -212px;
+}
+#PRODUCTS_LIST .pros_item_btn .btn_collect em {
+    display: none;
+}
+/* 购物车图标 */
+#PRODUCTS_LIST .pros_item_btn .btn_cart i {
+    background-position: -135px -208px;
+}
+
+
+/* -------------------------
+*-------------翻页----------- 
+----------------------------*/
+#BOTTOM_PAGER{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto 20px;
+}
+#BOTTOM_PAGER .search_page{
+    display: inline-block;
+}
+#BOTTOM_PAGER .search_page a {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #F8F8FA;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-right: 10px;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+#BOTTOM_PAGER .search_page a.cur {
+    background-color: #6a6a6f;
+    color: #fff;
+    font-weight: bold;
+}
+#BOTTOM_PAGER .search_page span {
+    float: left;
+    color: #999;
+    position: relative;
+}
+
+#BOTTOM_PAGER .search_page span{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: -10px;
+    padding: 0 10px;
+}
+#BOTTOM_PAGER .search_page a .lion {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background: url("../images/products/icons.png") no-repeat -129px -68px;
+    width: 40px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+#BOTTOM_PAGER .search_page a.cur .lion{
+    top: -22px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background: url("../images/products/icons.png") no-repeat -79px -68px;
+    width: 40px;
+    height: 22px;
+}
+#BOTTOM_PAGER .search_page a.next b {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -4px;
+    background: url("../images/products/icons.png") no-repeat -260px -136px;
+    width: 10px;
+    height: 17px;
+}
+#BOTTOM_PAGER .search_page a.prev b {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -4px;
+    background: url("../images/products/icons.png") no-repeat -260px -162px;
+    width: 10px;
+    height: 17px;
+}
+#BOTTOM_PAGER .search_page a.cur:hover {
+    background-color: #6a6a6f;
+    color: #fff;
+    font-weight: bold;
+}
+#BOTTOM_PAGER .search_page a:hover{
+    font-weight: bold;
+    background-color: #e5e5e5;
+}
+#BOTTOM_PAGER .search_page a:hover .lion {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    top: -22px;
+}
+#BOTTOM_PAGER .search_page a.next:hover,
+#BOTTOM_PAGER .search_page a.prev:hover {
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    background-color: #6a6a6f;
+}
+#BOTTOM_PAGER .search_page a.prev:hover b {
+    background: url("../images/products/icons.png") no-repeat -260px -83px;
+    width: 10px;
+    height: 17px;
+}
+#BOTTOM_PAGER .search_page a.next:hover b {
+    background: url("../images/products/icons.png") no-repeat -260px -109px;
+    width: 10px;
+    height: 17px;
+}
+

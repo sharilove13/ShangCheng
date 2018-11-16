@@ -1,0 +1,14 @@
+#_STORE_AD_{
+    width: 1190px;
+    position: relative;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+#_STORE_AD_ .store_ad_box{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    height: 120px;
+    overflow: hidden;
+    text-align: center;
+}
