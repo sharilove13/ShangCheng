@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css" /> 
     <link rel="stylesheet" type="text/css" href="css/index.css" /> 
-    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
 
 </head>
 <body>
@@ -152,20 +152,20 @@
                 <div class="clearboth">
                     <!-- 顶部导航栏-登录注册START  -->
                     <div class="nav_wrap1_fl" id="_HEADER_LOGIN_">
-                        <!-- 已登录用户名显示 -->
-                        <a href="javascript:selectDown()" id="USERS_LOGIN_UNAME" class="nav_wrap1_a" style="display:none;">
-                            <span id="LOGIN_UNAME">fff</span>
-                            <i class="fa fa-angle-down"></i> 
-                        </a>
-                        <!-- 已登录二级 -->
-                        <div id="LOGIN_INFO_WRAP" class="nav_wrap2" style="display:none;"> 
-                            <a href="" class="user_mng" target="_blank">账号管理</a> 
-                            <a href="javascript:" class="user_exit">退出登录</a> 
-                        </div> 
                         <!-- 未登录 -->
                         <div id="REG_LOGIN_WRAP" class="nav_wrap1_login">
-                            <a href="#" class="nav_login">登录</a>
-                            <a href="#" class="nav_reg">注册</a>
+                            <a class="nav_login">登录</a>
+                            <a class="nav_reg">注册</a>
+                        </div>
+                        <!-- 已登录用户名显示 -->
+                        <a id="USERS_LOGIN_UNAME" class="nav_wrap1_a">
+                            <span id="LOGIN_UNAME"></span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <!-- 已登录二级 -->
+                        <div id="LOGIN_INFO_WRAP" class="nav_wrap2">
+                            <a href="" class="user_mng" target="_blank">账号管理</a>
+                            <a href="javascript:" class="user_exit">退出登录</a>
                         </div>
                     </div>
                     <!-- 顶部导航栏-登录注册END  -->
@@ -472,81 +472,9 @@
             <!-- 轮播图 -->
             <div class="banner_pic" id="BANNER_PIC"> 
                 <ul class="banner">
-                    <li style="background-color:#f21a2f" class="show">
-                        <a title="365天放心购" target="_blank">
-                            <img src="./images/index/banner1-1.jpg" alt="365天放心购" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#2757dd">
-                        <a title="小家电3.15秒杀 正品超省" target="_blank">
-                            <img src="./images/index/banner1-2.jpg" alt="小家电3.15秒杀 正品超省" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#ffb400">
-                        <a title="空调放心购 全免费安装" target="_blank"><img src="./images/index/banner1-3.jpg" alt="空调放心购 全免费安装" /></a></li> 
-                    <li style="background-color:#53c2ef">
-                        <a  title="春季新品7折起" target="_blank">
-                            <img src="./images/index/banner2-1.jpg" alt="春季新品7折起" /></a>
-                        </li> 
-                    <li cptid="100002323" style="background-color:#ffd237">
-                        <a title="春季家装节满999减150" target="_blank">
-                            <img src="./images/index/banner2-2.jpg" alt="春季家装节满999减150" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#ff9000">
-                        <a title="新款童装9.9元起" target="_blank">
-                            <img src="./images/index/banner3-1.jpg" alt="新款童装9.9元起" />
-                        </a>
-                    </li> 
-                    <li cptid="100002324" style="background-color:#63c5ec">
-                        <a title="美素佳儿奶粉8.7折起" target="_blank">
-                            <img src="./images/index/banner3-2.jpg" alt="美素佳儿奶粉8.7折起" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#0095bf">
-                        <a title="超市315 真品真折扣" target="_blank">
-                            <img src="./images/index/banner4-1.jpg" alt="超市315 真品真折扣" />
-                        </a>
-                    </li> 
-                    <li cptid="100002325" style="background-color:#fcd02f">
-                        <a title="坚果大牌 19.9任选三件" target="_blank">
-                            <img src="./images/index/banner4-2.jpg" alt="坚果大牌 19.9任选三件" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#fdcfc0">
-                        <a title="洗护发 满99减30" target="_blank">
-                            <img src="./images/index/banner5-1.jpg" alt="洗护发 满99减30" />
-                        </a>
-                    </li> 
-                    <li cptid="100002326" style="background-color:#cc2761">
-                        <a title="美妆任选2件6折" target="_blank">
-                            <img src="./images/index/banner5-2.jpg" alt="美妆任选2件6折" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#f91745">
-                        <a title="315服务周 手机正品保障" target="_blank">
-                            <img src="./images/index/banner6-1.jpg" alt="315服务周 手机正品保障" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#fffdf8">
-                        <a title="三星Galaxy S7 0元预约" target="_blank">
-                            <img src="./images/index/banner6-2.jpg" alt="三星Galaxy S7 0元预约" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#fbe6a5">
-                        <a title="315数码专场 自拍神器999抢" target="_blank">
-                            <img src="./images/index/banner7-1.jpg" alt="315数码专场 自拍神器999抢" /></a>
-                        </li> 
-                    <li style="background-color:#df2b2c">
-                        <a title="i5独显本2899元起" target="_blank">
-                            <img src="./images/index/banner7-2.jpg" alt="i5独显本2899元起" />
-                        </a>
-                    </li> 
-                    <li style="background-color:#ff8e00">
-                        <a title="55吋4K智能仅2449元" target="_blank">
-                            <img src="./images/index/banner8-1.jpg" alt="55吋4K智能仅2449元" />
-                        </a>
-                    </li> 
+
+                    <!--轮播图li-ajax-->
+
                 </ul> 
                 <div class="bannerPage"></div>
                 <div><a href="">&lt;</a><a href="">&gt;</a></div>

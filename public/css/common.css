@@ -140,6 +140,7 @@ a.wrap2_close:hover i{
     top:35px;
     border:1px solid #ddd;
     background: #fff;
+    z-index: 999999;
 }
 
 .nav_wrap1_a span{
@@ -466,16 +467,31 @@ a.wrap2_close:hover i{
 }
 
 /* 已登录用户btn */
+
 #USERS_LOGIN_UNAME{
     min-width: 70px;
 }
 
 /* 已登录用户二级菜单 */
 #LOGIN_INFO_WRAP{
+    display: none;
     width:98%;
     min-width: 70px;
+    z-index: 999;
 }
-
+#USERS_LOGIN_UNAME:hover+#LOGIN_INFO_WRAP{
+    display: block;
+}
+#LOGIN_INFO_WRAP:hover{
+    display: block;
+}
+#LOGIN_INFO_WRAP:hover~#USERS_LOGIN_UNAME{
+    background: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	line-height: 33px;
+	padding: 0 9px
+}
 #LOGIN_INFO_WRAP a{
     display: block;
     width:71px;

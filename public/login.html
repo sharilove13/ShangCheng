@@ -33,12 +33,12 @@
 						</a>
 					</div>
 					<div class="login_tab">
-						<div>普通登录</div>
+						<div>用户登录</div>
 					</div>
 					<div class="login_body">
 						<div class="login_style" style="display: block;">
 							<dl>
-								<dd><input name="txtUser" type="text" id="LOGIN_UNAME" placeholder="用户名/邮箱/手机号" /></dd>
+								<dd><input name="txtUser" type="text" id="LOGIN_UNAME" placeholder="用户名/手机号" /></dd>
 							</dl>
 							<dl>
 								<dd><input type="password" id="LOGIN_UPWD" placeholder="请输入您的密码" /></dd>
@@ -53,7 +53,7 @@
 								<input type="checkbox" id="issave" checked /><label for="issave">下次自动登录</label>
 							</div>
 							<div class="tishi"></div>
-							<button onclick="cliLogin()" id="logbtn" style="outline:none">登 录</button>
+							<button id="LOGBTN" style="outline:none">登 录</button>
 						</div>
 					</div>
 					<div class="hezuo">
@@ -169,6 +169,8 @@
 			</div> 
 		</div>       
 	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/login.js"></script>
 </body>
 
 </html>

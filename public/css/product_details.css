@@ -12,3 +12,244 @@
     overflow: hidden;
     text-align: center;
 }
+
+/* -------------------------
+*---------横向分类导航栏-------
+----------------------------*/
+#_HOZNAV_CLASSES_{
+    width: 100%;
+    background: #f8f8f8;
+}
+#_HOZNAV_CLASSES_ .hoznav_classes_wrap{
+    position: relative;
+    height: 20px;
+    padding: 10px 0;
+    line-height: 20px;
+    z-index: 10;
+    background: #f8f8f8;
+}
+#_HOZNAV_CLASSES_ .hoznav_classes_wrap a{
+    float: left;
+    color: #666;
+}
+#_HOZNAV_CLASSES_ .hoznav_classes_wrap span {
+    float: left;
+    padding: 0 6px;
+    color: #bbb;
+    font-family: SimSun;
+}
+
+#_HOZNAV_CLASSES_ .hoznav_shop{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    height: 20px;
+    padding: 8px 0;
+    z-index: 10;
+    cursor: default;
+}
+#_HOZNAV_CLASSES_ .hoznav_shop_wrap{
+    padding-right: 8px;
+    font-size: 0;
+}
+#_HOZNAV_CLASSES_ .hoznav_shop_wrap .shop_label {
+    display: inline-block;
+    height: 14px;
+    margin-right: 11px;
+    margin-top: 3px;
+    padding: 0 3px;
+    color: #fff;
+    background: #f60;
+    font-size: 10px;
+    line-height: 14px;
+    border-radius: 2px;
+    vertical-align: top;
+}
+#_HOZNAV_CLASSES_ .hoznav_shop_wrap .shop_name {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 27px;
+    margin-top: 4px;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    color: #333;
+    max-width: 144px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#_HOZNAV_CLASSES_ .hoznav_shop_wrap .shop_service {
+    vertical-align: top;
+    height: 16px;
+    margin-top: 2px;
+    display: inline-block;
+}
+#_HOZNAV_CLASSES_ .hoznav_shop_wrap .shop_service>span {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+}
+#_HOZNAV_CLASSES_ .shop_service .shop_service_icon {
+    width: 16px;
+    margin-right: 1px;
+    background: url("../images/product_details/shop-service-icon.gif") no-repeat;
+}
+
+/* -------------------------
+*---------商品项展示和选择-------
+----------------------------*/
+#_PRO_INFO_{
+    position: relative;
+    z-index: 9;
+    margin-top: 10px;
+}
+#_PRO_INFO_ .proinfo_container{
+    position: relative;
+    min-height: 570px;
+    background: #fff;
+}
+/* 商品展示----左侧 */
+#_PRO_INFO_ .proinfo_left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 451px;
+    height: 570px;
+    z-index: 5;
+}
+/* 放大镜 */
+#_PRO_INFO_ .proinfo_left .imgzoom {
+    width: 448px;
+    height: 532px;
+}
+#_PRO_INFO_ .proinfo_left .imgzoom_main{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    padding: 0;
+    border: 1px solid #eee;
+}
+#_PRO_INFO_ .proinfo_left .imgzoom_main img {
+    display: block;
+    width: 450px;
+    height: 450px;
+}
+#_PRO_INFO_ .imgzoom_shot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    cursor: move;
+    border: 1px solid #aaa;
+    background: #fede4f 50% top no-repeat;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/* 视频 */
+#_PRO_INFO_ .imgzoom_video {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 452px;
+    height: 452px;
+    background: #fff url("../images/product_details/loading.gif") no-repeat 50%;
+    z-index: 10;
+}
+#_PRO_INFO_ .imgzoom_video .close {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    background-image:url("../images/product_details/icons2.png") ;
+    background-position: -920px -824px;
+    z-index: 1;
+}
+#_PRO_INFO_ .imgzoom_video .proinfo_left_player{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#IMGZOOM_VIDEO_BOX .imgzoom_video {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+#IMGZOOM_VIDEO_BOX .player_mask {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 10;
+}
+#IMGZOOM_VIDEO_BOX .player_loading {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 12;
+}
+#IMGZOOM_VIDEO_BOX .player_controls{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    line-height: 36px;
+    overflow: hidden;
+    -webkit-transition: height .5s;
+    -o-transition: height .5s;
+    transition: height .5s;
+    z-index: 10;
+}
+#IMGZOOM_VIDEO_BOX .player_controls.show{
+    height: 40px;
+    overflow: visible;
+}
+#IMGZOOM_VIDEO_BOX .player_controls .controls_item{
+    vertical-align: middle;
+    margin:0 10px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+#IMGZOOM_VIDEO_BOX .player_controls .controls_icon {
+    display: inline-block;
+    width: 32px;
+    height: 40px;
+    background-image: url("../images/product_details/cloud.png");
+    cursor: default;
+}
+#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+}
+#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn.play {
+    width: 16px;
+    height: 16px;
+    margin-top: -3px;
+    background: url("../images/product_details/icons2.png") no-repeat 50%;
+    background-position: -817px -848px;
+}
+#IMGZOOM_VIDEO_BOX .player_controls .controls_timespan {
+    color: #fff;
+    font-size: 12px;
+}
