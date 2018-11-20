@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/product_details.css">
+    <link rel="stylesheet" href="css/products.css">
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -492,12 +495,13 @@
     <div class="container proinfo" id="_PRO_INFO_"> 
         <div class="proinfo_container clearboth"> 
             <div class="proinfo_left"> 
-                <div id="IMG_ZOOM" class="imgzoom"> 
-                    <div class="imgzoom_main"> 
-                        <a id="BIG_IMG" class="view_img" > 
-                            <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="./images/product_details/Big1-Mate20.jpg"> 
-                        </a> 
-                    </div> 
+                <div id="IMG_ZOOM" class="imgzoom">
+                    <!--放大镜遮罩-->
+                    <div class="imgzoom_main">
+                        <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="./images/product_details/lg/Big1-Mate20.png" id="ITEM_IMG_SHOW" class="view_img" >
+                        <div id="MASK" class="noblock"></div>
+                        <div id="SUPER_MASK"></div>
+                    </div>
                     <!-- <div class="imgzoom_video" style="display: block;">
                         <a href="javascript:void(0);" class="close"></a>
                         <div id="IMGZOOM_VIDEO_BOX" style="height: 100%;" class="proinfo_left_player">
@@ -554,95 +558,53 @@
                         </div> 
                     </div>  -->
                     <!-- <a class="imgzoom-video-play" style="display: inline;"></a>  -->
-                    <div class="imgzoom-thumb"> 
-                        <a name="item_10638773031_sppic_picup01" class="prev prev-disable" href="javascript:void(0);" style="visibility: hidden;"></a> 
-                        <div class="imgzoom-thumb-main"> 
+                    <!--多图缩略图选择器-->
+                    <div class="imgzoom_choice">
+                        <a class="prev prev_disable" style="visibility: ;"></a>
+                        <div class="imgzoom_choice_main">
                             <ul style="left: 0px;"> 
-                                <li class=""> 
-                                    <a name="item_10638773031_sppic_xiaop01" href="javascript:void(0);">
-                                        <img onerror="javascript:setTimeout(function() {saMessageImgProcess()},2000);errorMainPicture(this);" alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src-large="//imgservice.suning.cn/uimg1/b2c/image/mjfsoPOK6GlxSqg_OrJlFQ.png_800w_800h_4e" src-medium="//imgservice.suning.cn/uimg1/b2c/image/mjfsoPOK6GlxSqg_OrJlFQ.png_800w_800h_4e" src="//imgservice.suning.cn/uimg1/b2c/image/mjfsoPOK6GlxSqg_OrJlFQ.png_60w_60h_4e">
+                                <li class="current">
+                                    <a>
+                                        <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="images/product_details/sm/sm1-Mate20.png" data-md="images/product_details/sm/Big1-Mate20.png" data-lg="images/product_details/sm/Big1-Mate20.png">
                                     </a> 
                                 </li> 
-                                <li class="" data-index="2"> 
-                                    <a name="item_10638773031_sppic_xiaop02" href="javascript:void(0);">
-                                        <img onerror="javascript:$('.imgzoom-thumb-main li[data-index=2]').remove();" alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src-large="//imgservice.suning.cn/uimg1/b2c/image/ylTLjTZQKQdRPiPDbW6x7A.jpg_800w_800h_4e" src-medium="//imgservice.suning.cn/uimg1/b2c/image/ylTLjTZQKQdRPiPDbW6x7A.jpg_800w_800h_4e" src="//imgservice.suning.cn/uimg1/b2c/image/ylTLjTZQKQdRPiPDbW6x7A.jpg_60w_60h_4e">
+                                <li class="" data-index="2">
+                                    <a>
+                                        <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="images/product_details/sm/sm2-Mate20.png" data-md="images/product_details/sm/Big2-Mate20.png" data-lg="images/product_details/sm/Big2-Mate20.png">
                                     </a> 
                                 </li> 
                                 <li class="" data-index="3"> 
-                                    <a name="item_10638773031_sppic_xiaop03" href="javascript:void(0);">
-                                        <img onerror="javascript:$('.imgzoom-thumb-main li[data-index=3]').remove();" alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src-large="//imgservice.suning.cn/uimg1/b2c/image/4dYqHkiraQQPyqxGb53sSA.jpg_800w_800h_4e" src-medium="//imgservice.suning.cn/uimg1/b2c/image/4dYqHkiraQQPyqxGb53sSA.jpg_800w_800h_4e" src="//imgservice.suning.cn/uimg1/b2c/image/4dYqHkiraQQPyqxGb53sSA.jpg_60w_60h_4e">
+                                    <a>
+                                        <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="images/product_details/sm/sm3-Mate20.jpg" data-md="images/product_details/sm/Big3-Mate20.png" data-lg="images/product_details/sm/Big3-Mate20.png">
                                     </a> 
                                 </li> 
-                                <li class="current" data-index="4"> 
-                                    <a name="item_10638773031_sppic_xiaop04" href="javascript:void(0);">
-                                        <img onerror="javascript:$('.imgzoom-thumb-main li[data-index=4]').remove();" alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src-large="//imgservice.suning.cn/uimg1/b2c/image/mTjyawNtFCuVxsFVINYL5g.jpg_800w_800h_4e" src-medium="//imgservice.suning.cn/uimg1/b2c/image/mTjyawNtFCuVxsFVINYL5g.jpg_800w_800h_4e" src="//imgservice.suning.cn/uimg1/b2c/image/mTjyawNtFCuVxsFVINYL5g.jpg_60w_60h_4e">
+                                <li class="" data-index="4">
+                                    <a>
+                                        <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="images/product_details/sm/sm4-Mate20.jpg" data-md="images/product_details/sm/Big4-Mate20.png" data-lg="images/product_details/sm/Big4-Mate20.png">
                                     </a> 
                                 </li> 
                                 <li class="" data-index="5"> 
-                                    <a name="item_10638773031_sppic_xiaop05" href="javascript:void(0);">
-                                        <img onerror="javascript:$('.imgzoom-thumb-main li[data-index=5]').remove();" alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src-large="//imgservice.suning.cn/uimg1/b2c/image/FGsGbl26_-wt2dcYaweaPA.jpg_800w_800h_4e" src-medium="//imgservice.suning.cn/uimg1/b2c/image/FGsGbl26_-wt2dcYaweaPA.jpg_800w_800h_4e" src="//imgservice.suning.cn/uimg1/b2c/image/FGsGbl26_-wt2dcYaweaPA.jpg_60w_60h_4e">
+                                    <a>
+                                        <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" src="images/product_details/sm/sm5-Mate20.jpg" data-md="images/product_details/sm/Big5-Mate20.png" data-lg="images/product_details/sm/Big5-Mate20.png">
                                     </a> 
                                 </li> 
                             </ul> 
                         </div> 
-                        <a name="item_10638773031_sppic_picdown01" class="next next-disable" href="javascript:void(0);" style="visibility: hidden;"></a> 
-                    </div> 
-                    <div class="imgzoom-pop" style="display: none;">
-                        <img onerror="this.src='//res.suning.cn/project/pdsWeb/images/blank_pic_800.jpg'" src="//imgservice.suning.cn/uimg1/b2c/image/mTjyawNtFCuVxsFVINYL5g.jpg_800w_800h_4e" style="top: -88px; left: -180px;"> 
-                    </div> 
-                </div> 
-                <div class="imgzoom-memo"> 
-                    <div class="z-item compare"> 
-                        <a id="compare" href="javascript:;" style="" name="item_db_01_pro">
-                            <i></i>对比
-                        </a> 
-                    </div> 
-                    <div class="share"> 
-                        <span class="label" name="item_10638773031_basic_share">
-                            <i class="sh-i"></i>分享
-                        </span> 
-                        <div class="share-list" style="display: none;"> 
-                            <a rel="nofollow" target="_blank" name="item_10638773031_basic_share-weibo" title="新浪微博" class="sina" href="http://v.t.sina.com.cn/share/share.php?url=https://product.suning.com/0000000000/10638773031.html&amp;appkey=400813291&amp;title=%E3%80%90%E7%A8%80%E7%BC%BA%E8%B4%A7%E6%BA%90%EF%BC%8C%E9%99%90%E9%87%8F%E6%8A%A2%E8%B4%AD%E3%80%91HUAWEI/%E5%8D%8E%E4%B8%BAMate%2020%20%E6%9E%81%E5%85%89%E8%89%B2%206GB+128GB%20%E9%BA%92%E9%BA%9F980%E8%8A%AF%E7%89%87%E5%85%A8%E9%9D%A2%E5%B1%8F%E5%BE%95%E5%8D%A1%E4%B8%89%E6%91%84%E7%A7%BB%E5%8A%A8%E8%81%94%E9%80%9A%E7%94%B5%E4%BF%A14G%E6%89%8B%E6%9C%BA%20%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD%E8%AE%A9%E6%82%A8%E5%B0%BD%E4%BA%AB%E8%B4%AD%E7%89%A9%E4%B9%90%E8%B6%A3%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20@%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD%EF%BC%89&amp;pic="></a> 
-                            <a rel="nofollow" target="_blank" name="item_10638773031_basic_share-douban" title="豆瓣" class="douban" href="http://www.douban.com/recommend/?url=https://product.suning.com/0000000000/10638773031.html&amp;title=%E3%80%90%E7%A8%80%E7%BC%BA%E8%B4%A7%E6%BA%90%EF%BC%8C%E9%99%90%E9%87%8F%E6%8A%A2%E8%B4%AD%E3%80%91HUAWEI/%E5%8D%8E%E4%B8%BAMate%2020%20%E6%9E%81%E5%85%89%E8%89%B2%206GB+128GB%20%E9%BA%92%E9%BA%9F980%E8%8A%AF%E7%89%87%E5%85%A8%E9%9D%A2%E5%B1%8F%E5%BE%95%E5%8D%A1%E4%B8%89%E6%91%84%E7%A7%BB%E5%8A%A8%E8%81%94%E9%80%9A%E7%94%B5%E4%BF%A14G%E6%89%8B%E6%9C%BA&amp;comment=%E6%8E%A8%E8%8D%90%E8%8B%8F%E5%AE%81%E7%94%B5%E5%99%A8%E7%BD%91%E4%B8%8A%E5%95%86%E5%9F%8E(suning.cn)%20%E3%80%90%E7%A8%80%E7%BC%BA%E8%B4%A7%E6%BA%90%EF%BC%8C%E9%99%90%E9%87%8F%E6%8A%A2%E8%B4%AD%E3%80%91HUAWEI/%E5%8D%8E%E4%B8%BAMate%2020%20%E6%9E%81%E5%85%89%E8%89%B2%206GB+128GB%20%E9%BA%92%E9%BA%9F980%E8%8A%AF%E7%89%87%E5%85%A8%E9%9D%A2%E5%B1%8F%E5%BE%95%E5%8D%A1%E4%B8%89%E6%91%84%E7%A7%BB%E5%8A%A8%E8%81%94%E9%80%9A%E7%94%B5%E4%BF%A14G%E6%89%8B%E6%9C%BA%20%E5%8D%8E%E4%B8%BA(HUAWEI)%E6%89%8B%E6%9C%BAMate%2020%E3%80%90%E4%BB%B7%E6%A0%BC%20%E5%9B%BE%E7%89%87%20%E5%93%81%E7%89%8C%20%E6%8A%A5%E4%BB%B7%E3%80%91-%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E8%8B%8F%E5%AE%81%E8%87%AA%E8%90%A5%E6%97%97%E8%88%B0%E5%BA%97%E4%BB%B7%E6%A0%BC%E4%BE%BF%E5%AE%9C%EF%BC%8C%E8%AF%84%E4%BB%B7%E4%B9%9F%E4%B8%8D%E9%94%99%EF%BC%8C%E5%BF%AB%E5%8E%BB%E7%9C%8B%E7%9C%8B%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D%E5%90%A7%0Ahttps://product.suning.com/0000000000/10638773031.html?safp=d488778a.13701.0.2674411ec4%0A%E8%8B%8F%E5%AE%81%E6%89%BF%E8%AF%BA%EF%BC%9A%E6%89%80%E5%94%AE%E5%95%86%E5%93%81%E5%9D%87%E4%B8%BA%E6%AD%A3%E5%93%81%E8%A1%8C%E8%B4%A7%EF%BC%8C%E5%B8%A6%E5%8F%91%E7%A5%A8%EF%BC%8C%E5%87%AD%E8%B4%A8%E4%BF%9D%E8%AF%81%E4%B9%A6%E5%8F%8A%E5%8F%91%E7%A5%A8%E5%8F%AF%E5%85%A8%E5%9B%BD%E8%81%94%E4%BF%9D"></a> 
-                            <a rel="nofollow" target="_blank" name="item_10638773031_basic_share-kaixin" title="开心" class="kaixin" href="http://www.kaixin001.com/repaste/bshare.php?rtitle=%E3%80%90%E7%A8%80%E7%BC%BA%E8%B4%A7%E6%BA%90%EF%BC%8C%E9%99%90%E9%87%8F%E6%8A%A2%E8%B4%AD%E3%80%91HUAWEI/%E5%8D%8E%E4%B8%BAMate%2020%20%E6%9E%81%E5%85%89%E8%89%B2%206GB+128GB%20%E9%BA%92%E9%BA%9F980%E8%8A%AF%E7%89%87%E5%85%A8%E9%9D%A2%E5%B1%8F%E5%BE%95%E5%8D%A1%E4%B8%89%E6%91%84%E7%A7%BB%E5%8A%A8%E8%81%94%E9%80%9A%E7%94%B5%E4%BF%A14G%E6%89%8B%E6%9C%BA%20%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD%E8%AE%A9%E6%82%A8%E5%B0%BD%E4%BA%AB%E8%B4%AD%E7%89%A9%E4%B9%90%E8%B6%A3%EF%BC%88%E5%88%86%E4%BA%AB%E8%87%AA%20@%E8%8B%8F%E5%AE%81%E6%98%93%E8%B4%AD%EF%BC%89&amp;rurl=https://product.suning.com/0000000000/10638773031.html&amp;from=maxthon"></a> 
-                        </div> 
-                    </div> 
-                    <div class="z-item favorite"> 
-                        <a name="item_10638773031_basic_favorite" href="javascript:FourPage.addProductFavorite();" id="inerestBox"><i></i>收藏</a> 
-                    </div> 
-                    <div class="z-item research" id="research"> 
-                        <a href="//ued.suning.com/survey/view/prod1"> <i></i>有奖调查</a> 
-                    </div> 
-                    <div class="report"> 
-                        <a id="reportbtn" name="item_10638773031_jubao_rukou" href="javascript:FourPage.reportJubao();" style="display:none"><i></i>举报</a> 
-                        <form id="reportForm" method="post" action="//jubao.suning.com/sams/accuseIndex.action" target="_blank" style="display:none"> 
-                            <input type="hidden" name="supplierID" value=""/> 
-                            <input type="hidden" name="curShopName" value=""/> 
-                            <input type="hidden" name="shopUrl" value=""/> 
-                            <input type="hidden" name="itemID" value="000000010638773031"/> 
-                            <input type="hidden" name="itemName" value="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"/>
-                            <input type="hidden" name="itemUrl" value="//product.suning.com/0000000000/10638773031.html"/> 
-                            <input type="hidden" name="imgUrl" value="//image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000010638773031_1_120x120.jpg?ver=2022"/> 
-                            <input type="hidden" name="probrandName" value="华为(HUAWEI)"/> 
-                            <input type="hidden" name="procateCode" value="R1901001"/> 
-                        </form> 
-                    </div> 
+                        <a class="next next_disable" style="visibility: ;"></a>
+                    </div>
+                    <!--放大弹出的图-->
+                    <div class="imgzoom_pop noblock" style="display: block;" id="MASK_IMG_LG" >
+                    </div>
                 </div>
             </div> 
-            <div class="proinfo_main no-right-side" id="proinfoMain" style="height: 878px;">  
-                <div class="proinfo-short-tip" id="proinfoShortTip" style="display:none;"></div> 
-                <!--海外购国旗--> 
-                <div class="national-flag clearfix" id="NationalFlag" style="display:none;"> 
-                    <i class=""></i> 
-                    <div class="info" id="overSeaPlace"> </div> 
-                </div> 
-                <div class="proinfo-title"> 
+            <div class="proinfo_main" id="proinfoMain">
+                <div class="proinfo_title">
                     <h1 id="itemDisplayName">
                         <span class="zy" id="itemNameZy">自营</span>【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机
                     </h1> 
                     <h2 id="promotionDesc" style="display: block;">
                         【货源紧张，限量抢购，赠一年碎屏险】麒麟980芯片 超广角三摄 超微距摄影&nbsp;&nbsp;
-                        <a target="_blank" href="http://shop.suning.com/30001556/index.html" name="item_10638773031_gmp_cuxiaomd" class="btn-prom-point">新品不断，优惠升级</a>
+                        <a target="_blank" href="http://shop.suning.com/30001556/index.html" class="a_discounts">新品不断，优惠升级</a>
                         <br>
                         19.9元40GB流量，100M包年电信宽带低至599元
                         <a href="https://cuxiao.suning.com/yysbfq.html" target="_blank">点击抢购。</a>
@@ -813,5 +775,395 @@
             </ul> 
         </div> 
     </div>
+    <div id="_ABOUT_FOOTER_" class="about_footer clearboth">
+        <div class="footer_guide">
+            <div class="container footer_info">
+                <div class="footer_promise clearboth">
+                    <dl>
+                        <dt class="zhengpin">
+                            正品保障
+                        </dt>
+                        <dd>
+                            <p>
+                                <a target="_blank">正品保障</a>
+                            </p>
+                            <p>正品保障，提供发票</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="jisu">
+                            急速物流
+                        </dt>
+                        <dd>
+                            <p>
+                                <a target="_blank">急速物流</a>
+                            </p>
+                            <p>急速物流，急速送达</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="wuyou">
+                            无忧售后
+                        </dt>
+                        <dd>
+                            <p>
+                                <a target="_blank">无忧售后</a>
+                            </p>
+                            <p>7天无理由退换货</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="tese">
+                            特色服务
+                        </dt>
+                        <dd>
+                            <p>
+                                <a target="_blank">特色服务</a>
+                            </p>
+                            <p>私人定制家电套餐</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt class="help">
+                            帮助中心
+                        </dt>
+                        <dd>
+                            <p>
+                                <a target="_blank">帮助中心</a>
+                            </p>
+                            <p>您的购物指南</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="footer_help">
+                    <dl>
+                        <dt>
+                            购物指南
+                        </dt>
+                        <dd>
+                            <a target="_blank">导购演示</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">免费注册</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">会员等级</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">常见问题</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">品牌大全</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            支付方式
+                        </dt>
+                        <dd>
+                            <a target="_blank">易付宝支付</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">网银支付</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">快捷支付</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">分期付款</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">货到付款</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">任性付支付</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            物流配送
+                        </dt>
+                        <dd>
+                            <a target="_blank">免运费政策</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">配送服务承诺</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">签收验货</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">物流查询</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            售后服务
+                        </dt>
+                        <dd>
+                            <a target="_blank">退换货政策</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">退换货流程</a>
+                        </dd>
+                        <dd>
+                            <a>购买延保服务</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">退款说明</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">退换货申请</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">维修/保养</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            商家服务
+                        </dt>
+                        <dd>
+                            <a target="_blank">商家入驻</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">培训中心</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">信息公告</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">广告服务</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank" >商家帮助</a>
+                        </dd>
+                        <dd>
+                            <a target="_blank">服务市场</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="app_down clearboth">
+                    <p>易购客户端</p>
+                    <a target="_blank">
+                        <img width="87" height="87" alt="苏宁易购APP二维码" src="http://img.suning.cn/public/v3/images/bottom-app-down.png?var=07" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-last-->
+        <!--new-pro
+        <div class="ng-new-pro">
+            <div class="ng-new-pro-con">
+                <div class="ng-new-pro-list">
+                    <dl>
+                        <dt>
+                            <a target="_blank">
+                                <img width="80" height="80" src="http://img.suning.cn/public/v3/images/f1.png?v=01" />
+                            </a>
+                        </dt>
+                        <dd>
+                            <p class="ng-title">
+                                <a target="_blank">政企采购</a>
+                            </p>
+                            <p class="ng-intro">
+                                <a target="_blank">为企业用户量身定做的采购平台，优选苏宁易购全站商品，为企业采购提供专业化的一站式采购解决方案。</a>
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            <a target="_blank">
+                                <img width="80" height="80" src="http://img.suning.cn/public/v3/images/f2.png?v=01" />
+                            </a>
+                        </dt>
+                        <dd>
+                            <p class="ng-title">
+                                <a target="_blank">苏宁众包</a>
+                            </p>
+                            <p class="ng-intro">
+                                <a target="_blank">以苏宁全渠道包销为主要特点，整合全社会众包资源，扶持创新企业，推广创新产品。</a>
+                            </p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="ng-serch-suning">
+                    <dl>
+                        <dt></dt>
+                        <dd>
+                            <p class="ng-title">身边苏宁</p>
+                            <p class="ng-intro">全国300个城市1600家门店3000个服务点为您提供最贴心的服务！</p>
+                            <a class="srh-btn" target="_blank"></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="footer-egg-con"></div>
+            </div>
+            <div class="footer-egg-btn" style="width: 356.5px;"></div>
+        </div>
+        -->
+        <div class="footer_last">
+            <div class="container footer_last_info">
+                <p class="footer_last_list">
+                    <a target="_blank">苏宁云商</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁互联</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁金融</a>
+                    <span>|</span>
+                    <a target="_blank">易付宝</a>
+                    <span>|</span>
+                    <a target="_blank">PPTV</a>
+                    <span>|</span>
+                    <a target="_blank">红孩子</a>
+                    <span>|</span>
+                    <a target="_blank" >缤购</a>
+                    <span>|</span>
+                    <a target="_blank">乐购仕</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁物流</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁美国</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁香港</a>
+                    <span>|</span>
+                    <a target="_blank">手机苏宁</a>
+                </p>
+                <p class="footer_last_list">
+                    <a target="_blank">关于苏宁易购</a>
+                    <span>|</span>
+                    <a target="_blank">联系我们</a>
+                    <span>|</span>
+                    <a target="_blank">诚聘英才</a>
+                    <span>|</span>
+                    <a target="_blank">供应商入驻</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁联盟</a>
+                    <span>|</span>
+                    <a target="_blank">苏宁招标</a>
+                    <span>|</span>
+                    <a target="_blank">友情链接</a>
+                    <span>|</span>
+                    <a target="_blank">法律申明</a>
+                    <span>|</span>
+                    <a target="_blank">用户体验提升计划</a>
+                    <span>|</span>
+                    <a target="_blank">股东会员认证</a>
+                </p>
+                <p class="footer_copyright clearboth">
+                    Copyright&copy; 2002-2016 ，苏宁云商集团股份有限公司版权所有
+                    <a style="color:#999" target="_blank">
+                        苏ICP备10207551号-4
+                    </a>
+                    <a style="color:#999" target="_blank">
+                        苏B1-20130131
+                    </a>
+                    <a style="color:#999" target="_blank">
+                        苏B2-20130376
+                    </a>
+                    <a style="color:#999" target="_blank">
+                        苏B2-20130391
+                    </a>
+                    出版物经营许可证新出发苏批字第A-243号
+                </p>
+                <div class="footer_authentication">
+                    <a target="_blank">
+                        <img width="76" height="24" alt="诚信网站" src="./images/index/footer_bottom_icon1.png" />
+                    </a>
+                    <a target="_blank">
+                        <img width="76" height="24" alt="中国联通授权网络经营代理商" src="./images/index/footer_bottom_icon2.png" />
+                    </a>
+                    <a target="_blank">
+                        <img width="76" height="24" alt="中国电信授权网络经营代理商" src="./images/index/footer_bottom_icon3.jpg" />
+                    </a>
+                    <a target="_blank">
+                        <img width="76" height="24" alt="电子营业执照" src="./images/index/footer_bottom_icon4.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 右侧边导航栏 -->
+    <div id="_RIGHT_NAV_" class="sidebar" style="display:block;">
+        <div class="sidebar_bg" style="display:block"></div>
+        <!-- 右侧边导航栏-中部-会员购物 -->
+        <div class="sidebar_tabs sidebar_middle_tabs" style="top: 178px; height: 357px;">
+            <!-- 右侧边导航栏-中上部-会员购物 -->
+            <div class="sidebar_tabs sidebar_top">
+                <div class="sidebar_tab sidebar_tab_member sidebar_tab_js" data-type="member" style="visibility: visible;">
+                    <a href="javascript:;" name="huiyuan">
+                        <i class="tab-icon tab-icon-member"></i>
+                    </a>
+                </div>
+                <div class="sidebar_tab sidebar_tab_cart sidebar_tab_js" data-type="cart">
+                    <a href="javascript:;" name="gouwuche">
+                        <div class="tab_cart_warp_box">
+                            <div class="tab_cart_warp">
+                                <i class="tab-icon  tab-icon-cart"></i>
+                                <span class="tab-cart-tip">购物车</span>
+                                <span class="tab-cart-num J_cart_total_num">0</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 右侧边导航栏-中下部-会员购物 -->
+            <div class="sidebar_tabs sidebar_bottom">
+                <div class="sidebar_tab sidebar_tab_finance sidebar_tab_js" data-type="finance">
+                    <a href="javascript:;" name="jinrong">
+                        <i class="tab-icon tab-icon-finance"></i>
+                        <span class="tab-tip">理财</span>
+                    </a>
+                </div>
+                <div class="sidebar_tab sidebar_tab_history sidebar_tab_js" data-type="history">
+                    <a href="javascript:;" name="zuji">
+                        <i class="tab-icon tab-icon-history"></i>
+                        <span class="tab-tip">足迹</span>
+                    </a>
+                </div>
+                <div class="sidebar_tab sidebar_tab_sign sidebar_tab_js" data-type="sign">
+                    <a name="qiandao" href="http://vip.suning.com/sign/welcome.do" target="_blank">
+                        <i class="tab-icon tab-icon-sign"></i>
+                        <span class="tab-tip">签到</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧边导航栏-底部-咨询等 -->
+        <div class="sidebar_tabs sidebar_bottom_tabs">
+            <div class="sidebar_tab sidebar_wider_tab sidebar_service sidebar_tab_js" id="sn-sidebar-change-service">
+                <a href="javascript:findpass();" name="kefu">
+                    <i class="tab-icon tab-icon-service"></i>
+                    <span class="tab-tip tab-tip-wider">在线咨询</span>
+                </a>
+            </div>
+            <div class="sidebar_tab sidebar_wider_tab sidebar_feedback sidebar_tab_js" id="sn-sidebar-change-feedback">
+                <a target="_blank" name="wenjuan">
+                    <i class="tab-icon tab-icon-feedback"></i>
+                    <span class="tab-tip tab-tip-wider">意见反馈</span>
+                </a>
+            </div>
+            <div class="sidebar_tab sidebar_wider_tab sidebar_code sidebar_tab_js">
+                <a href="javascript:;">
+                    <!-- 二维码-->
+                    <i class="tab-icon tab-icon-code"></i>
+                </a>
+            </div>
+            <div class="sidebar_tab sidebar_wider_tab sidebar_to_top sidebar_tab_js">
+                <a href="javascript:void(0);" name="back">
+                    <i class="tab-icon tab-icon-to-top"></i>
+                    <span class="tab-tip tab-tip-wider">返回顶部</span>
+                </a>
+            </div>
+        </div>
+        <!-- 右侧边导航栏-底部-二维码弹出框 -->
+        <div class="tab_tip_code_warp" id="_SIDEBAR_CHANGE_CODE_">
+            <a href="http://sale.suning.com/syb/yinliuye0512/index.html" name="erweima" target="_blank">
+                <img src="./images/app-code.png">
+            </a>
+        </div>
+    </div>
+    <script src="js/product_details.js"></script>
 </body>
 </html>

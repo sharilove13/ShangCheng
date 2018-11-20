@@ -121,135 +121,275 @@
     z-index: 5;
 }
 /* 放大镜 */
-#_PRO_INFO_ .proinfo_left .imgzoom {
+#IMG_ZOOM {
     width: 448px;
     height: 532px;
 }
-#_PRO_INFO_ .proinfo_left .imgzoom_main{
+#IMG_ZOOM .imgzoom_main{
     position: relative;
     width: 450px;
     height: 450px;
     padding: 0;
     border: 1px solid #eee;
 }
-#_PRO_INFO_ .proinfo_left .imgzoom_main img {
+#ITEM_IMG_SHOW{
     display: block;
     width: 450px;
     height: 450px;
 }
-#_PRO_INFO_ .imgzoom_shot {
+#MASK{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
+    width: 198px;
+    height: 198px;
     cursor: move;
     border: 1px solid #aaa;
-    background: #fede4f 50% top no-repeat;
-    opacity: 0;
-    filter: alpha(opacity=0);
+    background-color: #fede4f;
+    opacity: 0.5;
+}
+#SUPER_MASK{
+    position: absolute;
+    top:0;
+    left:0;
+    width:448px; height:448px;
+}
+#MASK_IMG_LG{
+    position: absolute;
+    width:400px; height:400px;
+    top:0;
+    left:450px;
+    z-index:1000;
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-/* 视频 */
-#_PRO_INFO_ .imgzoom_video {
-    /* display: none; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 452px;
-    height: 452px;
-    background: #fff url("../images/product_details/loading.gif") no-repeat 50%;
-    z-index: 10;
+/*多图缩略图选择器*/
+#IMG_ZOOM .imgzoom_choice{
+    margin-top: 10px;
 }
-#_PRO_INFO_ .imgzoom_video .close {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 22px;
-    height: 22px;
-    background-image:url("../images/product_details/icons2.png") ;
-    background-position: -920px -824px;
-    z-index: 1;
+
+/*左右箭头*/
+#IMG_ZOOM .imgzoom_choice .next,
+#IMG_ZOOM .imgzoom_choice .prev {
+    width: 12px;
+    height: 20px;
+    background-image: url("../images/product_details/icons2.png");
 }
-#_PRO_INFO_ .imgzoom_video .proinfo_left_player{
-    position: relative;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
+#IMG_ZOOM .imgzoom_choice .prev{
+    float: left;
+    margin: 21px 0 0 5px;
+    background-position: -1041px -760px;
 }
-#IMGZOOM_VIDEO_BOX .imgzoom_video {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
+#IMG_ZOOM .imgzoom_choice .next{
+    float: right;
+    margin: 21px 5px 0 0;
+    background-position: -180px -925px;
 }
-#IMGZOOM_VIDEO_BOX .player_mask {
-    position: absolute;
-    display: none;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0,0,0,.3);
-    z-index: 10;
-}
-#IMGZOOM_VIDEO_BOX .player_loading {
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    z-index: 12;
-}
-#IMGZOOM_VIDEO_BOX .player_controls{
-    position: absolute;
-    width: 100%;
-    height: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    line-height: 36px;
-    overflow: hidden;
-    -webkit-transition: height .5s;
-    -o-transition: height .5s;
-    transition: height .5s;
-    z-index: 10;
-}
-#IMGZOOM_VIDEO_BOX .player_controls.show{
-    height: 40px;
-    overflow: visible;
-}
-#IMGZOOM_VIDEO_BOX .player_controls .controls_item{
-    vertical-align: middle;
-    margin:0 10px;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    cursor: pointer;
-}
-#IMGZOOM_VIDEO_BOX .player_controls .controls_icon {
-    display: inline-block;
-    width: 32px;
-    height: 40px;
-    background-image: url("../images/product_details/cloud.png");
+#IMG_ZOOM .imgzoom_choice .next_disable,
+#IMG_ZOOM .imgzoom_choice .prev_disable{
+    background-image: url("../images/product_details/icons2.png");
     cursor: default;
 }
-#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn {
-    display: inline-block;
-    width: 20px;
-    height: 40px;
+#IMG_ZOOM .imgzoom_choice .prev_disable {
+    background-position: -204px -925px;
 }
-#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn.play {
-    width: 16px;
-    height: 16px;
-    margin-top: -3px;
-    background: url("../images/product_details/icons2.png") no-repeat 50%;
-    background-position: -817px -848px;
+#IMG_ZOOM .imgzoom_choice .next_disable {
+    background-position: -192px -925px;
 }
-#IMGZOOM_VIDEO_BOX .player_controls .controls_timespan {
-    color: #fff;
+/*多图缩略图选择器主体*/
+#IMG_ZOOM .imgzoom_choice_main{
+    position: relative;
+    float: left;
+    width: 390px;
+    height: 64px;
+    margin: 0 12px;
+    overflow: hidden;
+}
+#IMG_ZOOM .imgzoom_choice_main ul {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 1000em;
+ }
+
+#IMG_ZOOM .imgzoom_choice_main ul li {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 2px solid transparent;
+    margin-right: 17px;
+    cursor: pointer;
+}
+#IMG_ZOOM .imgzoom_choice_main ul .current {
+    border-color: #f50;
+}
+#IMG_ZOOM .imgzoom_choice_main ul li img {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+/*放大弹出的图*/
+#MASK_IMG_LG{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #eee;
+    background: url("../images/product_details/lg/Big1-Mate20.png") no-repeat;
+    overflow: hidden;
+}
+#_PRO_INFO_ .proinfo_main{
+    position: relative;
+    height: 882px;
+    margin-top: 10px;
+    margin-left: 450px;
+    padding: 0 0 10px 20px;
+    min-height: 520px;
+    z-index: 4;
+    *zoom: 1;
+}
+
+#_PRO_INFO_ .proinfo_main .proinfo_title{
+    padding: 13px 10px 12px;
+    background: #fff;
+}
+#_PRO_INFO_ .proinfo_title h1 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5;
+    color: #222;
+    word-break: break-all;
+    min-height: 24px;
+}
+#_PRO_INFO_ .proinfo_title h1 span.zy {
+    background-color: #f50;
+}
+#_PRO_INFO_ .proinfo_title h1 span {
+    float: left;
+    min-width: 42px;
+    padding: 0 1px;
+    height: 20px;
+    margin: 2px 5px 0 0;
     font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    vertical-align: middle;
 }
+#_PRO_INFO_ .proinfo_title h2 {
+    font: normal 14px/18px \5FAE\8F6F\96C5\9ED1;
+    color: #f60;
+    margin-top: 3px;
+    word-break: break-all;
+}
+
+#_PRO_INFO_ .proinfo_title .a_discounts {
+    text-decoration: underline;
+}
+#_PRO_INFO_ .proinfo_title a {
+    color: #6a9fde;
+}
+/* 视频 */
+/*#_PRO_INFO_ .imgzoom_video {*/
+    /*!* display: none; *!*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 452px;*/
+    /*height: 452px;*/
+    /*background: #fff url("../images/product_details/loading.gif") no-repeat 50%;*/
+    /*z-index: 10;*/
+/*}*/
+/*#_PRO_INFO_ .imgzoom_video .close {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*width: 22px;*/
+    /*height: 22px;*/
+    /*background-image:url("../images/product_details/icons2.png") ;*/
+    /*background-position: -920px -824px;*/
+    /*z-index: 1;*/
+/*}*/
+/*#_PRO_INFO_ .imgzoom_video .proinfo_left_player{*/
+    /*position: relative;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+    /*overflow: hidden;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .imgzoom_video {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: #000;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_mask {*/
+    /*position: absolute;*/
+    /*display: none;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*background: rgba(0,0,0,.3);*/
+    /*z-index: 10;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_loading {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*-webkit-transform: translate(-50%,-50%);*/
+    /*-ms-transform: translate(-50%,-50%);*/
+    /*transform: translate(-50%,-50%);*/
+    /*z-index: 12;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls{*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*background-color: #000;*/
+    /*line-height: 36px;*/
+    /*overflow: hidden;*/
+    /*-webkit-transition: height .5s;*/
+    /*-o-transition: height .5s;*/
+    /*transition: height .5s;*/
+    /*z-index: 10;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls.show{*/
+    /*height: 40px;*/
+    /*overflow: visible;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_item{*/
+    /*vertical-align: middle;*/
+    /*margin:0 10px;*/
+    /*background-position: 50%;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100%;*/
+    /*cursor: pointer;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_icon {*/
+    /*display: inline-block;*/
+    /*width: 32px;*/
+    /*height: 40px;*/
+    /*background-image: url("../images/product_details/cloud.png");*/
+    /*cursor: default;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn {*/
+    /*display: inline-block;*/
+    /*width: 20px;*/
+    /*height: 40px;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn.play {*/
+    /*width: 16px;*/
+    /*height: 16px;*/
+    /*margin-top: -3px;*/
+    /*background: url("../images/product_details/icons2.png") no-repeat 50%;*/
+    /*background-position: -817px -848px;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_timespan {*/
+    /*color: #fff;*/
+    /*font-size: 12px;*/
+/*}*/
+
