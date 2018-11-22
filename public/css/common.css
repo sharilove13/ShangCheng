@@ -68,7 +68,9 @@ ul,ol,dl,li{
 .noblock{
     display: none!important;
 }
-
+.lazy_loading, img.err_product {
+    background: url("../images/product_details/icons2.png") 50% 50% no-repeat;
+}
 /* 图标 */
 .sidebar .sidebar_tab .tab-icon, .sidebar .sidebar_tab .tab-icon-tip, .sidebar .tab-tip-code-warp .icon {
     background: url(../images/sidebaricon.png) no-repeat;

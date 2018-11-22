@@ -1,5 +1,4 @@
 $(function(){
-
     //轮播图
     $.ajax({
         url:"http://localhost:4000/index/getIndexBanners",

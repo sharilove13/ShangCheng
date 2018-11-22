@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/product_details.css">
     <link rel="stylesheet" href="css/products.css">
-    <script src="js/index.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <!-- 顶部导航栏 -->
@@ -669,6 +669,7 @@
                         </dd>
                     </dl>
                 </div>
+                <!-- 颜色选项 -->
                 <div class="tzm clearboth" id="J-TZM">
                     <dl id="colorItemList" class="proinfo_color_spec clearboth">
                         <dt>
@@ -754,6 +755,7 @@
                         </dd>
                     </dl>
                 </div>
+                <!-- 购买按钮 -->
                 <div class="buy_btns clearboth">
                     <a id="buyNowAddCart" class="btn_dark_buy">立即购买</a>
                     <a id="addCart" class="btn_orange_buy"><i></i>加入购物车</a>
@@ -762,121 +764,209 @@
                 <!--特色服务-->
                 <dl class="proinfo_serv_all">
                     <dt>特色服务</dt>
-                    <dd class="proinfo-serv clearfix" id="proinfo-id">
-                        <span id="returnCate" style="" name="item_10638773031_basic_7days-hover">
-                            <a rel="nofollow" class="wly" target="_blank" href="//help.suning.com/page/id-205.htm">
+                    <dd class="proinfo-serv clearboth" id="proinfo-id">
+                        <span id="returnGoods">
+                            <a class="wly" target="_blank" href="//help.suning.com/page/id-205.htm">
                                 <i class="icon"></i>
                                 7天无理由退货
-                                <span class="s-tooltip">
-                                    <i class="s-t-lion"></i>
-                                    无理由退货，购物更安心
-                                    <span class="tri-pointer-up">
-                                        <i class="inner-tri"></i>
-                                    </span>
-                                </span>
                             </a>
                         </span>
                         <span label="label" id="SL00000010">
                             <a href="http://hc.suning.com/help/channel-153317917886393431.htm" class="icon-image" target="_blank">
                                 <img class="icon" src="https://image.suning.cn/uimg/MLS/label/921432721171994343446630.jpg">
                                 代客检
-                                <span class="s-tooltip">
-                                    <i class="s-t-lion"></i>
-                                    退换货提供免费上门取送检测服务
-                                    <span class="tri-pointer-up">
-                                        <i class="inner-tri"></i>
-                                    </span>
-                                </span>
                             </a>
                         </span>
                     </dd>
                 </dl>
+
             </div> 
-        </div> 
-        <div id="bookProcedure" class="presell-process hide" style="display: none;"> 
-            <div class="pp-header"> 
-                <div class="h-content"> 
-                    <h3>商品预定流程：</h3> 
-                </div> 
-            </div> 
-            <ul class="clearfix"> 
-                <li id="depositTime" class="step-1 current"> 
-                    <i class="icon-1"></i> 
-                    <dl> 
-                        <dt>付定金<span class="deposit-money"></span></dt>
-                        <dd></dd> 
-                        <dd></dd> 
-                    </dl> 
-                </li> 
-                <li class="sep">&gt;</li> 
-                <li class="step-2"> 
-                    <i class="icon-2"></i> 
-                    <dl> 
-                        <dt>商家备货</dt> 
-                    </dl> 
-                </li> 
-                <li class="sep">&gt;</li> 
-                <li id="balanceTime" class="step-3"> 
-                    <i class="icon-3"></i> 
-                    <dl> 
-                        <dt>付尾款<span class="deposit-money"></span></dt> 
-                        <dd></dd> 
-                        <dd>结束：6月30日23:59</dd> 
-                    </dl> 
-                </li> 
-                <li class="sep">&gt;</li> 
-                <li id="sendTime" class="step-4"> 
-                    <i class="icon-4"></i> 
-                    <dl> 
-                        <dt>发货</dt> 
-                        <dd>预计7月1日发货</dd> 
-                    </dl> 
-                </li> 
-                <li id="dingJinTuan" class="presell-rule rule-fr" style="display: none;padding-left:0px;"></li> 
-            </ul> 
-        </div> 
-        <div id="prebuy" class="bespoke-process" style="display:none;"> 
-            <div class="pp-header"> 
-                <div class="h-content"> 
-                    <h3>预约抢购流程说明：</h3> 
-                </div> 
-                <div class="arr-bg"></div> 
-            </div> 
-            <ul class="clearfix"> 
-                <li class="step-1 current"> 
-                    i class="icon-1"></i> 
-                    <dl> <dt>等待预约</dt> </dl> 
-                </li> 
-                <li class="sep">&gt;</li> 
-                <li id="appointTime" class="step-2"> 
-                    <i class="icon-2"></i> 
-                    <dl> 
-                        <dt>预约中</dt> 
-                        <dd></dd> 
-                        <dd></dd> 
-                    </dl>
-                </li> 
-                <li class="sep">&gt;</li> 
-                <li class="step-3"> 
-                    <i class="icon-3"></i> 
-                    <dl> 
-                        <dt>等待抢购</dt> 
-                    </dl> 
-                </li> 
-                <li class="sep">&gt;</li> 
-                <li id="buyTime" class="step-4"> 
-                    <i class="icon-4"></i> 
-                    <dl> 
-                        <dt>抢购中</dt> 
-                        <dd></dd> 
-                        <dd></dd> 
-                        <dd></dd> 
-                    </dl> 
-                </li> 
-                <li id="yuYueQiangGou" class="presell-rule rule-fr" style="display: none;"></li> 
-            </ul> 
         </div> 
     </div>
+
+    <!-- 推荐相关 -->
+    <div class="recom_goods clearboth">
+        <div class="container">
+            <div class="tabarea">
+                <!-- tab行 -->
+                <ul class="tabarea_items clearboth">
+                    <li class="current"><a>看了又看</a></li>
+                    <li><a>热门推荐</a></li>
+                </ul>
+                <!-- tab1内容 -->
+                <div class="klyk_list_wrap tabarea_content clearboth" style="display: block;"> 
+                    <a class="btn_dir prev">
+                        <i class="arr"></i>
+                    </a> 
+                    <a class="btn_dir next" >
+                        <i class="arr"></i>
+                    </a> 
+                    <div class="klyk_list">
+                        <ul class="clearboth" style="left: 0px;">   
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" href="" title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"> 
+                                    <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/Ms3cOocHcVIopRVEgOhmdg.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price">
+                                    <i>¥</i> 
+                                    <em>4499</em>.00  
+                                    <label class="special_store">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                </p> 
+                            </li>    
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"> 
+                                    <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/8cm2UOjCS2JQxlDfa5fxaQ.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price">
+                                    <i>¥</i> <em>3999</em>.00  
+                                    <label class="com-has-border">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                </p> 
+                            </li>    
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" href=" " title="华为/荣耀畅玩8C 全系4G大内存 4000mAh电池  4GB+32GB 幻夜黑 全网通智能手机全面屏手机 双卡双待"> 
+                                    <img alt="华为/荣耀畅玩8C 全系4G大内存 4000mAh电池  4GB+32GB 幻夜黑 全网通智能手机全面屏手机 双卡双待" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/szlLQqXgbjr620upofeCGw.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price"><i>¥</i> <em>999</em>.00  
+                                    <label class="com-has-border">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href=" " title="华为/荣耀畅玩8C 全系4G大内存 4000mAh电池  4GB+32GB 幻夜黑 全网通智能手机全面屏手机 双卡双待">华为/荣耀畅玩8C 全系4G大内存 4000mAh电池  4GB+32GB 幻夜黑 全网通智能手机全面屏手机 双卡双待</a>
+                                </p> 
+                            </li>    
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 宝石蓝 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"> 
+                                    <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 宝石蓝 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/hyFPddN9kaq2xZ5ynHA3jg.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price">
+                                    <i>¥</i> <em>4499</em>.00  
+                                    <label class="com-has-border">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 宝石蓝 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 宝石蓝 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机
+                                    </a>
+                                </p> 
+                            </li>    
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 翡冷翠 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"> 
+                                    <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 翡冷翠 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/xKSljwLh5spdDf56qlbwuQ.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price">
+                                    <i>¥</i> <em>4499</em>.00  
+                                    <label class="com-has-border">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 翡冷翠 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 翡冷翠 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                </p> 
+                            </li>    
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" id="baoguang_recviewviewnb_1-6_0000000000_000000010640823713_01A_1-1_1A_A" name="item_000000010638773031_recviewviewnb_1-6_p_0000000000_10640823713_01A_1-1_1A_A" href="//product.suning.com/0000000000/10640823713.html#?src=item_000000010638773031_recviewviewnb_1-6_p_0000000000_10640823713_01A_1-1_1A_A" title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 X 幻影银 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"> 
+                                    <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 X 幻影银 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/9NJDMgilvcMEI5lE17b-hQ.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price">
+                                    <i>¥</i> <em>4999</em>.00  
+                                    <label class="com-has-border">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 X 幻影银 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 X 幻影银 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                </p> 
+                            </li>    
+                            <li class="klyk_item_wrap"> 
+                                <a target="_blank" href=" " title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机"> 
+                                    <img alt="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机" class="lazy-loading" src="//imgservice.suning.cn/uimg1/b2c/image/deuQ02oVBRYJTMAD8rzn2Q.jpg_160w_160h_4e"> 
+                                </a> 
+                                <p class="price">
+                                    <i>¥</i> <em>3999</em>.00  
+                                    <label class="com-has-border">苏宁自营</label>  
+                                </p> 
+                                <p class="p_title">
+                                    <a target="_blank" href="" title="【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 亮黑色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                </p> 
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <!-- tab2内容 -->
+                <div id="J-holiday" style="display: none;" class="tabarea_content hot_rec_box" data-type="jsonp">
+                    <div class="hot_rec_list "> 
+                        <div class="hot_more"> 
+                            <a href="" target="_blank"> 
+                                <img alt="" class="lazy_loading" src="http://image2.suning.cn/uimg/cms/img/152644076553001654.jpg"> 
+                            </a> 
+                        </div> 
+                        <div class="hot_list"> 
+                            <ul style="left: 0px;">  
+                                <li> 
+                                    <a href="" target="_blank" >
+                                        <img alt="" src="//imgservice.suning.cn/uimg1/b2c/image/8cm2UOjCS2JQxlDfa5fxaQ.jpg_160w_160h_4e" class="err-product">
+                                    </a> 
+                                    <p class="price">
+                                        <i>¥</i> <em>3999</em>.00  
+                                        <label class="special_store">苏宁自营</label>  
+                                    </p> 
+                                    <p class="p_title">
+                                        <a href=" " target="_blank">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 极光色 6GB+64GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                    </p> 
+                                </li>  
+                                <li> 
+                                    <a href=" " target="_blank" >
+                                        <img alt="" src="//imgservice.suning.cn/uimg1/b2c/image/9NJDMgilvcMEI5lE17b-hQ.jpg_160w_160h_4e" class="err-product">
+                                    </a> 
+                                    <p class="price">
+                                        <i>¥</i> <em>4999</em>.00  
+                                        <label class="special_store">苏宁自营</label>  
+                                    </p> 
+                                    <p class="p_title">
+                                        <a href=" " target="_blank">【稀缺货源，限量抢购】HUAWEI/华为Mate 20 X 幻影银 6GB+128GB 麒麟980芯片全面屏徕卡三摄移动联通电信4G手机</a>
+                                    </p> 
+                                </li>  
+                                <li> 
+                                    <a href=" " target="_blank" >
+                                        <img alt="" src="//imgservice.suning.cn/uimg1/b2c/image/zOlKvVK2Rv0Gu85qZpFjvQ.jpg_160w_160h_4e" class="err-product">
+                                    </a> 
+                                    <p class="price">
+                                        <i>¥</i> <em>3388</em>.00  
+                                        <label class="special_store">苏宁自营</label>  
+                                    </p> 
+                                    <p class="p_title">
+                                        <a href=" " target="_blank">【享任性付6期免息】HUAWEI/华为P20 6GB+64GB极光色移动联通电信4G全面屏手机</a>
+                                    </p> 
+                                </li>  
+                            </ul> 
+                        </div> 
+                        <div class="pages_container"> 
+                            <a href="javascript:;" class="l_arrow" ></a> 
+                            <span class="pages_dot">
+                                <span class="page_dot current" data-page="0"></span>
+                                <span class="page_dot" data-page="1"></span>
+                                <span class="page_dot" data-page="2"></span>
+                                <span class="page_dot" data-page="3"></span>
+                            </span> 
+                            <a class="r_arrow" ></a> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div id="_ABOUT_FOOTER_" class="about_footer clearboth">
         <div class="footer_guide">
             <div class="container footer_info">
