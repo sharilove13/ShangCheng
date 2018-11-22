@@ -249,6 +249,123 @@
     *zoom: 1;
 }
 
+/*价格详情*/
+
+
+
+
+
+/* 视频 */
+/*#_PRO_INFO_ .imgzoom_video {*/
+/*!* display: none; *!*/
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 0;*/
+/*width: 452px;*/
+/*height: 452px;*/
+/*background: #fff url("../images/product_details/loading.gif") no-repeat 50%;*/
+/*z-index: 10;*/
+/*}*/
+/*#_PRO_INFO_ .imgzoom_video .close {*/
+/*display: block;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*right: 0;*/
+/*width: 22px;*/
+/*height: 22px;*/
+/*background-image:url("../images/product_details/icons2.png") ;*/
+/*background-position: -920px -824px;*/
+/*z-index: 1;*/
+/*}*/
+/*#_PRO_INFO_ .imgzoom_video .proinfo_left_player{*/
+/*position: relative;*/
+/*-webkit-box-sizing: border-box;*/
+/*box-sizing: border-box;*/
+/*overflow: hidden;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .imgzoom_video {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*background-color: #000;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_mask {*/
+/*position: absolute;*/
+/*display: none;*/
+/*left: 0;*/
+/*right: 0;*/
+/*top: 0;*/
+/*bottom: 0;*/
+/*background: rgba(0,0,0,.3);*/
+/*z-index: 10;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_loading {*/
+/*display: none;*/
+/*position: absolute;*/
+/*left: 50%;*/
+/*top: 50%;*/
+/*-webkit-transform: translate(-50%,-50%);*/
+/*-ms-transform: translate(-50%,-50%);*/
+/*transform: translate(-50%,-50%);*/
+/*z-index: 12;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls{*/
+/*position: absolute;*/
+/*width: 100%;*/
+/*height: 0;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*background-color: #000;*/
+/*line-height: 36px;*/
+/*overflow: hidden;*/
+/*-webkit-transition: height .5s;*/
+/*-o-transition: height .5s;*/
+/*transition: height .5s;*/
+/*z-index: 10;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls.show{*/
+/*height: 40px;*/
+/*overflow: visible;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_item{*/
+/*vertical-align: middle;*/
+/*margin:0 10px;*/
+/*background-position: 50%;*/
+/*background-repeat: no-repeat;*/
+/*background-size: 100%;*/
+/*cursor: pointer;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_icon {*/
+/*display: inline-block;*/
+/*width: 32px;*/
+/*height: 40px;*/
+/*background-image: url("../images/product_details/cloud.png");*/
+/*cursor: default;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn {*/
+/*display: inline-block;*/
+/*width: 20px;*/
+/*height: 40px;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn.play {*/
+/*width: 16px;*/
+/*height: 16px;*/
+/*margin-top: -3px;*/
+/*background: url("../images/product_details/icons2.png") no-repeat 50%;*/
+/*background-position: -817px -848px;*/
+/*}*/
+/*#IMGZOOM_VIDEO_BOX .player_controls .controls_timespan {*/
+/*color: #fff;*/
+/*font-size: 12px;*/
+/*}*/
+
+
+
+
+
+/*右侧主体*/
+#_PRO_INFO_ .proinfo_main dl {
+    margin-bottom: 10px;
+}
 #_PRO_INFO_ .proinfo_main .proinfo_title{
     padding: 13px 10px 12px;
     background: #fff;
@@ -284,112 +401,341 @@
     word-break: break-all;
 }
 
-#_PRO_INFO_ .proinfo_title .a_discounts {
-    text-decoration: underline;
-}
 #_PRO_INFO_ .proinfo_title a {
     color: #6a9fde;
+    text-decoration: underline;
 }
-/* 视频 */
-/*#_PRO_INFO_ .imgzoom_video {*/
-    /*!* display: none; *!*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 452px;*/
-    /*height: 452px;*/
-    /*background: #fff url("../images/product_details/loading.gif") no-repeat 50%;*/
-    /*z-index: 10;*/
-/*}*/
-/*#_PRO_INFO_ .imgzoom_video .close {*/
-    /*display: block;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*width: 22px;*/
-    /*height: 22px;*/
-    /*background-image:url("../images/product_details/icons2.png") ;*/
-    /*background-position: -920px -824px;*/
-    /*z-index: 1;*/
-/*}*/
-/*#_PRO_INFO_ .imgzoom_video .proinfo_left_player{*/
-    /*position: relative;*/
-    /*-webkit-box-sizing: border-box;*/
-    /*box-sizing: border-box;*/
-    /*overflow: hidden;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .imgzoom_video {*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*background-color: #000;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_mask {*/
-    /*position: absolute;*/
-    /*display: none;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*background: rgba(0,0,0,.3);*/
-    /*z-index: 10;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_loading {*/
-    /*display: none;*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*top: 50%;*/
-    /*-webkit-transform: translate(-50%,-50%);*/
-    /*-ms-transform: translate(-50%,-50%);*/
-    /*transform: translate(-50%,-50%);*/
-    /*z-index: 12;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls{*/
-    /*position: absolute;*/
-    /*width: 100%;*/
-    /*height: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*background-color: #000;*/
-    /*line-height: 36px;*/
-    /*overflow: hidden;*/
-    /*-webkit-transition: height .5s;*/
-    /*-o-transition: height .5s;*/
-    /*transition: height .5s;*/
-    /*z-index: 10;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls.show{*/
-    /*height: 40px;*/
-    /*overflow: visible;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls .controls_item{*/
-    /*vertical-align: middle;*/
-    /*margin:0 10px;*/
-    /*background-position: 50%;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100%;*/
-    /*cursor: pointer;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls .controls_icon {*/
-    /*display: inline-block;*/
-    /*width: 32px;*/
-    /*height: 40px;*/
-    /*background-image: url("../images/product_details/cloud.png");*/
-    /*cursor: default;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn {*/
-    /*display: inline-block;*/
-    /*width: 20px;*/
-    /*height: 40px;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls .controls_play_btn.play {*/
-    /*width: 16px;*/
-    /*height: 16px;*/
-    /*margin-top: -3px;*/
-    /*background: url("../images/product_details/icons2.png") no-repeat 50%;*/
-    /*background-position: -817px -848px;*/
-/*}*/
-/*#IMGZOOM_VIDEO_BOX .player_controls .controls_timespan {*/
-    /*color: #fff;*/
-    /*font-size: 12px;*/
-/*}*/
+#proinfoMain .activity_img{
+    width: 730px;
+}
+#priceDom{
+    margin-bottom: 15px;
+    background: url("../images/product_details/price_bg.png");
+    position: relative;
+    padding: 14px 0 8px;
+    z-index: 6;
+}
+.proinfo_focus dl{
+    margin-bottom: 4px;
+}
+#proinfoMain dl dt {
+    float: left;
+    width: 70px;
+    padding-left: 10px;
+    color: #999;
+    overflow: hidden;
+    font-family:  "simsun";
+}
+#proinfoMain dl dt span {
+    display: inline-block;
+    width: 6em;
+    font-family: "simsun";
+}
+#proinfoMain dl dd {
+    margin-left: 80px;
+}
+#mainPrice{
+    position: relative;
+    z-index: 6;
+}
 
+#mainPrice .price_promo{
+    margin-bottom: 2px;
+}
+
+#mainPrice .price_promo dt{
+    margin-top: 8px;
+}
+#mainPrice dl dt span.w3{
+    letter-spacing: .5em;
+}
+#mainPrice .price_promo dd {
+    width:380px;
+    height: 30px;
+}
+
+.proinfo_focus .mainprice {
+    height: 28px;
+    float: left;
+    font: 700 30px/25px Tahoma;
+    color: #e00;
+}
+.proinfo_focus .mainprice i {
+    font-size: 18px;
+    font-family: Arial;
+}
+.proinfo_focus .mainprice span {
+    font-size: 24px;
+    font-family: Tahoma;
+}
+.proinfo_focus .supervip_box dd {
+    line-height: 18px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.supervip_icon {
+    float: left;
+    width: 40px;
+    height: 13px;
+    margin-top: 2px;
+    margin-right: 6px;
+    background: url("../images/product_details/supervip.gif");
+}
+.proinfo_focus .supervip_box .super_text {
+    font-size: 12px;
+    color: #333;
+}
+
+.proinfo_focus .supervip_box .vip_more{
+    font-size: 12px;
+    color: #38d;
+    margin-left: 13px;
+}
+.proinfo_focus .pro_comments {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -20px;
+    width: 70px;
+    height: 40px;
+    text-align: right;
+}
+.proinfo_focus .pro_comments a {
+    color: #999;
+}
+.proinfo_focus .pro_comments span {
+    text-decoration: underline;
+    color: #666;
+    font-weight: 600;
+}
+.promo_list li {
+    overflow: visible;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.promo_list li label {
+     float: left;
+     width: 52px;
+     margin-top: 1px;
+     height: 16px;
+     line-height: 16px;
+     color: #f60;
+     text-align: center;
+     border: 1px solid #f60;
+ }
+.promo_list li .promotion_content {
+    margin-left: 64px;
+    padding-right: 10px;
+    overflow: hidden;
+    color: #666;
+    padding-left: 2px;
+}
+.promo_list li .i-triangle {
+    float: left;
+    display: inline-block;
+    border: 4px solid;
+    border-color: transparent transparent transparent #ccc;
+    font-size: 0;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.promo_list li .desc {
+    float: left;
+}
+.promo_list li .a_detail {
+    margin-left: 10px;
+    color: #38d;
+    display: inline-block;
+}
+.promo_closeup {
+    margin-bottom: 5px;
+}
+.promo_show {
+    margin-bottom: 10px;
+}
+
+/*颜色选择*/
+.proinfo-main dl.proinfo_color_spec {
+    padding-top: 5px;
+    margin-bottom: 6px;
+}
+.proinfo_color_spec .clr_item {
+    box-sizing: border-box;
+    float: left;
+    z-index: 666;
+    margin: 0 4px 5px 0;
+}
+.proinfo_color_spec .clr_item a {
+    display: block;
+    position: relative;
+    float: left;
+    height: 38px;
+    line-height: 38px;
+    padding: 1px 8px 1px 1px;
+    border: 1px solid #ddd;
+    color: #666;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.proinfo_color_spec .clr_item a img {
+    float: left;
+    display: block;
+    height: 38px;
+    width: 38px;
+    margin-right: 6px;
+    vertical-align: top;
+}
+.proinfo_color_spec .clr_item a span {
+    float: left;
+    max-width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.proinfo_color_spec .clr_item.selected{
+    border:1px solid #ff2f13;
+}
+
+/*规格选择*/
+dl.proinfo_buytype {
+    padding-top: 5px;
+    padding-bottom: 0;
+    margin-bottom: 6px;
+}
+dl.proinfo_buytype ul li {
+    float: left;
+    margin: 0 5px 5px 0;
+    white-space: nowrap;
+}
+dl.proinfo_buytype ul li a {
+    position: relative;
+    float: left;
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid #ddd;
+    line-height: 32px;
+    background: #fff;
+    max-width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+dl.proinfo_buytype ul li.selected a {
+    height: 32px;
+    border: 1px solid #f50;
+    line-height: 32px;
+}
+
+.proinfo_num dt {
+    line-height: 30px;
+}
+.proinfo_num dd a.num_btn {
+    float: left;
+    width: 22px;
+    height: 30px;
+}
+.proinfo_num dd .minus {
+    background-image: url("../images/product_details/icons2.png");
+    background-position: -846px -656px;
+}
+.proinfo_num dd .plus {
+    background-image: url("../images/product_details/icons2.png");
+    background-position: -824px -656px;
+}
+.proinfo_num dd .minus-disable {
+    background-position: -802px -656px;
+}
+.proinfo_num dd .plus-disable {
+    background-position: -780px -656px;
+}
+
+.proinfo_num dd input {
+    float: left;
+    width: 25px;
+    height: 18px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    text-align: center;
+}
+/*购买按钮*/
+.buy_btns{
+    padding: 8px 0 20px 80px;
+}
+.buy_btns a {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    color: #999;
+    text-align: center;
+}
+.buy_btns .btn_dark_buy {
+    background: #663200;
+    color: #fff;
+    font: 16px/40px microsoft yahei;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 115px;
+    height: 40px;
+    display: block;
+}
+.buy_btns .btn_orange_buy {
+    background: #f50;
+    color: #fff;
+    font: 16px/40px microsoft yahei;
+    font-weight: 600;
+    border-radius: 3px;
+    width: 135px;
+    height: 40px;
+    display: block;
+}
+/*分割线*/
+.divide-line {
+    border-top: 1px dotted #ddd;
+}
+/*特色服务*/
+.proinfo_serv_all{
+    padding-top: 15px;
+    margin-bottom: 7px;
+}
+.proinfo_serv_all span {
+    float: left;
+    position: relative;
+    padding: 0 0 0 18px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+    background: #fff;
+    white-space: nowrap;
+}
+.proinfo_serv_all .icon {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    z-index: 1;
+    border: 1px solid #a98c81;
+}
+.proinfo_serv_all .tyfx .icon,
+.proinfo_serv_all .wly .icon {
+    background-image: url("../images/product_details/icons2.png");
+}
+
+.proinfo_serv_all .wly .icon {
+    background-position: -618px -598px;
+}
+
+.proinfo_serv_all .s-tooltip {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: -80px;
+    padding: 2px 8px;
+    background: ivory;
+    border: 1px solid #f50;
+    font-weight: 300;
+    line-height: 20px;
+    z-index: 2;
+}

@@ -609,86 +609,188 @@
                         19.9元40GB流量，100M包年电信宽带低至599元
                         <a href="https://cuxiao.suning.com/yysbfq.html" target="_blank">点击抢购。</a>
                     </h2> 
-                </div> 
-                <div class="dajuhui-panel dajuhui-panel2" style="display:none;" id="timePanel2"> 
-                    <span class="djh-logo"></span> 
-                    <span class="super-quan hide"></span> 
-                    <span class="djh-cd"> 
-                        <i class="djh-icon"></i> 
-                        <span class="active-label">此商品</span> 
-                        <span class="proinfo-cd"> 
-                            <span id="bigPolyTime"></span> 
-                        </span> 
-                        <span class="active-label">参加活动</span> 
-                    </span> 
-                    <span class="sell-tell"> 
-                        <a class="qgtell-text" name="item_10638773031_kstx_click" href="javascript:reyuSnqgRemind();">开售提醒</a> 
-                    </span> 
-                    <div class="djh-qg" id="bigPolyMore" style="display: none;"></div> 
-                </div> 
-                <div class="dajuhui-panel" style="display:none;" id="timePanel"> 
-                    <span class="djh-logo"></span> 
-                    <span class="djh-cd"> 
-                        <i class="djh-icon"></i>
-                        <span class="active-label" id="beginOrEnd">距离活动开始</span> 
-                        <span class="proinfo-cd"> 
-                            <em class="d">02</em> 
-                            <span>天</span> 
-                            <em class="h">07</em> 
-                            <span>时</span> 
-                            <em class="m">04</em> 
-                            <span>分</span>
-                            <em class="s">39</em> 
-                            <span>秒</span> 
-                            <input type="hidden" id="durationTime" value="200000"> 
-                        </span> 
-                    </span> 
-                    <span class="qgcontain hide"> 
-                        <span class="qgprcent"></span>
-                        <i class="qg-i"></i> 
-                    </span> 
-                    <div class="djh-qg" id="djhBuyNum" style="display:none;"> 
-                        <span class="yq">已抢</span> 
-                        <span class="num"></span> 
-                    </div> 
-                    <div class="djh-qg" id="bigPolyMore2" style="display: none;"></div> 
-                    <div id="yushouCount" class="total presell-rule rule-fr" style="display:none;"></div> 
-                    <span class="super-new-icon" id="superNewIcon" style="display: none;"></span> 
-                </div> 
-                <div id="shoppingAllowance"> </div> 
-                <div id="priceDom" class="proinfo-focus clearfix"> 
-                    <div class="txt-under-shelf" style="display:none;" id="xjdiv">此商品已下架</div> 
-                    <div style="position: relative;" class="price-container clearfix" id="mainPrice">
-                        <dl class="price-promo">                                                  
+                </div>
+                <!--活动-->
+                <img class="activity_img" src="./images/product_details/activity_ganen.png" alt="">
+                <!--价格详情-->
+                <div id="priceDom" class="proinfo_focus clearboth">
+                    <!--商品下架栏-->
+                    <div class="under_shelf" style="display:none;" id="xjdiv">此商品已下架</div>
+                    <div class="clearboth" id="mainPrice">
+                        <dl class="price_promo">
                             <dt>
-                                <span class="w3" id="promPriceText">		易购价	  </span>
-                            </dt>                               
-                            <dd>                                                                      
+                                <span class="w3" id="promPriceTitle">		易购价	  </span>
+                            </dt>
+                            <dd>
                                 <span class="mainprice">
                                     <i>¥</i>4499.<span>00</span>
-                                </span>		  		          	
-                                <a href="javascript:FourPage.subscribePriceNotice();" class="btn-price-notice" name="item_10638773031_gmq_jjtz" id="PriceNotice1">降价通知</a>
-                                <span class="btn-price-save" style="display: none;">
-                                    用券最多可再省<span class="btn-price-save-number"></span>元
-                                </span>        
-                                <a href="" target="_blank" class="btn-price-business" style="display: none;" name="item_10638773031_govinquires_click" id="qyxjNotice">企业询价
-                                </a>    
-                            </dd>                                                             
-                        </dl>	
-                        <dl class="super-vipbox" style="">
-                            <dd id="superYz">
-                                <span class="super-vip-icon"></span>
-                                <span class="super-word">加入会员返云钻，下单立返约89.98元</span>
-                                <a href="javascript:superVipLogin('//supervip.suning.com/snprime-web/toIndex.do');" class="more-equity" id="superYzLink" name="item_10638773031_superhyljkt_click">立即开通&gt;</a>
+                                </span>
                             </dd>
                         </dl>
-                        <dl class="proinfo-comments">        
-                            <div class="v-div-line"></div>    <a href="#pro_detail_tab">                                                          <div>累计评价</div><span>100+</span>    </a>                                                                 </dl></div> <dl class="receive-quan" id="freeCouponTitle" style=""> <dt><span class="w2" id="getCoupon">刮券</span></dt> <dd> <div class="more-juan" id="freeCouponBox" style="display: none;"></div> <div class="gua-juan" onclick="scrapeCouponLoginSataus()"> <a href="javascript:;" class="a1" onclick="return false;"></a> <span>100%刮中券，最高50元无敌券</span> <a href="javascript:;" class="a2" onclick="return false;">立即去刮奖&gt;</a> </div> </dd> </dl> <dl class="proinfo-promo" id="allcuxiao" style="display: block;"> <dt><span class="w2">促销</span></dt> <dd> <div class="ph-price-qrcode" id="mobileTitle" style="display:none;"> <label></label><i class="i-triangle"></i><div class="prom-info" id="mobileBox"></div> </div> <ul class="promo-list"><li id="voucherTitle" style="display:none;"><label>满 减</label><i class="i-triangle"></i><p class="promotion-content" id="voucherBox"></p></li><li id="lhvoucherTitle" style="display:none;"><label>联合满减</label><i class="i-triangle"></i><p class="promotion-content" id="lhvoucherBox"></p></li><li id="isXYuanNItemTitle" style="display:none;"><label>套 装 价</label><i class="i-triangle"></i><p class="promotion-content" id="isXYuanNItemBox"></p></li><li id="taogouyhTitle" style="display:none;"><label>套购优惠</label><i class="i-triangle"></i><p class="promotion-content" id="taogouyhBox"></p></li><li id="giftTitle" class="promo-gift" style="display:none;"><label class="lable-zp">赠 品</label><i class="i-triangle i-tri-zp"></i><div class="zengpin clearfix" id="giftBox"></div></li><li id="limitGifts" class="manzen-handle-li" style=""><label>限量赠</label> <i class="i-triangle"></i> <p class="promotion-content"> </p><div class="manzen-handle manzen-handle-show" id="jtzpHandle"> <span class="manzen-hendle-text">  1-6000名送赠品（赠完即止） </span>  <span class="manzen-hendle-text-pop">1-6000名送赠品（赠完即止）</span>  <i class="ng-iconfont down"></i> <i class="ng-iconfont up"></i> <div class="manzen-pop">   <div class="manzen-pop-list">  <a target="_blank" class="manzen-pop-img-container" href="//product.suning.com/0000000000/10554845744.html"> <img class="manzen-pop-img" src="//imgservice.suning.cn/uimg1/b2c/image/dofZi8F3ydW0Lw95jljBKg.jpg_60w_60h_4e">  </a> <div class="manzen-pop-number">*1</div>  <a target="_blank" class="manzen-pop-img-container" href="//product.suning.com/0000000000/10543413501.html"> <img class="manzen-pop-img" src="//imgservice.suning.cn/uimg1/b2c/image/68VNv29V0QIMeL34pvWfQg.jpg_60w_60h_4e">  <div class="manzem-pop-img-label">已赠完</div>  </a> <div class="manzen-pop-number">*1</div>  </div>  </div> </div> <p class="mt4"></p></li><li id="ordersGifts" class="manzen-handle-li" style="display:none;">
-          </li><li id="jrPromTitle" style="display:none;"><label>支付满减</label><i class="i-triangle"></i><p class="promotion-content" id="jrPromBox"></p></li><li id="purchaseTitle" style="display:none;"><label>优惠换购</label><i class="i-triangle"></i><p class="promotion-content" id="purchaseBox"></p></li><li id="couponTitle" style="display:none;"><label>返 券</label><i class="i-triangle"></i><p class="promotion-content" id="couponBox"></p></li><li id="newcouponTitle" style="display:none;"><label>返 券</label><i class="i-triangle"></i><p class="promotion-content" id="newcouponBox"></p></li><li id="yfbTitle" style=""><label>实名有礼</label><i class="i-triangle"></i><p class="prom-info prom-yun" id="yfbBox"><span class="desc">实名认证领苏宁支付券</span><a href="javascript:CommonFourPage.realNameLogin();" class="a-detail ml10">登录后查看 &gt;</a></p></li><li id="rxfTitle" style="display:none;"><label>任性付</label><i class="i-triangle"></i><p class="promotion-content" id="rxfBox"></p></li><li id="scodeTitle" style="display:none;"><label>S 码</label><i class="i-triangle"></i><p class="promotion-content" id="scodeBox"></p></li><li id="pointTitle" class="prom-list-box" style="display: block;"><label>云 钻</label><i class="i-triangle"></i><p class="promotion-content" id="pointBox"><span>普通会员返<a name="item_10638773031_jifen_xq" href="//vip.suning.com" class="b " target="_blank">674</a>云钻</span></p><p class="promotion-content mt4" id="yunzuan" style="display: none;"></p></li><li id="freightfreeTitle" style="display:none;"><label>免运费</label><i class="i-triangle"></i><p class="promotion-content" id="freightfreeBox"></p></li><li id="govTitle" style="display:none;"></li><li id="jnbtTitle" style="display:none;"><label>节能补贴</label><i class="i-triangle"></i><p class="promotion-content" id="jnbtBox"></p></li></ul> <a class="zp-b-img"> <i></i><img src="" alt=""> <div class="zp-title"> <h4 class="txt"></h4> <p class="price">¥</p> </div> </a> <span class="tool-tip zindex22"><i class="a-up-arrow tip-yun"></i></span> <div class="promo-closeup" style="display: none;"><label class="promo-label">云 钻</label> <span>更多促销<i class="ng-iconfont"></i></span> </div> <div class="promo-show" style="display: none;"> <span>收起<i class="ng-iconfont"></i></span> </div> </dd> </dl> </div> <!-- 乐拼购 --> <dl class="happy-go" id="happyGo" style="display:none;"> </dl> <dl class="support-panel" style=""> <dt><span class="w2">支持</span></dt> <dd class=""> <a id="lyg" style="display:none;" name="item_10638773031__basic_0buy" rel="nofollow"> <span class="sp-item licai" data-tooltip="买苏宁理财，免费送" id="lygi"> <i class="border-l"></i> <i class="icon"></i>买苏宁理财，免费送 <i class="border-r"></i> </span> </a> <a href="javascript:void(0);" id="4Gpackage" style="" name="item_10638773031_ysc_gm0101"><span class="sp-item sjtc" data-tooltip="18元30GB" id="phoneGoLook"><i class="border-l"></i><i class="icon"></i>18元30GB<i class="border-r"></i></span></a> <a id="yjhx" style="" href="http://hx.suning.com/photo_index.htm" rel="nofollow" target="_blank" name="item_10638773031_basic_oldfornew"> <span class="sp-item yjhx" data-tooltip="闲置物品回收变现"> <i class="border-l"></i> <i class="icon"></i>以旧换新 <i class="border-r"></i> </span> </a> </dd> <span class="tool-tip"> <i class="a-up-arrow"></i> </span> </dl> <div class="proinfo-deliver"> <dl><dt><span class="w2">送至</span></dt> <dd class="clearfix"> <div id="sncity" class="l"><div class="ui-city"><a name="item_none_dizhi_01" href="###" class="ui-city-toggle" hidefocus="true"><em class="address-placement"><span id="provinceName" class="pr" role="130,,,浙江">浙江</span><span id="citybName" class="ct" role="1000323,9315,01,杭州">杭州</span><span id="districtName" class="ds" role=",12499,01,上城区">上城区</span></em><b class="arr"></b></a></div></div> <div class="proinfo-deliver-tip"> <strong id="haveProduct" class="goods-haveNo" style="">有货</strong> <span id="c_kucun" class="freight"><a name="item_10638773031_basic_carriage-detail" href="//help.suning.com/page/channel-37.htm" target="_blank">86元免基础运费(50.00kg内)</a></span> <strong id="nowProduct" class="yunfei-fare" style="display: none;"></strong> <span id="zyService" class="sent-support" style=""> <em>支持</em> <ul><li class="line1"><span class="s-s-item no-link" data-tooltip="门店自提服务（免运费）"><a href="javascript:;" name="item_10638773031_basic_pickup-hover">自提</a></span><i class="ng-iconfont down-i" style="display: none;"></i><i class="ng-iconfont up-i" style="display: none;"></i></li><li class="line2"></li></ul> <span class="tool-tip"> <i class="a-up-arrow"></i> </span> </span> </div> <span id="yunfei_tooltip" class="s-tooltip" style="display: none;">所选地址自营订单满86元免基础运费（50.00kg内），不足金额订单收取5元/单基础运费，超出重量加收0.9元/kg续重运费，实际收取运费以提交订单页面内的运费金额为准。<span class="tri-pointer-up"><i class="inner-tri"></i></span></span> </dd> <dd class="supplier-row" id="shopNameBox"> <span id="prescription" class="arriv-infos" style="display: inline;">现在下单，预计周日（11月18日）送达</span> <span id="shopName">由&nbsp;<span><a href="//shop.suning.com/30001556/index.html" name="item_10638773031_gmq_dianpu01" target="_blank">苏宁</a></span>&nbsp;销售和发货，并提供售后服务</span> <a id="callme" rel="nofollow" name="item_10638773031_basic_agent" href="javascript:findpassNewBrand('000000010638773031','02','0010127391','R1901001','000060864','20006','https://www.suning.com/emall/sprdonline_10052_10051_000000010638773031__.html','571','5710101');" class="contact-me contact-me-self"><i></i>联系客服</a> <span class="tool-tip"><i class="a-up-arrow"></i></span> </dd> <dd class="arriv-warning" id="arrivWarning" style="display: none;"></dd> </dl> </div> <div class="proinfo-weight hide" id="weightid" style="display: block;"> <dl> <dt><span class="w2">重量</span></dt> <dd id="weightcvalue">0.5kg</dd> </dl> </div> <dl class="proinfo-o2o" style="display:none"> <dt>门店服务</dt> <dd> <ul> <li class="item2" style="display:none"> <a href="javascript:void(0);" class="icon" name="item_10638773031_mdfw_mdxh"></a> <a href="javascript:void(0);" name="item_10638773031_mdfw_mdxh">门店现货</a> <span>· 选择有现货的门店下单，可立即提货</span> </li> <li class="item6" style="display:none"> <a href="javascript:void(0);" class="icon"></a> <a href="javascript:void(0);" name="item_10638773031_mdfw_ddsc">到店试</a> <span>· 可支持到店试穿服务</span> </li> </ul> </dd> </dl> <div class="divide-line"></div> <div class="tzm" id="J-TZM"> <div class="pop-onsale"> 此款有货 <i class="d-arr"></i> </div> <dl id="colorItemList" class="proinfo-color-ex proattr-radio"> <dt> <span class="w2"> 颜色 </span> </dt> <dd> <ul class="tip-infor"> <li colorid="10001" sku="000000010638773027" data-id="1" title="亮黑色" class="clr-item" cid="10001"> <a name="item_10638773031_ysys_size01" href="javascript:void(0);" title="亮黑色 mate20 6GB+128GB"> <img src="//imgservice.suning.cn/uimg1/b2c/image/Ms3cOocHcVIopRVEgOhmdg.jpg_60w_60h_4e" alt=""><i></i><span>亮黑色</span> </a> </li> <li colorid="10003" sku="000000010640823716" data-id="2" title="宝石蓝" class="clr-item" cid="10003"> <a name="item_10638773031_ysys_size02" href="javascript:void(0);" title="宝石蓝 mate20 6GB+128GB"> <img src="//imgservice.suning.cn/uimg1/b2c/image/jeFzbMaL4PJRjZIZ5fFq5Q.jpg_60w_60h_4e" alt=""><i></i><span>宝石蓝</span> </a> </li> <li colorid="10007" sku="000000010640823719" data-id="3" title="幻影银" class="clr-item disabled c-disabled" cid="10007"> <a name="item_10638773031_ysys_size03" href="javascript:void(0);" title="【无此商品】- 幻影银 mate20 6GB+128GB"> <img src="//imgservice.suning.cn/uimg1/b2c/image/MlB1iHmpQzjBub0S13upsA.jpg_60w_60h_4e" alt=""><i></i><span>幻影银</span> </a> </li> <li colorid="10009" sku="000000010638773031" data-id="4" title="极光色" class="clr-item selected" cid="10009"> <a name="item_10638773031_ysys_size04" href="javascript:void(0);" title="极光色 mate20 6GB+128GB"> <img src="//imgservice.suning.cn/uimg1/b2c/image/ylTLjTZQKQdRPiPDbW6x7A.jpg_60w_60h_4e" alt=""><i></i><span>极光色</span> </a> </li> <li colorid="10011" sku="000000010638772980" data-id="5" title="樱粉金" class="clr-item notic-able disabled c-disabled" cid="10011" subpart="000000010638773032"> <a name="item_10638773031_ysys_size05" href="javascript:void(0);" title="【无货】- 樱粉金 mate20 6GB+128GB"> <img src="//imgservice.suning.cn/uimg1/b2c/image/ch8d0eq6c3bJ1ObsYHfaAw.jpg_60w_60h_4e" alt=""><i></i><span>樱粉金</span> </a> </li> <li colorid="10013" sku="000000010638773034" data-id="6" title="翡冷翠" class="clr-item" cid="10013"> <a name="item_10638773031_ysys_size06" href="javascript:void(0);" title="翡冷翠 mate20 6GB+128GB"> <img src="//imgservice.suning.cn/uimg1/b2c/image/xKSljwLh5spdDf56qlbwuQ.jpg_60w_60h_4e" alt=""><i></i><span>翡冷翠</span> </a> </li> </ul> <input type="hidden"> </dd> </dl> <dl id="versionItemList" class="proinfo-buytype proattr-radio"> <dt> <span class="w2"> 版本 </span> </dt> <dd> <ul> <li class="selected" versionid="20001" sku="000000010638773027" data-id="1" title="mate20 6GB+128GB" cid="20001"><a name="item_10638773031_ysc_size01" href="javascript:void(0);" title="极光色 mate20 6GB+128GB">mate20 6GB+128GB<i></i></a></li> <li class="" versionid="20006" sku="000000010638772980" data-id="2" title="mate20 6GB+64GB" cid="20006"><a name="item_10638773031_ysc_size02" href="javascript:void(0);" title="极光色 mate20 6GB+64GB">mate20 6GB+64GB<i></i></a></li> <li class="disabled c-disabled" versionid="20011" sku="000000010640823716" data-id="3" title="mate20X 6GB+128GB" cid="20011"><a name="item_10638773031_ysc_size03" href="javascript:void(0);" title="【无此商品】- 极光色 mate20X 6GB+128GB">mate20X 6GB+128GB<i></i></a></li> <li class="disabled c-disabled" versionid="20013" sku="000000010640823719" data-id="4" title="mate20X 8GB+256GB" cid="20013"><a name="item_10638773031_ysc_size04" href="javascript:void(0);" title="【无此商品】- 极光色 mate20X 8GB+256GB">mate20X 8GB+256GB<i></i></a></li> </ul> <input type="hidden"> </dd> </dl> <dl id="phonedl" class="proinfo-buytype proattr-radio proinfo-hyj" style=""> <dt>购买方式</dt> <dd> <ul class="clearfix"><li data-id="1" title="裸机版" class="selected"><a href="javascript:void(0);">裸机<i></i></a></li><li title="赠移动手机卡" data-id="2" bt="2"><a href="javascript:void(0);" name="item_10638773031_ysc_gm02">赠移动手机卡<i></i></a></li></ul> <input type="hidden"> </dd> </dl> <dl id="phoned2" class="proinfo-buytype proattr-radio proinfo-hyj-rel" style="display:none;"> <dt>合约类型</dt> <dd><ul><li title="流量日租卡" bt="2" tt="11"><a href="javascript:void(0);" name="item_10638773031_ysc_hy02">流量日租卡<i></i></a></li></ul></dd> </dl> <div class="tzm-border"> <div class="tip" id="nochooseInfo"><span>请选择您要的商品信息</span> </div> <a href="javascript:void(0);" class="close ng-iconfont"></a> </div> <dl id="nocodePackage" class="ncp proinfo-yanbao proattr-check" style="display:none;"></dl> <div id="shouhou" class="sh-box sh-box" style="display: none"> <dl class="sh"> <dt>售后服务</dt> <dd> <ul id="afterSalesService" class="sh-list clearfix"></ul> <div id="pcAfterSalesServiceText" class="sh-info"></div> <div class="follow-box" style="left: 154px; right: auto;"> <a href="javascript:;" class="ng-iconfont fold-icon" style="display: none;"></a> <a href="javascript:;" class="ng-iconfont extend-icon" style="display: none;"></a> </div> </dd> </dl> </div> <div class="renxf-box hide" id="freenessPay" style="display: block;"> <dl class="renxf"> <dt>任 性 付</dt> <dd> <div class="rx-charge" id="rx_charge_box"> <span class="tri-pointer"> <i class="inner-tri"></i> </span> </div> <ul class="renxf-list clearfix hide" id="freenessInfo" style="display: block;"><li data-id="3" class="renxf-item h-charge-info renxf-hui"><a href="javascript:void(0);" name="item_10638773031_gmq_rxffqfs3">¥1544.66×3期<i></i></a><div class="rx-charge">含月均利息：¥44.99x3期<span class="tri-pointer"><i class="inner-tri"></i></span></div></li><li data-id="6" class="renxf-item h-charge-info renxf-hui"><a href="javascript:void(0);" name="item_10638773031_gmq_rxffqfs6">¥792.57×6期<i></i></a><div class="rx-charge">含月均利息：¥42.74x6期<span class="tri-pointer"><i class="inner-tri"></i></span></div></li><li data-id="12" class="renxf-item h-charge-info renxf-hui"><a href="javascript:void(0);" name="item_10638773031_gmq_rxffqfs12">¥417.66×12期<i></i></a><div class="rx-charge">含月均利息：¥42.74x12期<span class="tri-pointer"><i class="inner-tri"></i></span></div></li><li data-id="24" class="renxf-item h-charge-info renxf-hui"><a href="javascript:void(0);" name="item_10638773031_gmq_rxffqfs24">¥232.45×24期<i></i></a><div class="rx-charge">含月均利息：¥44.99x24期<span class="tri-pointer"><i class="inner-tri"></i></span></div></li></ul> <div class="follow-box" style="left: 433.531px; right: auto;"> <span class="rxf-hui" id="freehui" style="display:none;"> </span> <a href="javascript:;" class="ng-iconfont fold-icon" name="item_10638773031_basic_renxingfu-unfold"></a> <a href="javascript:;" class="ng-iconfont extend-icon" title="更多分期方案" name="item_10638773031_basic_renxingfu-unfold"></a> <a href="//rxf.suning.com/" target="_blank" id="rxf-help-id" class="rxf-help" name="item_10638773031_gmq_rxfjs"> <span class="tool-tip"> <i class="a-up-arrow"></i> 任性付是苏宁推出的“先消费，后付款”的低息分期产品。支持闪电付款，最高20万，为消费者提供无抵押、免担保、0首付低利息、现金取现等服务 </span> </a> <span style="display:none" id="rxfmd" name="item_10638773031_gmq_rxfjs-hover"></span> </div> </dd> </dl> </div> 
-           <div class="sh-box o2o-box" style="display: none;" id="carPartO2O"></div> <dl id="yanbao" class="proinfo-yb proinfo-yanbao proattr-check" style=""><dt><span>增值服务</span></dt><dd><ul class="clearfix"><li class="mulit" data-id="0"><a data-id="000000000110023117" data-vendor="0050000000" name="item_10638773031_gmq_QBX" href="javascript:void(0);" class="mulita" data-flag="0"><label class="hui"></label><img class="icon_img" src="//image1.suning.cn/uimg/EWOP/exttype/QBX_1.png"><span class="promotionSpan">全保修2年&nbsp;&nbsp;¥299.00</span><em class="ng-iconfont i-down"></em><em class="ng-iconfont i-up"></em><i class="flag"></i></a><div class="child-list" style="width: 369px;"><a data-flag="0" data-id="000000000110023117" data-vendor="0050000000" name="item_10638773031_gmq_QBX" href="javascript:;" data-name="全保修2年&nbsp;&nbsp;&amp;yen299.00"><label><input type="radio" class="radio" name="txx1">性能故障意外故障全面保修&nbsp;&nbsp;2年&nbsp;<del>¥309.00</del>&nbsp;&nbsp;¥299.00&nbsp;&nbsp;<span class="promote-lebel">送耳机</span></label></a><a data-flag="1" data-id="000000000110023244" data-vendor="0050000000" name="item_10638773031_gmq_QBX" href="javascript:;" data-name="全保修3年&nbsp;&nbsp;&amp;yen339.00"><label><input type="radio" class="radio" name="txx1">性能故障意外故障全面保修&nbsp;&nbsp;3年&nbsp;<del>¥349.00</del>&nbsp;&nbsp;¥339.00&nbsp;&nbsp;<span class="promote-lebel">送耳机</span></label></a></div></li><li class="mulit" data-id="2"><a data-id="000000000110023832" data-vendor="0050000000" name="item_10638773031_gmq_ZJB" href="javascript:void(0);" class="mulita"><img class="icon_img" src="//image1.suning.cn/uimg/EWOP/exttype/ZJB_1.png"><span class="promotionSpan">整机保1年&nbsp;&nbsp;¥129.00</span><em class="ng-iconfont i-down"></em><em class="ng-iconfont i-up"></em><i class="flag"></i></a><div class="child-list" style="width: 262px;"><a data-flag="0" data-id="000000000110023832" data-vendor="0050000000" name="item_10638773031_gmq_ZJB" href="javascript:;" data-name="整机保1年&nbsp;&nbsp;&amp;yen129.00"><label><input type="radio" class="radio" name="txx2">整机性能故障免费维修&nbsp;&nbsp;1年&nbsp;&nbsp;¥129.00&nbsp;&nbsp;</label></a><a data-flag="1" data-id="000000000110023841" data-vendor="0050000000" name="item_10638773031_gmq_ZJB" href="javascript:;" data-name="整机保2年&nbsp;&nbsp;&amp;yen239.00"><label><input type="radio" class="radio" name="txx2">整机性能故障免费维修&nbsp;&nbsp;2年&nbsp;&nbsp;¥239.00&nbsp;&nbsp;</label></a><a data-flag="2" data-id="000000000110023850" data-vendor="0050000000" name="item_10638773031_gmq_ZJB" href="javascript:;" data-name="整机保3年&nbsp;&nbsp;&amp;yen269.00"><label><input type="radio" class="radio" name="txx2">整机性能故障免费维修&nbsp;&nbsp;3年&nbsp;&nbsp;¥269.00&nbsp;&nbsp;</label></a></div></li><li class="" data-id="5"><a title="免费换屏一次" data-id="000000000110023688" data-vendor="0050000000" name="item_10638773031_gmq_TGSPB" href="javascript:void(0);" class=""><img class="icon_img" src="//image1.suning.cn/uimg/EWOP/exttype/TGSPB_1.png"><span>特供碎屏保1年&nbsp;&nbsp;¥58.00</span><i class="flag"></i></a></li><li class="" data-id="6" style="display: none;"><a title="重要文件找回" data-id="000000000110025011" data-vendor="0050000135" name="item_10638773031_gmq_SJHF" href="javascript:void(0);" class=""><img class="icon_img" src="//image1.suning.cn/uimg/EWOP/exttype/SJHF_1.png"><span>数据恢复3年&nbsp;&nbsp;¥99.00</span><i class="flag"></i></a></li></ul><input type="hidden"><div class="follow-box" style="left: 520.438px; right: auto;"><i class="ng-iconfont fold-icon" name="item_10638773031_basic_warranty-unfold"></i><i class="ng-iconfont extend-icon" title="更多延保" name="item_10638773031_basic_warranty-unfold" style="display: inline;"></i><a name="item_10638773031_gmq_ybxq" onclick="CommonFourPage.gotoYanBao() " target="_blank" class="i-help" id="ybid"><span class="tool-tip"><i class="a-up-arrow"></i>在苏宁购买电器类商品可享受的增值售后服务，包含厂家质保期内的意外保障服务、厂家质保期结束后的延长保修服务以及货品替换服务等全程保修服务业务</span></a>&nbsp;<span style="display:none;" id="ybmdid" name="item_10638773031_gmq_xbxq-hover"></span></div></dd><div style="display: none;">整机性能故障免费维修&nbsp;&nbsp;1年&nbsp;&nbsp;¥129.00&nbsp;&nbsp;</div></dl> <dl id="insureCmmdty" class="proinfo-bx proinfo-yanbao proattr-check" style="display:none;"> 
-         </dl> <dl id="buycount" class="proinfo-num" style=""> <dt><span class="w2">数量</span></dt> <dd><a href="javascript:void(0);" class="func minus minus-disable" name="item_10638773031_gmq_fuhao-"></a><input id="buyNum" type="text" value="1" max="1"><a href="javascript:void(0);" class="func plus plus-disable" name="item_10638773031_gmq_fuhaojia"></a> <span id="productLimit" class="tip" style="">每人限购<em>1</em>件</span> <span id="kcjz" class="tip" style="display:none;font-weight: 600;"></span> <a id="sfrz" style="display:none;" href="//my.suning.com/getEnterpriseMemberIdentity.do" class="b jump" target="_blank">身份认证，享受大单采购</a> </dd> </dl> </div> <dl id="bigPolyVerify" class="hide" style="display: none;"></dl> <div class="mainbtns clearfix"> <a id="buyNowAddCart" name="item_10638773031_gmq_ljgm-1shouji" class="btn-dark-buy" href="javascript:Cart.buyNowTime();" style="">立即购买</a> <a id="addCart" name="item_10638773031_gmq_buy01-1shouji" class="btn-orange-buy" href="javascript:Cart.addCart();"><i></i>加入购物车</a> <a id="superBuy" name="item_10638773031_supertqq_click" class="btn-dark-buy-super" href="javascript:void();" style="display:none;"><p>提前抢</p><p>SUPER会员专享</p></a> <a id="tellMe" name="item_10638773031_gmq_daohuotz01" class="btn-inform" href="javascript:FourPage.subscribeArrivalNotice();" style="display:none;"><span>到货通知</span></a> <div href="javascript:;" class="qrcode-panel" id="qrCode" style="" name="item_10638773031_basic_QR-hover"> <div class="qrc-wrapper" style="height: 0px;"> <img onerror="javascript:$('#qrCode').hide();" class="b-img lazy-loading" lazy-src="//code.suning.cn/pc/build.do?longUrl=687474703a2f2f632e6d2e73756e696e672e636f6d2f6368616e6e656c7761702e68746d3f61707069643d31267061636b6e76657273696f6e3d313331266368616e6e656c636f64653d313030363126646f776e666c61673d312675746d5f736f757263653d7172636f64652675746d5f6d656469756d3d312675746d5f636f6e74656e743d343030302675746d5f7465726d3d30322675746d5f63616d706169676e3d26616454797065436f64653d3130313326616449643d31303633383737333033315f30303030303030303030266368616e6e656c747970653d30362673746f72653d343030305f30315f2670726f64756374547970653d30&amp;bizCode=i9seHn"> </div> <div class="q-bottom"> <span class="s-img"></span> <div class="q-text one-row"><div class="cli-buy txt">扫一扫购买</div></div> <i class="ng-iconfont"></i> </div> </div> <span class="memo" id="yushouTimeWarn" style="display:none;">请在下单后15分钟之内完成支付</span> <a class="btn-ziti link hide" id="btn_mdjt" href="javascript:void(0);">查看现货门店 &gt;</a> <span class="memo" style="display:none;" id="jhsm">注：预约享受优先购买权</span> </div> <p class="proinfo-memo" id="buyReminder" style="display: none;"><span>由于此商品库存有限，请在下单后15分钟之内支付完成，手慢无哦！</span></p> <div class="divide-line"></div> <dl class="pro-serv-panel"> <dt>特色服务</dt> <dd class="proinfo-serv clearfix" id="proinfo-id"> <span id="returnCate" style="" name="item_10638773031_basic_7days-hover"> <a rel="nofollow" class="wly" target="_blank" href="//help.suning.com/page/id-205.htm"><i class="icon"></i>7天无理由退货<span class="s-tooltip"><i class="s-t-lion"></i>无理由退货，购物更安心<span class="tri-pointer-up"><i class="inner-tri"></i></span></span></a> </span> <span id="zb180" style="display: none;"> <a rel="nofollow" href="//sale.suning.com/ju/b2cfwbz0405/index.html" target="_blank" class="zb-180"> </a> </span> <span id="returnGoods" style="display: none;" forhyjflag="0"> <a rel="nofollow" href="//help.suning.com/page/channel-376.htm" target="_blank" class="replace"><i class="icon"></i>300天坏就换</a> </span> <span id="yfxian" style="display:none;" name="item_10638773031_basic_carriage-insurance-hover"> <a class="tyfx" rel="nofollow" href="//help.suning.com/page/channel-354.htm" target="_blank"> <i class="icon"></i>退运费险 <span class="s-tooltip"> <i class="s-t-lion"></i>赠送退货运费险 <span class="tri-pointer-up"> <i class="inner-tri"></i> </span> </span> </a> </span> <span id="safekeep" style="display: block;"> <a rel="nofollow" href="//help.suning.com/page/id-697.htm" class="spbg-note blue-bg" target="_blank" name="item_10638773031_ex_pro"> <i class="icon"></i>商品保管说明 <span class="s-tooltip"> <i class="s-t-lion"></i> 商品保管说明 <span class="tri-pointer-up"> <i class="inner-tri"></i> </span> </span> </a> </span> <span> <a rel="nofollow" href="//b.suning.com" target="_blank" class="zqcg blue-bg" name="item_10638773031_basic_purchaser"> <i class="icon"></i>企业采购 <span class="s-tooltip"> <i class="s-t-lion"></i> 针对企业客户采购的专业服务 <span class="tri-pointer-up"> <i class="inner-tri"></i> </span> </span> </a> </span> <span label="label" id="SL00000010"><a href="http://hc.suning.com/help/channel-153317917886393431.htm" class="icon-image" target="_blank"><img class="icon" src="https://image.suning.cn/uimg/MLS/label/921432721171994343446630.jpg">代客检<span class="s-tooltip"><i class="s-t-lion"></i>退换货提供免费上门取送检测服务<span class="tri-pointer-up"><i class="inner-tri"></i></span></span></a></span></dd> </dl> <div class="ng-rec-con lazy-ajax" style="display: none" id="J-slide1" data-type="jsonp"> </div> 
-          <div id="cshopBox" class="proinfo-side" style="height: 886px;"> <div class="proinfo-side-inner"> 
-               <div class="customer-rec" id="hyjImageTile" style="display:none"> </div> <div class="customer-rec" id="seeAgainTile"> <div class="customer-rec-title"> <div class="t-bg"></div> <h3> <span>看了又看</span> </h3> </div> <div class="customer-rec-list" style="display:none;" id="seeAndsee"> <div class="scroll-wrapper clearfix" style="left: 0px;"> </div> <div class="pages-container" style="display: none;"> <a href="javascript:;" class="l-arrow"></a> <span class="pages-dot"></span> <a href="javascript:;" class="r-arrow"></a> </div> </div> <div class="customer-rec-empty" style="display:none;" id="noAndsee"> <i></i><p>欢迎光临本店铺</p><p><a href="javascript:;" target="_blank">点我可查看更多商品哦~</a></p> </div> </div> </div> </div> <div class="scode-link-box hide" id="scode"> <a name="cprd_10638773031_gmq_smtd" title="请在下单后15分钟之内完成支付" href="javascript:YuShou.checkScode();" class="scode-link"></a> </div> <div class="shopping-guide r-n-store clearfix" id="shopingGuideContent" style="display:none;"></div> 
+                        <dl class="supervip_box" style="">
+                            <dd id="superYz clearboth">
+                                <span class="supervip_icon"></span>
+                                <span class="super_text">加入会员返云钻，下单立返约89.98元</span>
+                                <a class="vip_more" id="superYzLink" name="item_10638773031_superhyljkt_click">立即开通&gt;</a>
+                            </dd>
+                        </dl>
+                        <dl class="pro_comments">
+                            <a href="#pro_detail_tab">
+                                <div>累计评价</div>
+                                <span>100+</span>
+                            </a>
+                        </dl>
+                    </div>
+                    <dl class="proinfo-promo" id="allcuxiao" style="display: block;">
+                        <dt><span class="w2">促销</span></dt>
+                        <dd>
+                            <ul class="promo_list">
+                                <li id="yfbTitle" style="">
+                                    <label>实名有礼</label>
+                                    <i class="i-triangle"></i>
+                                    <p class="promotion_content prom_shiming" id="yfbBox">
+                                        <span class="desc">实名认证领苏宁支付券</span>
+                                        <a class="a_detail">登录后查看 &gt;</a>
+                                    </p>
+                                </li>
+                                <li id="pointTitle" class="prom-list-box" style="display: block;">
+                                    <label>云 钻</label>
+                                    <i class="i-triangle"></i>
+                                    <p class="promotion_content" id="pointBox">
+                                        <span>普通会员返<a class="b" target="_blank">674</a>云钻</span>
+                                    </p>
+                                </li>
+                                <li id="freightfreeTitle" style="display:none;">
+                                    <label>免运费</label>
+                                    <i class="i_triangle"></i>
+                                    <p class="promotion_content" id="freightfreeBox"></p>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="tzm clearboth" id="J-TZM">
+                    <dl id="colorItemList" class="proinfo_color_spec clearboth">
+                        <dt>
+                            <span class="w2"> 颜色 </span>
+                        </dt>
+                        <dd>
+                            <ul class="tip-infor">
+                                <li title="亮黑色" class="clr_item">
+                                    <a title="亮黑色 mate20 6GB+128GB">
+                                        <img src="./images/product_details/spec/spec1-Mate20.jpg" alt="">
+                                        <i></i>
+                                        <span>亮黑色</span>
+                                    </a>
+                                </li>
+                                <li title="宝石蓝" class="clr_item">
+                                    <a title="宝石蓝 mate20 6GB+128GB">
+                                        <img src="./images/product_details/spec/spec2-Mate20.jpg" alt="">
+                                        <span>宝石蓝</span>
+                                    </a>
+                                </li>
+                                <li title="幻影银" class="clr_item">
+                                    <a title="【无此商品】- 幻影银 mate20 6GB+128GB">
+                                        <img src="./images/product_details/spec/spec3-Mate20.jpg" alt="">
+                                        <i></i>
+                                        <span>幻影银</span>
+                                    </a>
+                                </li>
+                                <li title="极光色" class="clr_item selected">
+                                    <a title="极光色 mate20 6GB+128GB">
+                                        <img src="./images/product_details/spec/spec4-Mate20.jpg" alt="">
+                                        <i></i>
+                                        <span>极光色</span>
+                                    </a>
+                                </li>
+                                <li title="樱粉金" class="clr_item">
+                                    <a title="【无货】- 樱粉金 mate20 6GB+128GB">
+                                        <img src="./images/product_details/spec/spec5-Mate20.jpg" alt="">
+                                        <i></i>
+                                        <span>樱粉金</span>
+                                    </a>
+                                </li>
+                                <li title="翡冷翠" class="clr_item">
+                                    <a title="翡冷翠 mate20 6GB+128GB">
+                                        <img src="./images/product_details/spec/spec6-Mate20.jpg" alt="">
+                                        <i></i>
+                                        <span>翡冷翠</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <input type="hidden">
+                        </dd>
+                    </dl>
+                    <dl id="versionItemList" class="proinfo_buytype clearboth">
+                        <dt> <span class="w2"> 版本 </span> </dt>
+                        <dd>
+                            <ul>
+                                <li class="selected" title="mate20 6GB+128GB">
+                                    <a title="极光色 mate20 6GB+128GB">mate20 6GB+128GB<i></i></a>
+                                </li>
+                                <li title="mate20 6GB+64GB">
+                                    <a title="极光色 mate20 6GB+64GB">mate20 6GB+64GB
+                                    </a>
+                                </li>
+                                <li class="disabled c-disabled" title="mate20X 6GB+128GB">
+                                    <a title="【无此商品】- 极光色 mate20X 6GB+128GB">mate20X 6GB+128GB
+                                </a>
+                                </li>
+                                <li class="disabled c-disabled"title="mate20X 8GB+256GB">
+                                    <a title="【无此商品】- 极光色 mate20X 8GB+256GB">mate20X 8GB+256GB
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl id="buycount" class="proinfo_num" style="">
+                        <dt>
+                            <span class="w2">数量</span>
+                        </dt>
+                        <dd>
+                            <a class="num_btn minus minus-disable"></a>
+                            <input id="buyNum" type="text" value="1" min="1">
+                            <a class="num_btn plus plus-disable"></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="buy_btns clearboth">
+                    <a id="buyNowAddCart" class="btn_dark_buy">立即购买</a>
+                    <a id="addCart" class="btn_orange_buy"><i></i>加入购物车</a>
+                </div>
+                <div class="divide-line"></div>
+                <!--特色服务-->
+                <dl class="proinfo_serv_all">
+                    <dt>特色服务</dt>
+                    <dd class="proinfo-serv clearfix" id="proinfo-id">
+                        <span id="returnCate" style="" name="item_10638773031_basic_7days-hover">
+                            <a rel="nofollow" class="wly" target="_blank" href="//help.suning.com/page/id-205.htm">
+                                <i class="icon"></i>
+                                7天无理由退货
+                                <span class="s-tooltip">
+                                    <i class="s-t-lion"></i>
+                                    无理由退货，购物更安心
+                                    <span class="tri-pointer-up">
+                                        <i class="inner-tri"></i>
+                                    </span>
+                                </span>
+                            </a>
+                        </span>
+                        <span label="label" id="SL00000010">
+                            <a href="http://hc.suning.com/help/channel-153317917886393431.htm" class="icon-image" target="_blank">
+                                <img class="icon" src="https://image.suning.cn/uimg/MLS/label/921432721171994343446630.jpg">
+                                代客检
+                                <span class="s-tooltip">
+                                    <i class="s-t-lion"></i>
+                                    退换货提供免费上门取送检测服务
+                                    <span class="tri-pointer-up">
+                                        <i class="inner-tri"></i>
+                                    </span>
+                                </span>
+                            </a>
+                        </span>
+                    </dd>
+                </dl>
             </div> 
         </div> 
         <div id="bookProcedure" class="presell-process hide" style="display: none;"> 

@@ -4,9 +4,13 @@ html,body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,p{
     font-size: 12px;
     font-family: "Microsoft Yahei";
     font-weight: normal;
+    word-break: break-all;
 }
 body,a{
     color: #333;
+}
+.b {
+    color: #38d;
 }
 
 dl{
