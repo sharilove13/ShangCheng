@@ -16,7 +16,9 @@ body,a{
 dl{
     display: block;
 }
-
+video {
+    object-fit: contain;
+}
 a{
     text-decoration: none;
     color:#666;

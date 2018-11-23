@@ -789,8 +789,8 @@
         <div class="container">
             <div class="tabarea">
                 <!-- tab行 -->
-                <ul class="tabarea_items clearboth">
-                    <li class="current"><a>看了又看</a></li>
+                <ul class=" clearboth">
+                    <li clastabarea_itemss="current"><a>看了又看</a></li>
                     <li><a>热门推荐</a></li>
                 </ul>
                 <!-- tab1内容 -->
@@ -955,17 +955,199 @@
         </div>
     </div>
 
+    <!--主体-->
+    <div class="container content_wrap clearboth">
+        <!--主体左侧边栏-->
+        <div class="procon_side" >
+            <div class="store_intro">
+                <div class="store_intro_head">
+                    <div class="bg"></div>
+                    <h4 class="si-intro-head-zy"><i></i><span>苏宁自营</span></h4>
+                </div>
+                <div class="store_intro_list">
+                    <dl>
+                        <dt>商家：</dt>
+                        <dd>
+                            <a target="_blank" > 华为手机苏宁自营旗舰店 </a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>联系：</dt>
+                        <dd id="onlineTile">
+                            <a id="callmeTile" class="contact-me contact-me-self">
+                                <i></i>联系客服
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="store_intro_trend">
+                    <ul>
+                        <li>
+                            <p>
+                                <span>商品</span>
+                            </p>
+                            <p class="up">
+                                <em id="gSatisfy">4.91</em>
+                                <i></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p><span>服务</span></p>
+                            <p class="up"><em id="sSatisfy">4.92</em><i></i></p>
+                        </li>
+                        <li>
+                            <p>
+                                <span>物流</span>
+                            </p>
+                            <p class="up"><em id="dSatisfy">4.94</em><i></i></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="store_intro_enter">
+                    <a class="store_entry store_btn_larger" target="_blank" title="进入店铺">进入店铺</a>
+                </div>
+            </div>
+            <div id="viewAndBuyContent" class="view_buy" data-type="jsonp">
+                <div class="view_buy_head">
+                    <h3>看了最终买</h3>
+                </div>
+                <ul class="view_buy_con" id="vab">
+                    <li>
+                        <a target="_blank" title="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机">
+                            <img class="image lazy-loading" alt="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机" src="//imgservice.suning.cn/uimg1/b2c/image/SLeYU7j3wwtCC6qOpuPkCw.jpg_120w_120h_4e">
+                        </a>
+                        <p class="title">
+                            <a target="_blank" title="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机" >
+                                <span class="zylable">自营</span>
+                                【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机
+                            </a>
+                        </p>
+                        <p class="slide_pro_price">
+                            <span>
+                                <i>¥ </i><em>6999.00</em>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" title="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机">
+                            <img class="image lazy-loading" alt="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机" src="//imgservice.suning.cn/uimg1/b2c/image/SLeYU7j3wwtCC6qOpuPkCw.jpg_120w_120h_4e">
+                        </a>
+                        <p class="title">
+                            <a target="_blank" title="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机" >
+                                <span class="zylable">自营</span>
+                                【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机
+                            </a>
+                        </p>
+                        <p class="slide_pro_price">
+                            <span>
+                                <i>¥ </i><em>6999.00</em>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" title="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机">
+                            <img class="image lazy-loading" alt="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机" src="//imgservice.suning.cn/uimg1/b2c/image/SLeYU7j3wwtCC6qOpuPkCw.jpg_120w_120h_4e">
+                        </a>
+                        <p class="title">
+                            <a target="_blank" title="【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机" >
+                                <span class="zylable">自营</span>
+                                【领券立减】Apple iPhone X 64GB 深空灰 移动联通电信4G手机
+                            </a>
+                        </p>
+                        <p class="slide_pro_price">
+                            <span>
+                                <i>¥ </i><em>6999.00</em>
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
+        <!--内容详情-->
+        <div class="procon">
+            <div class="tabarea" id="PRO_DETAIL">
+                <div class="procon_toolbar" id="PRO_DETAIL_TAB">
+                    <div id="tabAddCart" class="add_cart" style="">
+                        <a id="addCart2" class="btn_orange_color" >加入购物车</a>
+                    </div>
+                    <ul class="tabarea_items detail_tabs">
+                        <li class="current">
+                            <a >商品详情</a>
+                        </li>
+                        <li id="productParTitle" >
+                            <a >包装及参数</a>
+                        </li>
+                        <li id="productCommTitle" >
+                            <a >评价（100+）</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="J-procon-desc" class="tabarea_content clearboth" style="display: block;">
+                    <div class="pro_detail_container">
+                        <div id="kernelParmeter" class="pro_detail_parameter" style="display: none;">
+                            <div class="hd">
+                                <h4>核心参数</h4>
+                                <span class="opt">
+                                    <a href="javascript:FourPage.productParTitleClick();">更多参数</a>
+                                </span>
+                            </div>
+                            <ul class="cnt clearfix"> </ul>
+                        </div>
+                        <div id="productDetail" class="pro_detail_pics" >
+                            <div id="PRO_NEED_KNOW">
+                                <p>
+                                    <img src="./images/product_details/content/needknow/needknow1-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/needknow/needknow2-Mate20.jpg" alt="">
+                                </p>
+                            </div>
+                            <div id="PRO_INFO">
+                                <p>
+                                    <img src="./images/product_details/content/info/info1-Mate20.png" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/info/info2-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/info/info3-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/info/info4-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/info/info5-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/info/info6-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/info/info7-Mate20.jpg" alt="">
+                                </p>
+                            </div>
+                            <div id="PRO_PROBLEM">
+                                <p>
+                                    <img src="./images/product_details/content/problem/problem1-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/problem/problem2-Mate20.jpg" alt="">
+                                </p>
+                            </div>
+                            <div id="PRO_AFTER_SELL">
+                                <p>
+                                    <img src="./images/product_details/content/aftersell/aftersell1-Mate20.jpg" alt="">
+                                </p>
+                                <p>
+                                    <img src="./images/product_details/content/aftersell/aftersell2-Mate20.jpg" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="_ABOUT_FOOTER_" class="about_footer clearboth">
         <div class="footer_guide">
