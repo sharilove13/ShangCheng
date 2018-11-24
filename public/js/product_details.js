@@ -24,5 +24,19 @@ $(function () {
             $mask.css({left,top});
             $lgDiv.css("background-position",
                 `-${16/9*left}px -${16/9*top}px`)
-        })
+        });
+    
+    //鼠标进入每个小图片切换中图片和大图片
+    //选择条
+    var $imgzoom_choice = $("#IMGZOOM_CHOICE");
+    $imgzoom_choice.on("mouseover",function(e){
+        if(e.target.nodeName === "IMG"){
+            var img=e.target;
+            var md=img.dataset.md;
+            var lg=img.dataset.lg;
+            $mImg.attr("src", md);
+            $lgDiv.css("background-image",`url(${lg})`);
+            console.log("get IMG");
+        }
+    });
 });
