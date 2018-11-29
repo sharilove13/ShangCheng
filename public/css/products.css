@@ -367,7 +367,10 @@
     border-left: 1px solid #EEE;
     margin-left: -1px;
 }
-
+#PRODUCTS_LIST .pros_item_btn .btn_collect:hover,
+#PRODUCTS_LIST .pros_item_btn .btn_cart:hover{
+    background-color: #f9f9fd;
+}
 #PRODUCTS_LIST .pros_item_btn a i{
     display: inline-block;
     margin: 0 2px 0 0;
